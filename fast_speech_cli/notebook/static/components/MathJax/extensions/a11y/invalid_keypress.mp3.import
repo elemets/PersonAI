@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/invalid_keypress.mp3-32936899b231bf199b75d1e5f0c922c3.mp3str"
+
+[deps]
+
+source_file="res://fast_speech_cli/notebook/static/components/MathJax/extensions/a11y/invalid_keypress.mp3"
+dest_files=[ "res://.import/invalid_keypress.mp3-32936899b231bf199b75d1e5f0c922c3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,28 @@
+{
+    "Greetings" : [
+        "Hello there my name is Artorius the second",
+        "Hi, I am a demon of the underworld, horrible to meet you"
+    ],
+    "Reactions" : {
+        "positive" : [
+            "Hmmm, I like what you're saying"
+        ],
+        "neutral": [
+            "You could at least try to be interesting..."
+        ],
+        "negative" : [
+            "You're not the sort of person I want to talk to"
+        ]
+    },
+    "Clues" : {
+        "success" : [ 
+            "I'm certain I saw Jerudas with a gun" 
+        ],
+        "failure" : [
+            "Don't talk to me like that, I'm sick of your shenanigans.  Leave me alone for a bit."
+        ],
+        "satisified" : [
+            "I've already tell you what I know go away."
+        ]
+    }
+}
