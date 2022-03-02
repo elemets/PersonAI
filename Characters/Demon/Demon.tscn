@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Demon.gd" type="Script" id=1]
+[ext_resource path="res://Characters/Demon_2.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Demon/PlayerDetectionZone.tscn" type="PackedScene" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 16.0
+height = 0.0
+
+[node name="Demon" type="KinematicBody2D"]
+script = ExtResource( 1 )
+ACCELERATION = 603
+
+[node name="Demon" type="Sprite" parent="."]
+position = Vector2( 0, -24 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -8 )
+shape = SubResource( 1 )
+
+[node name="PlayerDetectionZone" parent="." instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+modulate = Color( 0.980392, 0.243137, 0.243137, 0.32549 )
+position = Vector2( 0, -8 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[editable path="PlayerDetectionZone"]
