@@ -3,7 +3,7 @@ extends KinematicBody2D
 export var ACCELERATION = 600
 export var MAX_SPEED = 70
 export var FRICTION = 200
-
+export var NAME = "Magdela"
 
 
 enum {
@@ -27,12 +27,16 @@ onready var playerDetectionZone = $PlayerDetectionZone
 onready var start_position = global_position
 onready var target_position = global_position
 var rng = RandomNumberGenerator.new()
-signal conversation
+signal conversation(demon_name)
+signal name(NAME)
+onready var animation_player = $AnimationPlayer
 
 onready var timer = get_node("Timer")
 func _ready():
+	emit_signal("name", NAME)
 	timer.set_wait_time(5)
 	timer.start()
+
 
 func TimerTimeout():
 	pass
@@ -44,14 +48,14 @@ func _physics_process(delta):
 			var player = playerDetectionZone.player
 			if player != null and Input.is_key_pressed(KEY_E):
 				print("emitting conversation")
-				emit_signal("conversation")
+				emit_signal("conversation", NAME)
 			elif player != null:
 				velocity = velocity.move_toward(Vector2.ZERO, FRICTION *delta)
 		WANDER:
 			var player = playerDetectionZone.player
 			var point = update_target_position()
 			var direction = (point - global_position).normalized()
-			print(start_position)
+			print(direction)
 			if player ==  null:
 				velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
 
@@ -66,24 +70,22 @@ func see_player():
 		
 func update_target_position():
 	var target_vector = Vector2.ZERO
+
 	match square_next:
 		LEFT:
 			target_vector = Vector2(start_position.x - 100, start_position.y)
+			animation_player.play("run_left")
 			if is_at_target_position():
 				square_next = RIGHT
+			target_position = target_vector
 		RIGHT:
 			target_vector = Vector2(start_position.x + 100, start_position.y)
+			animation_player.play("run_right")
 			if is_at_target_position():
 				square_next = LEFT
-	target_position = target_vector
+			target_position = target_vector
 	return target_position
 
 func is_at_target_position():
 	return (target_position - global_position).length() < TOLERANCE
-
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 

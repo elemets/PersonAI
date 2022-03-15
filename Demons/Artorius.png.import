@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Happy.png-25b6216ce2ff45e2c475840f014a166f.stex"
+path="res://.import/Artorius.png-c15b7a82ec9bae0d037bd29016a8b2af.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Demon/Expressions/Happy.png"
-dest_files=[ "res://.import/Happy.png-25b6216ce2ff45e2c475840f014a166f.stex" ]
+source_file="res://Demons/Artorius.png"
+dest_files=[ "res://.import/Artorius.png-c15b7a82ec9bae0d037bd29016a8b2af.stex" ]
 
 [params]
 

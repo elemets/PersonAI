@@ -1,12 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Dialog/RichTextLabel.gd" type="Script" id=1]
 [ext_resource path="res://addons/os_async_executer/OSAsyncExecute.gd" type="Script" id=2]
 [ext_resource path="res://Dialog/alaGardCustom.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Dialog/DemonChange.gd" type="Script" id=4]
-[ext_resource path="res://Characters/Demon/Expressions/Happy.png" type="Texture" id=5]
+[ext_resource path="res://Characters/Demon/Magdela/Expressions/Happy.png" type="Texture" id=5]
 [ext_resource path="res://Dialog/inside.jpg" type="Texture" id=6]
 [ext_resource path="res://Dialog/LineEdit_sc.gd" type="Script" id=7]
+[ext_resource path="res://Dialog/Socket.gd" type="Script" id=8]
 
 [sub_resource type="Theme" id=1]
 default_font = ExtResource( 3 )
@@ -73,6 +74,9 @@ __meta__ = {
 
 [node name="OSAsyncExecute" type="Node" parent="RichTextLabel"]
 script = ExtResource( 2 )
+
+[node name="Socket" type="Node2D" parent="."]
+script = ExtResource( 8 )
 
 [connection signal="text_entered" from="YSort/LineEdit" to="YSort/LineEdit" method="_on_LineEdit_text_entered"]
 [connection signal="text_entered" from="YSort/LineEdit" to="RichTextLabel" method="_on_LineEdit_text_entered"]

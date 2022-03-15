@@ -4,6 +4,7 @@ signal user_text_input(text)
 
 
 func _ready():
+	release_focus()
 	pass
 
 

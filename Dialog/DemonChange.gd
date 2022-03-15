@@ -4,10 +4,12 @@ extends Sprite
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
-
+var demon_name = 'Magdela'
+var texture_string
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+	texture = load(texture_string)
 	pass # Replace with function body.
 
 
@@ -18,9 +20,19 @@ func _ready():
 
 func _on_RichTextLabel_mood(emotion):
 	if emotion == 'pos':
-		texture = load("res://Characters/Demon/Expressions/Happy.png")
+		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+		texture = load(texture_string)
 	elif emotion == 'neg':
-		texture = load("res://Characters/Demon/Expressions/Sad.png")
+		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Sad.png"
+		texture = load(texture_string)
 	else:
-		texture = load("res://Characters/Demon/Expressions/Neutral.png")
+		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Neutral.png"
+		texture = load(texture_string)
+	pass # Replace with function body.
+
+
+
+
+func _on_Demon_name(NAME):
+	demon_name = NAME
 	pass # Replace with function body.

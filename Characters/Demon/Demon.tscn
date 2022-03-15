@@ -1,12 +1,96 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Demon.gd" type="Script" id=1]
-[ext_resource path="res://Characters/Demon_2.png" type="Texture" id=2]
 [ext_resource path="res://Characters/Demon/PlayerDetectionZone.tscn" type="PackedScene" id=3]
+
+[sub_resource type="StreamTexture" id=8]
+load_path = "res://.import/Magdela.png-328194c7deb60d9874c5f87fbeb9763b.stex"
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 16.0
 height = 0.0
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 6 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "run_backward"
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 9 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "run_forward"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 0 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "run_left"
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 3 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "run_right"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 6 ]
+}
 
 [node name="Demon" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -14,7 +98,10 @@ ACCELERATION = 603
 
 [node name="Demon" type="Sprite" parent="."]
 position = Vector2( 0, -24 )
-texture = ExtResource( 2 )
+texture = SubResource( 8 )
+hframes = 3
+vframes = 4
+frame = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -8 )
@@ -27,5 +114,13 @@ modulate = Color( 0.980392, 0.243137, 0.243137, 0.32549 )
 position = Vector2( 0, -8 )
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Demon")
+anims/RESET = SubResource( 3 )
+anims/run_backward = SubResource( 7 )
+anims/run_forward = SubResource( 6 )
+anims/run_left = SubResource( 5 )
+anims/run_right = SubResource( 4 )
 
 [editable path="PlayerDetectionZone"]

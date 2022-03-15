@@ -10,12 +10,12 @@ var output = []
 var result_dict = {}
 var pid
 signal mood(emotion)
+signal Player_Response(message)
 var drawTextSpeed = 0
 var chatLimit = 56
-var file = './fast_speech_cli/output.txt'
+var demon_name
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$OSAsyncExecute.execute("./fast_speech_cli/fast_speech_cli.exe", ["artorius", "greet"], "greet_command")
 	pass # Replace with function body.
 
 
@@ -43,5 +43,11 @@ func _showCharacter():
 
 
 func _on_LineEdit_text_entered(new_text):
-	$OSAsyncExecute.execute("./fast_speech_cli/fast_speech_cli.exe", ["artorius", "response", new_text], "response_command")
+	if new_text != '':
+		emit_signal("Player_Response", new_text)
+	pass # Replace with function body.
+
+
+func _on_Socket_payload_received(payload):
+	text = payload['Content']
 	pass # Replace with function body.

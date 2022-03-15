@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Neutral.png-47f38f1f50ebb1c7fa1392a1180d6ea2.stex"
+path="res://.import/Magdela.png-328194c7deb60d9874c5f87fbeb9763b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Demon/Expressions/Neutral.png"
-dest_files=[ "res://.import/Neutral.png-47f38f1f50ebb1c7fa1392a1180d6ea2.stex" ]
+source_file="res://Demons/Magdela.png"
+dest_files=[ "res://.import/Magdela.png-328194c7deb60d9874c5f87fbeb9763b.stex" ]
 
 [params]
 
