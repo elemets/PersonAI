@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://WinOrLose.gd" type="Script" id=1]
+[ext_resource path="res://Restart_Screen_Text.gd" type="Script" id=2]
+[ext_resource path="res://Dialog/alaGardCustom.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Dialog/alagard.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://ExitButton.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=2]
+size = 42
+font_data = ExtResource( 4 )
+
+[sub_resource type="Theme" id=3]
+default_font = SubResource( 2 )
+
+[sub_resource type="Theme" id=4]
+default_font = ExtResource( 3 )
+
+[node name="RestartMenu" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinOrLose" type="RichTextLabel" parent="."]
+margin_left = 232.0
+margin_top = 24.0
+margin_right = 428.0
+margin_bottom = 72.0
+size_flags_stretch_ratio = 0.0
+theme = SubResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Restart_Screen_Text" type="RichTextLabel" parent="."]
+margin_left = 96.0
+margin_top = 136.0
+margin_right = 536.0
+margin_bottom = 264.0
+theme = SubResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="MenuButton" parent="."]
+margin_left = 288.0
+margin_top = 296.0
+margin_right = 353.0
+margin_bottom = 316.0
+text = "EXIT"
+switch_on_hover = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_ExitButton_pressed"]

@@ -34,6 +34,7 @@ onready var animation_player = $AnimationPlayer
 onready var timer = get_node("Timer")
 func _ready():
 	emit_signal("name", NAME)
+	print("Emitting signal", NAME)
 	timer.set_wait_time(5)
 	timer.start()
 

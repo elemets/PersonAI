@@ -19,6 +19,8 @@ func _ready():
 
 
 func _on_RichTextLabel_mood(emotion):
+	print("emotion received")
+	print(emotion)
 	if emotion == 'pos':
 		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
 		texture = load(texture_string)
@@ -33,6 +35,16 @@ func _on_RichTextLabel_mood(emotion):
 
 
 
-func _on_Demon_name(NAME):
-	demon_name = NAME
+
+func _on_Demon2_conversation(demon_name):
+	demon_name = demon_name
+	texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+	texture = load(texture_string)
+	pass # Replace with function body.
+
+
+func _on_Demon_conversation(demon_name):
+	demon_name = demon_name
+	texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+	texture = load(texture_string)
 	pass # Replace with function body.

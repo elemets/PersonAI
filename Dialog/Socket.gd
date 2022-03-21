@@ -3,6 +3,8 @@ extends Node2D
 export var SOCKET_URL = "ws://127.0.0.1:1234"
 
 var demon_name
+var demon_name_2
+var current_convo
 var command
 var content
 signal payload_received
@@ -16,9 +18,6 @@ func _ready():
 	_client.connect("data_received", self, "_on_data")
 	
 	var err = _client.connect_to_url(SOCKET_URL)
-	
-	print(err)
-	
 	if err != OK:
 		print("Unable to connect")
 		set_process(false)
@@ -35,10 +34,10 @@ func _on_connected(proto = ""):
 	print("Connected with protocol: ", proto)
 	print("Sending initialise to the demon")
 	_send(demon_name, 'init')
+	_send(demon_name_2, 'init')
 	
 func _on_data():
 	var payload = JSON.parse(_client.get_peer(1).get_packet().get_string_from_utf8()).result
-	print(payload)
 	waiting_for_payload = false
 	if payload['Type'] == 'greet' or payload['Type'] == 'response':
 		emit_signal("payload_received", payload)
@@ -56,29 +55,33 @@ func _on_Demon_name(NAME):
 func _on_Demon_conversation(demon_name):
 	command = 'greet'
 	demon_name = demon_name
-	if waiting_for_payload == false:
-		_send(demon_name, command)
-		waiting_for_payload = true
+	current_convo = demon_name
+	print("This is current demon name:")
+	print(demon_name)
+	_send(demon_name, command)
+	print("Sending")
+
 	pass # Replace with function body.
 
 
 func _on_RichTextLabel_Player_Response(message):
 	if waiting_for_payload == false:
-		_send(demon_name, "response", message)
+		_send(current_convo, "response", message)
 		waiting_for_payload = true
 	pass # Replace with function body.
 
 
 func _on_Demon2_conversation(demon_name):
 	command = 'greet'
-	demon_name = demon_name
-	if waiting_for_payload == false:
-		_send(demon_name, command)
-		waiting_for_payload = true
+	demon_name_2 = demon_name
+	current_convo = demon_name_2
+	_send(demon_name_2, command)
+
 	pass # Replace with function body.
 
 
 func _on_Demon2_name(NAME):
-	demon_name = NAME
+	demon_name_2 = NAME
 	command = 'init'
+
 	pass # Replace with function body.

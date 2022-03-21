@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Dialog/RichTextLabel.gd" type="Script" id=1]
-[ext_resource path="res://addons/os_async_executer/OSAsyncExecute.gd" type="Script" id=2]
 [ext_resource path="res://Dialog/alaGardCustom.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Dialog/DemonChange.gd" type="Script" id=4]
 [ext_resource path="res://Characters/Demon/Magdela/Expressions/Happy.png" type="Texture" id=5]
@@ -72,9 +71,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OSAsyncExecute" type="Node" parent="RichTextLabel"]
-script = ExtResource( 2 )
-
 [node name="Socket" type="Node2D" parent="."]
 script = ExtResource( 8 )
 
@@ -83,4 +79,3 @@ script = ExtResource( 8 )
 [connection signal="user_text_input" from="YSort/LineEdit" to="YSort/LineEdit" method="_on_LineEdit_user_text_input"]
 [connection signal="conversation_finished" from="RichTextLabel" to="YSort/LineEdit" method="_on_RichTextLabel_conversation_finished"]
 [connection signal="mood" from="RichTextLabel" to="YSort/Sprite" method="_on_RichTextLabel_mood"]
-[connection signal="command_finished" from="RichTextLabel/OSAsyncExecute" to="RichTextLabel" method="_on_OSAsyncExecute_command_finished"]

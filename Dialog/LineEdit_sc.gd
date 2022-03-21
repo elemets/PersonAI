@@ -8,7 +8,6 @@ func _ready():
 	pass
 
 
-
 func _on_RichTextLabel_conversation_finished():
 	grab_focus()
 	pass # Replace with function body.

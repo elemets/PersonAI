@@ -42,7 +42,7 @@ tracks/0/keys = {
 "values": [ 9, 10, 11, 9 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=9]
 resource_name = "run_forward"
 length = 0.3
 tracks/0/type = "value"
@@ -119,7 +119,7 @@ position = Vector2( 0, -8 )
 root_node = NodePath("../Demon")
 anims/RESET = SubResource( 3 )
 anims/run_backward = SubResource( 7 )
-anims/run_forward = SubResource( 6 )
+anims/run_forward = SubResource( 9 )
 anims/run_left = SubResource( 5 )
 anims/run_right = SubResource( 4 )
 
