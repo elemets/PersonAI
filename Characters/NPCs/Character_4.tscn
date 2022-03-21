@@ -1,0 +1,232 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Characters/NPCs/Character_4_Sprite.gd" type="Script" id=1]
+[ext_resource path="res://Characters/NPCs/PlayerDetectionZone.tscn" type="PackedScene" id=3]
+
+[sub_resource type="GDScript" id=10]
+script/source = "extends KinematicBody2D
+
+export var ACCELERATION = 600
+export var MAX_SPEED = 70
+export var FRICTION = 200
+export var NAME = \"Magdela\"
+
+
+enum {
+	IDLE,
+	IN_CONVERSATION,
+	WANDER
+}
+
+enum {
+	LEFT,
+	RIGHT
+}
+
+var square_next = RIGHT
+
+
+const TOLERANCE = 4.0
+var velocity = Vector2.ZERO
+var state = WANDER
+onready var playerDetectionZone = $PlayerDetectionZone
+onready var start_position = global_position
+onready var target_position = global_position
+var rng = RandomNumberGenerator.new()
+signal conversation(demon_name)
+signal name(NAME)
+signal text_dict(text_dict)
+var text_dict = {}
+onready var animation_player = $AnimationPlayer
+
+onready var timer = get_node(\"Timer\")
+func _ready():
+	var file = File.new()
+	file.open(\"./Assets/Character_Info/character_names.json\", file.READ)
+	var text_returned = file.get_as_text()
+	text_dict = JSON.parse(text_returned).result
+	file.close()
+	if text_dict.has(\"Character_4\"):
+		NAME = text_dict['Character_4']
+		emit_signal(\"name\", NAME)
+		print(\"Emitting signal\", NAME)
+		timer.set_wait_time(5)
+		timer.start()
+		emit_signal(\"text_dict\", text_dict)
+	else:
+		queue_free()
+		pass
+
+
+func TimerTimeout():
+	pass
+
+func _physics_process(delta):
+	see_player()
+	match state:
+		IDLE:
+			var player = playerDetectionZone.player
+			if player != null and Input.is_key_pressed(KEY_E):
+				print(\"emitting conversation\")
+				emit_signal(\"conversation\", NAME)
+			elif player != null:
+				velocity = velocity.move_toward(Vector2.ZERO, FRICTION *delta)
+		WANDER:
+			var player = playerDetectionZone.player
+			var point = update_target_position()
+			var direction = (point - global_position).normalized()
+			print(direction)
+			if player ==  null:
+				velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+
+	velocity = move_and_slide(velocity)
+
+func see_player():
+	if playerDetectionZone.can_see_player():
+		state = IDLE
+	else:
+		state = WANDER
+		
+		
+func update_target_position():
+	var target_vector = Vector2.ZERO
+
+	match square_next:
+		LEFT:
+			target_vector = Vector2(start_position.x - 100, start_position.y)
+			animation_player.play(\"run_left\")
+			if is_at_target_position():
+				square_next = RIGHT
+			target_position = target_vector
+		RIGHT:
+			target_vector = Vector2(start_position.x + 100, start_position.y)
+			animation_player.play(\"run_right\")
+			if is_at_target_position():
+				square_next = LEFT
+			target_position = target_vector
+	return target_position
+
+func is_at_target_position():
+	return (target_position - global_position).length() < TOLERANCE
+
+"
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 16.0
+height = 0.0
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 6 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "run_backward"
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 9 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "run_forward"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 0 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "run_left"
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 3 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "run_right"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 6 ]
+}
+
+[node name="Character_4" type="KinematicBody2D"]
+script = SubResource( 10 )
+
+[node name="Character_4" type="Sprite" parent="."]
+position = Vector2( 0, -24 )
+hframes = 3
+vframes = 4
+frame = 6
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -8 )
+shape = SubResource( 1 )
+
+[node name="PlayerDetectionZone" parent="." instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+modulate = Color( 0.980392, 0.243137, 0.243137, 0.32549 )
+position = Vector2( 0, -8 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Character_4")
+anims/RESET = SubResource( 3 )
+anims/run_backward = SubResource( 7 )
+anims/run_forward = SubResource( 9 )
+anims/run_left = SubResource( 5 )
+anims/run_right = SubResource( 4 )
+
+[connection signal="text_dict" from="." to="Character_4" method="_on_Character_4_text_dict"]
+
+[editable path="PlayerDetectionZone"]

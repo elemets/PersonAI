@@ -59,6 +59,10 @@ texture={
 2d_render/layer_1="Player"
 2d_physics/layer_1="Player"
 
+[logging]
+
+file_logging/enable_file_logging=true
+
 [physics]
 
 common/enable_pause_aware_picking=true

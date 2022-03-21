@@ -46,24 +46,6 @@ func _send(demon_name, command, content=''):
 	_client.get_peer(1).put_packet(JSON.print({"Name": demon_name, "Command": command, "Content": content}).to_utf8())
 
 
-func _on_Demon_name(NAME):
-	demon_name = NAME
-	command = 'init'
-	pass # Replace with function body.
-
-
-func _on_Demon_conversation(demon_name):
-	command = 'greet'
-	demon_name = demon_name
-	current_convo = demon_name
-	print("This is current demon name:")
-	print(demon_name)
-	_send(demon_name, command)
-	print("Sending")
-
-	pass # Replace with function body.
-
-
 func _on_RichTextLabel_Player_Response(message):
 	if waiting_for_payload == false:
 		_send(current_convo, "response", message)
@@ -71,17 +53,30 @@ func _on_RichTextLabel_Player_Response(message):
 	pass # Replace with function body.
 
 
-func _on_Demon2_conversation(demon_name):
+func _on_Character_2_conversation(demon_name):
 	command = 'greet'
-	demon_name_2 = demon_name
+	demon_name_2 = "Character_2"
 	current_convo = demon_name_2
 	_send(demon_name_2, command)
-
 	pass # Replace with function body.
 
 
-func _on_Demon2_name(NAME):
-	demon_name_2 = NAME
+func _on_Character_2_name(NAME):
+	demon_name_2 = "Character_2"
 	command = 'init'
+	pass 
 
-	pass # Replace with function body.
+
+func _on_Character_1_name(NAME):
+	demon_name = 'Character_1'
+	command = 'init'
+	pass 
+
+
+func _on_Character_1_conversation(demon_name):
+	command = 'greet'
+	demon_name = "Character_1"
+	current_convo = demon_name
+	_send(demon_name, command)
+	print("Sending")
+	pass 

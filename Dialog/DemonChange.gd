@@ -6,9 +6,10 @@ extends Sprite
 # var b = "text"
 var demon_name = 'Magdela'
 var texture_string
+var current_character = 'Character_1'
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+	texture_string = "./Assets/Characters/"+  current_character + "/Expressions/Happy.png"
 	texture = load(texture_string)
 	pass # Replace with function body.
 
@@ -22,29 +23,29 @@ func _on_RichTextLabel_mood(emotion):
 	print("emotion received")
 	print(emotion)
 	if emotion == 'pos':
-		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+		texture_string = "./Assets/Characters/"+current_character+"/Expressions/Happy.png"
 		texture = load(texture_string)
 	elif emotion == 'neg':
-		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Sad.png"
+		texture_string = "./Assets/Characters/"+current_character+"/Expressions/Sad.png"
 		texture = load(texture_string)
 	else:
-		texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Neutral.png"
+		texture_string = "./Assets/Characters/"+current_character+"/Expressions/Neutral.png"
 		texture = load(texture_string)
 	pass # Replace with function body.
 
 
 
-
-
-func _on_Demon2_conversation(demon_name):
+func _on_Character_2_conversation(demon_name):
 	demon_name = demon_name
-	texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+	texture_string = "./Assets/Characters/Character_2/Expressions/Happy.png"
+	current_character = "Character_2"
 	texture = load(texture_string)
-	pass # Replace with function body.
+	pass 
 
 
-func _on_Demon_conversation(demon_name):
+func _on_Character_1_conversation(demon_name):
 	demon_name = demon_name
-	texture_string = "res://Characters/Demon/"+ demon_name +"/Expressions/Happy.png"
+	texture_string = "./Assets/Characters/Character_1/Expressions/Happy.png"
+	current_character = "Character_1"
 	texture = load(texture_string)
-	pass # Replace with function body.
+	pass 

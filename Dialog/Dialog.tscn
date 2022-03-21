@@ -3,8 +3,8 @@
 [ext_resource path="res://Dialog/RichTextLabel.gd" type="Script" id=1]
 [ext_resource path="res://Dialog/alaGardCustom.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Dialog/DemonChange.gd" type="Script" id=4]
-[ext_resource path="res://Characters/Demon/Magdela/Expressions/Happy.png" type="Texture" id=5]
-[ext_resource path="res://Dialog/inside.jpg" type="Texture" id=6]
+[ext_resource path="res://Assets/Characters/Character_2/Expressions/Happy.png" type="Texture" id=5]
+[ext_resource path="res://Assets/DialogRoom/inside.jpg" type="Texture" id=6]
 [ext_resource path="res://Dialog/LineEdit_sc.gd" type="Script" id=7]
 [ext_resource path="res://Dialog/Socket.gd" type="Script" id=8]
 

@@ -7,6 +7,8 @@ const FRICTION = 600
 
 var velocity = Vector2.ZERO
 
+
+
 func _physics_process(delta):
 	
 	var input_vector = Vector2.ZERO
