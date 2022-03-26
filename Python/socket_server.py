@@ -65,8 +65,9 @@ class socket_server():
                 output = demon_info['Player_Rating']            
             
             data_to_be_sent = json.dumps({"Type": type, "Content": output, "Emotion": pos_or_neg, "prob_score": prob_score})
-            logger.info(sentence)
-            logger.info(data_to_be_sent)
+            if sentence:
+                logger.info(sentence)
+                logger.info(data_to_be_sent)
             print(data_to_be_sent)
             await websocket.send(data_to_be_sent)
             

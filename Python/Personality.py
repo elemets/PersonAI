@@ -67,7 +67,7 @@ class Personality:
     def increase_rating(self, increase_amount):
         self.json_file["Player_Rating"] += increase_amount
         self.json_file['Player_Rating'] = float(self.json_file['Player_Rating'])
-        with open(f"./Demons/{self.name}.json", "w") as f:
+        with open(f"../Assets/Characters/{self.name}.json", "w") as f:
             json.dump(self.json_file, f)
         self.personality_score += increase_amount
 
@@ -75,7 +75,7 @@ class Personality:
     def decrease_rating(self, decrease_amount):
         self.json_file["Player_Rating"] += decrease_amount
         self.json_file['Player_Rating'] = float(self.json_file['Player_Rating'])
-        with open(f"./Demons/{self.name}.json", "w") as f:
+        with open(f"../Assets/Characters/{self.name}.json", "w") as f:
             json.dump(self.json_file, f)
         self.personality_score += decrease_amount
 

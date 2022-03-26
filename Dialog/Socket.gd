@@ -43,6 +43,7 @@ func _on_data():
 		emit_signal("payload_received", payload)
 
 func _send(demon_name, command, content=''):
+
 	_client.get_peer(1).put_packet(JSON.print({"Name": demon_name, "Command": command, "Content": content}).to_utf8())
 
 

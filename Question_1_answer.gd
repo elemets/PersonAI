@@ -25,6 +25,7 @@ func _on_Final_Screen_Text_file_loaded(dict):
 
 func _on_Final_Button_pressed():
 	text = text.to_lower()
+	print(text.similarity(required_answer))
 	if text.similarity(required_answer) > 0.8:
 		emit_signal("question_1_correct", true)
 	else:

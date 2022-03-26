@@ -290,3 +290,67 @@
 2022-03-21 17:56:30,261:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
 2022-03-21 17:56:38,632:INFO:What do you know about the murder?
 2022-03-21 17:56:38,633:INFO:{"Type": "response", "Content": "I know that the victim was a human.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:52:42,015:INFO:
+2022-03-21 21:52:42,015:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:52:42,373:INFO:
+2022-03-21 21:52:42,373:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:53:58,142:INFO:
+2022-03-21 21:53:58,142:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:53:58,158:INFO:
+2022-03-21 21:53:58,158:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:54:24,655:INFO:Hi, whats your name?
+2022-03-21 21:54:24,655:INFO:{"Type": "response", "Content": "Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:54:59,035:INFO:What do you do for fun?
+2022-03-21 21:54:59,035:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:55:47,252:INFO:What's your favourite meal?
+2022-03-21 21:55:47,252:INFO:{"Type": "response", "Content": "Gyros.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 21:56:13,293:INFO:Do you like music?
+2022-03-21 21:56:13,293:INFO:{"Type": "response", "Content": "Yes, I do.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:04:16,592:INFO:Hi Magdela you look very pretty, do you like to wear makeup?
+2022-03-21 22:04:16,593:INFO:{"Type": "response", "Content": "Yes I do.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:04:42,452:INFO:Maybe you could teach me one day! ;)
+2022-03-21 22:04:42,452:INFO:{"Type": "response", "Content": "You gotta try a bit harder, seriously!", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:04:59,517:INFO:do you like dancing?
+2022-03-21 22:04:59,517:INFO:{"Type": "response", "Content": "Yes, I love dancing.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:05:18,688:INFO:Me too, my favourite is salsa dancing...
+2022-03-21 22:05:18,688:INFO:{"Type": "response", "Content": "Talk to me about something I care about or leave", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:06:34,780:INFO:What do you care about?
+2022-03-21 22:06:34,780:INFO:{"Type": "response", "Content": "I care about my friends, my family, my job, my hobbies, my food, my drink, my music, my movies, my TV shows, my books, my games, my sports,", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:07:07,718:INFO:I love reading too, what's your favourite book?
+2022-03-21 22:07:07,718:INFO:{"Type": "response", "Content": "I don't have a favourite book.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:07:17,250:INFO:What do you read?
+2022-03-21 22:07:17,250:INFO:{"Type": "response", "Content": "I'm not sure I can help you with that...", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:08:09,214:INFO:Do you have any family?
+2022-03-21 22:08:09,214:INFO:{"Type": "response", "Content": "Yes, I have a wife and two children.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:08:47,717:INFO:I'd love to meet them some day!
+2022-03-21 22:08:47,717:INFO:{"Type": "response", "Content": "You gotta try a bit harder, seriously!", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:09:30,647:INFO:who would want to kill Dio?
+2022-03-21 22:09:30,647:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:09:44,033:INFO:Did you know Dio?
+2022-03-21 22:09:44,033:INFO:{"Type": "response", "Content": "Yes, I knew him.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:10:03,492:INFO:Were you friends?
+2022-03-21 22:10:03,492:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:10:30,115:INFO:So ok ummm, were you sad that he died? No um I dunno stop stooop
+2022-03-21 22:10:30,115:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:11:08,573:INFO:Im sorry to hear that do you know who killed Dio?
+2022-03-21 22:11:08,574:INFO:{"Type": "response", "Content": "I don't know who killed Dio.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:11:22,502:INFO:Do you know anyone who hated Dio?
+2022-03-21 22:11:22,502:INFO:{"Type": "response", "Content": "Yes, I know a lot of people who hated Dio.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:11:33,470:INFO:Is one of them Artorius?
+2022-03-21 22:11:33,470:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:11:43,346:INFO:Do you like burritos?
+2022-03-21 22:11:43,346:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "pos", "prob_score": null}
+2022-03-21 22:12:45,541:INFO:I fucking hate gyros
+2022-03-21 22:12:45,541:INFO:{"Type": "response", "Content": "You're not the sort of person I want to talk to", "Emotion": "neg", "prob_score": null}
+2022-03-21 22:13:01,709:INFO:I love gyros and I hate Dio
+2022-03-21 22:13:01,709:INFO:{"Type": "response", "Content": "Hmmm, I like what you're saying", "Emotion": "pos", "prob_score": null}
+2022-03-21 22:13:08,224:INFO:Gotcha!
+2022-03-21 22:13:08,224:INFO:{"Type": "response", "Content": "You could at least try to be interesting...", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:13:20,542:INFO:How did you kill Dio?
+2022-03-21 22:13:20,542:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:13:30,231:INFO:Are you good with a knife?
+2022-03-21 22:13:30,231:INFO:{"Type": "response", "Content": "I'm not sure I can help you with that...", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:13:44,564:INFO:Do you like Dio?
+2022-03-21 22:13:44,564:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "neutral", "prob_score": null}
+2022-03-21 22:13:59,235:INFO:Do you know who killed Dio?
+2022-03-21 22:13:59,235:INFO:{"Type": "response", "Content": "I don't know.", "Emotion": "neutral", "prob_score": null}
