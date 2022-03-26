@@ -20,7 +20,6 @@ func _on_TransitionScreen_transition():
 	elif children.has(currentScene) and final_screen_btn:
 		remove_child(currentScene)
 		remove_child(dialogScene)
-		print(final_screen_btn)
 	elif children.has(currentScene) and final_screen_btn == false:
 		remove_child(currentScene)
 		add_child(dialogScene)
@@ -60,5 +59,15 @@ func _on_Character_1_conversation(demon_name):
 
 func _on_StartButton_pressed():
 	menu_button = true 
+	$TransitionScreen.transition()
+	pass # Replace with function body.
+
+
+func _on_Character_3_conversation(demon_name):
+	$TransitionScreen.transition()
+	pass # Replace with function body.
+
+
+func _on_Character_4_conversation(demon_name):
 	$TransitionScreen.transition()
 	pass # Replace with function body.

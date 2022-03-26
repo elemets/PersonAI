@@ -1,4 +1,18 @@
 {
-    "Character_1" : "artorius",
-    "Character_2": "magdela"
+    "Characters": {
+        "Character_1" : "alice",
+        "Character_2": "harry",
+        "Character_3": "bobby"
+    },
+    "Character_hframes": {
+        "Character_1_hframes": 1,
+        "Character_2_hframes": 1,
+        "Character_3_hframes": 1
+    },
+    "Character_vframes": {  
+        "Character_1_vframes": 1,
+        "Character_2_vframes": 1,
+        "Character_3_vframes": 1
+    }
+
 }

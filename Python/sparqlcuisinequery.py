@@ -207,6 +207,7 @@ def fictional_universe_query(universe_id):
   
   endpoint_url = "https://query.wikidata.org/sparql"
 
+  print(universe_id)
   query = f"""#Goats
       SELECT ?item ?itemLabel 
       WHERE 
@@ -221,4 +222,4 @@ def fictional_universe_query(universe_id):
     if result['itemLabel']['value'] not in universe_list:
       universe_list.append(result['itemLabel']['value'])
   return universe_list
-      
+  

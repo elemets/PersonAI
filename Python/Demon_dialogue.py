@@ -7,8 +7,7 @@ import wikipedia
 import pandas as pd
 from iteration_utilities import deepflatten
 import re
-from transformers import pipeline
-from sparqlcuisinequery import cuisine_query
+from sparqlcuisinequery import cuisine_query, fictional_universe_query
 """
 Demon class, this manages the demon's response to the player
 """
@@ -27,16 +26,20 @@ class Demon:
         self.Pers_Score = 0 
         with open(f'../Assets/Characters/{name}.json') as f:
             demon_info = json.load(f)
-        if not demon_info['Food_Bool']: 
-            dish_likes = self.food_lookup(likes)
-            dish_dislikes = self.food_lookup(dislikes)
-            self.dislikes = self.dislikes + dish_dislikes
-            self.likes = self.likes + dish_likes
+        print(demon_info['Food_Bool'])
+        if not demon_info['Food_Bool'] and self.likes[0] != 'nothing': 
+            new_likes  = self.food_universe_lookup(likes)
+            new_dislikes = self.food_universe_lookup(dislikes)
+            print(self.dislikes)
+            print(new_dislikes)
+            self.dislikes = self.dislikes + new_dislikes
+            self.likes = self.likes + new_likes
             with open(f'../Assets/Characters/{name}.json', "w") as f:
                 demon_info['Likes'] = self.likes
                 demon_info['Dislikes'] = self.dislikes
                 demon_info['Food_Bool'] = self.food_lookup_bool
                 json.dump(demon_info, f)
+        
         self.Pers_Score = demon_info['Player_Rating']
         self.personality = Personality(self.likes, self.dislikes, pref_speech, name)
         
@@ -73,11 +76,14 @@ class Demon:
         return response, pos_or_neg, prob_score
 
     
-    def question_answering(self, question, context, open_or_not=True):
+    def question_answering(self, question, context):
         answers = {}
         with open(f'../Assets/Characters/{self.name}_context.json') as f:
             context = json.load(f)
             f.close()
+        with open(f'../Assets/Character_Info/openai_filenames.json') as f:
+            openai_files = json.load(f)  
+        
         if self.Pers_Score > 25:
             true_context = context['context-very-liked']
             context_ai = 'very_liked'
@@ -88,27 +94,11 @@ class Demon:
             true_context = context['context']
             context_ai = 'not_liked'
             
-        if not open_or_not:
 
-        
-            true_context = None
-            
-            print(self.Pers_Score)
-           
-                
-            question = question[0]
-
-            answers = self.qa_pipeline({
-                'context': true_context,
-                'question': question
-
-            })
-        else:
-            with open(f'../Assets/Character_Info/openai_filenames.json') as f:
-                openai_files = json.load(f)
+        if openai_files['open-ai'] == True:
             try:
                 question = question[0]
-                openai.api_key = "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"
+                openai.api_key = str(openai_files['open-ai-api'])
                 query = openai.Answer.create(
                     search_model="ada", 
                     model="curie", 
@@ -126,6 +116,19 @@ class Demon:
             except:
                 answers['answer']  = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
                 answers['score'] = None
+        else:
+            true_context = None
+            
+            print(self.Pers_Score)
+           
+                
+            question = question[0]
+
+            answers = self.qa_pipeline({
+                'context': true_context,
+                'question': question
+
+            })
         return answers['answer'], answers['score']
             
 
@@ -171,28 +174,52 @@ class Demon:
     """
     Takes the list of likes or dislikes and checks it for 
     key word food, if it contains food then it will append
-    all the dishes from the wikipedia page"""
-    def food_lookup(self, likes_or_dislikes):
+    all the dishes from wikidata query.
+    This now also does the same for any fictional universes in the likes """
+    def food_universe_lookup(self, likes_or_dislikes):
+        likes_or_dislikes_to_add = []
         dish_names = []
+        ## finds all likes with the word food in it...
         likes_with_food_in = [like for like in likes_or_dislikes if "food" in like]
         likes_without = [like.replace("food", "") for like in likes_with_food_in]
+        
+        ## finds any likes which match any of the fictional universes
+        with open("../Assets/sparqlJSONS/all_fictional_universes.json") as file:
+            fictional_universes = json.load(file)
+        fictional_universe_ids = []
+        ## finds the id within the list of dictionaries
+        ## appends them to universe ids list
+        for result in fictional_universes:
+            if result['itemLabel'] in likes_or_dislikes:
+                print(result['item'])
+                fictional_universe_ids.append(result['item'])
         if likes_with_food_in != None:
             self.food_lookup_bool = True
+        if fictional_universe_ids != None:
+            self.universe_lookup_bool = True
+        
+        universe_character_list = []
+        for universe in fictional_universe_ids:
+            universe_character_list += fictional_universe_query(universe)
         for cuisine_likes in likes_without:
             cuisine_id = self.cuisine_lookup(cuisine_likes)
             dishes = cuisine_query(cuisine_id)
             dish_names.append(dishes)
+        print(universe_character_list)
         dish_names = self.flatten(dish_names)
-        return dish_names
+        
+        likes_or_dislikes_to_add = dish_names + universe_character_list
+        return likes_or_dislikes_to_add
     
     def flatten(self, t):
         return list(deepflatten(t, depth=1))
 
     def cuisine_lookup(self, country):
-        with open("./sparqlJSONS/Country_Labels.json") as f:
+        with open("../Assets/sparqlJSONS/Country_Labels.json") as f:
             id_country_list = json.load(f)
         country_id = ''
         for country_dict in id_country_list:
             if str(country_dict['itemLabel']).casefold() in str(country).casefold():
                 country_id = country_dict['item']
         return country_id
+    

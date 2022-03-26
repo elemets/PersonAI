@@ -290,3 +290,1083 @@
 2022-03-21 17:56:30,261:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
 2022-03-21 17:56:38,632:INFO:What do you know about the murder?
 2022-03-21 17:56:38,633:INFO:{"Type": "response", "Content": "I know that the victim was a human.", "Emotion": "neutral", "prob_score": null}
+2022-03-24 20:35:43,121:INFO:
+2022-03-24 20:35:43,123:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 20:39:15,367:INFO:
+2022-03-24 20:39:15,367:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 20:47:22,304:INFO:
+2022-03-24 20:47:22,304:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 20:49:19,687:INFO:
+2022-03-24 20:49:19,687:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 20:49:24,526:INFO:
+2022-03-24 20:49:24,526:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 20:57:07,155:INFO:
+2022-03-24 20:57:07,155:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:02:03,468:INFO:
+2022-03-24 21:02:03,468:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:04:24,879:INFO:
+2022-03-24 21:04:24,879:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:06:31,036:INFO:
+2022-03-24 21:06:31,036:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:43,657:INFO:
+2022-03-24 21:09:43,657:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:47,790:INFO:
+2022-03-24 21:09:47,790:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:49,224:INFO:
+2022-03-24 21:09:49,224:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,151:INFO:
+2022-03-24 21:09:58,151:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,155:INFO:
+2022-03-24 21:09:58,155:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,230:INFO:
+2022-03-24 21:09:58,230:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,237:INFO:
+2022-03-24 21:09:58,237:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,245:INFO:
+2022-03-24 21:09:58,245:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,250:INFO:
+2022-03-24 21:09:58,250:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,259:INFO:
+2022-03-24 21:09:58,259:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,264:INFO:
+2022-03-24 21:09:58,264:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,271:INFO:
+2022-03-24 21:09:58,271:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:09:58,276:INFO:
+2022-03-24 21:09:58,276:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-03-24 21:10:16,990:INFO:Whats ur name?
+2022-03-24 21:10:16,990:INFO:{"Type": "response", "Content": "Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 11:58:44,531:INFO:
+2022-03-25 11:58:44,532:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 11:58:48,601:INFO:
+2022-03-25 11:58:48,601:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 11:58:50,448:INFO:
+2022-03-25 11:58:50,448:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:00:56,255:INFO:
+2022-03-25 12:00:56,255:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:00:58,843:INFO:
+2022-03-25 12:00:58,843:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:01:00,603:INFO:
+2022-03-25 12:01:00,603:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:01:59,971:INFO:
+2022-03-25 12:01:59,971:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:02:00,420:INFO:
+2022-03-25 12:02:00,420:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:02:00,938:INFO:
+2022-03-25 12:02:00,938:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:31:07,658:INFO:
+2022-03-25 12:31:07,658:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:31:10,425:INFO:
+2022-03-25 12:31:10,425:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 12:31:10,953:INFO:
+2022-03-25 12:31:10,953:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:11:56,125:INFO:
+2022-03-25 13:11:56,125:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:11:56,573:INFO:
+2022-03-25 13:11:56,573:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:11:56,996:INFO:
+2022-03-25 13:11:56,996:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,900:INFO:
+2022-03-25 13:12:07,900:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,925:INFO:
+2022-03-25 13:12:07,925:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,931:INFO:
+2022-03-25 13:12:07,931:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,958:INFO:
+2022-03-25 13:12:07,958:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,962:INFO:
+2022-03-25 13:12:07,962:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,983:INFO:
+2022-03-25 13:12:07,983:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:07,995:INFO:
+2022-03-25 13:12:07,995:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:14,343:INFO:Where are you from
+2022-03-25 13:12:14,343:INFO:{"Type": "response", "Content": "You could at least try to be interesting...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:18,190:INFO:Where are you from?
+2022-03-25 13:12:18,190:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:24,371:INFO:What do you like?
+2022-03-25 13:12:24,371:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:12:48,289:INFO:What food do you like?
+2022-03-25 13:12:48,290:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:25,565:INFO:
+2022-03-25 13:20:25,565:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:25,955:INFO:
+2022-03-25 13:20:25,955:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:26,437:INFO:
+2022-03-25 13:20:26,437:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:40,847:INFO:
+2022-03-25 13:20:40,847:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:40,854:INFO:
+2022-03-25 13:20:40,854:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:40,871:INFO:
+2022-03-25 13:20:40,871:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:40,878:INFO:
+2022-03-25 13:20:40,878:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:40,893:INFO:
+2022-03-25 13:20:40,894:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:40,899:INFO:
+2022-03-25 13:20:40,899:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:20:55,624:INFO:Hey what's your name?
+2022-03-25 13:20:55,624:INFO:{"Type": "response", "Content": "Harry.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:21:05,092:INFO:What do you like?
+2022-03-25 13:21:05,092:INFO:{"Type": "response", "Content": "Sushi.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:24:50,259:INFO:
+2022-03-25 13:24:50,259:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:24:50,638:INFO:
+2022-03-25 13:24:50,638:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:24:51,109:INFO:
+2022-03-25 13:24:51,109:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:10,349:INFO:
+2022-03-25 13:27:10,349:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:10,736:INFO:
+2022-03-25 13:27:10,736:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:11,115:INFO:
+2022-03-25 13:27:11,115:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,017:INFO:
+2022-03-25 13:27:20,017:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,024:INFO:
+2022-03-25 13:27:20,024:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,044:INFO:
+2022-03-25 13:27:20,044:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,050:INFO:
+2022-03-25 13:27:20,050:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,066:INFO:
+2022-03-25 13:27:20,066:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,073:INFO:
+2022-03-25 13:27:20,073:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,083:INFO:
+2022-03-25 13:27:20,083:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,088:INFO:
+2022-03-25 13:27:20,088:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,107:INFO:
+2022-03-25 13:27:20,107:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,114:INFO:
+2022-03-25 13:27:20,114:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,123:INFO:
+2022-03-25 13:27:20,123:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:20,130:INFO:
+2022-03-25 13:27:20,130:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:31,218:INFO:What do you like?
+2022-03-25 13:27:31,218:INFO:{"Type": "response", "Content": "Sushi.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:36,099:INFO:
+2022-03-25 13:27:36,099:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:36,106:INFO:
+2022-03-25 13:27:36,106:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:36,133:INFO:
+2022-03-25 13:27:36,133:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:36,139:INFO:
+2022-03-25 13:27:36,139:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:36,167:INFO:
+2022-03-25 13:27:36,167:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:43,842:INFO:What do you like?
+2022-03-25 13:27:43,843:INFO:{"Type": "response", "Content": "Sushi.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,086:INFO:
+2022-03-25 13:27:47,087:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,092:INFO:
+2022-03-25 13:27:47,092:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,110:INFO:
+2022-03-25 13:27:47,110:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,119:INFO:
+2022-03-25 13:27:47,119:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,146:INFO:
+2022-03-25 13:27:47,146:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,153:INFO:
+2022-03-25 13:27:47,153:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:27:47,180:INFO:
+2022-03-25 13:27:47,180:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:32:21,758:INFO:
+2022-03-25 13:32:21,758:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:32:22,141:INFO:
+2022-03-25 13:32:22,141:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:32:22,749:INFO:
+2022-03-25 13:32:22,749:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 13:32:27,741:INFO:
+2022-03-25 13:32:27,742:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:14:05,354:INFO:
+2022-03-25 15:14:05,355:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:14:05,741:INFO:
+2022-03-25 15:14:05,741:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:14:06,201:INFO:
+2022-03-25 15:14:06,201:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:17:31,380:INFO:
+2022-03-25 15:17:31,380:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:17:31,780:INFO:
+2022-03-25 15:17:31,780:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:17:32,165:INFO:
+2022-03-25 15:17:32,165:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:06,219:INFO:
+2022-03-25 15:20:06,219:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:33,727:INFO:
+2022-03-25 15:20:33,728:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:34,140:INFO:
+2022-03-25 15:20:34,140:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:34,622:INFO:
+2022-03-25 15:20:34,623:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,465:INFO:
+2022-03-25 15:20:53,465:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,472:INFO:
+2022-03-25 15:20:53,472:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,474:INFO:
+2022-03-25 15:20:53,474:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,494:INFO:
+2022-03-25 15:20:53,494:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,500:INFO:
+2022-03-25 15:20:53,500:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,504:INFO:
+2022-03-25 15:20:53,504:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,521:INFO:
+2022-03-25 15:20:53,521:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,528:INFO:
+2022-03-25 15:20:53,528:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,531:INFO:
+2022-03-25 15:20:53,531:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,538:INFO:
+2022-03-25 15:20:53,538:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,544:INFO:
+2022-03-25 15:20:53,544:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:20:53,547:INFO:
+2022-03-25 15:20:53,547:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:21:05,342:INFO:Whats your name?
+2022-03-25 15:21:05,342:INFO:{"Type": "response", "Content": "Bobby.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:21:12,952:INFO:What do you like?
+2022-03-25 15:21:12,952:INFO:{"Type": "response", "Content": "Pirates of the Caribbean.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:36:36,838:INFO:
+2022-03-25 16:36:36,838:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:36:37,309:INFO:
+2022-03-25 16:36:37,309:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:36:37,862:INFO:
+2022-03-25 16:36:37,862:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,710:INFO:
+2022-03-25 16:37:27,710:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,718:INFO:
+2022-03-25 16:37:27,719:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,722:INFO:
+2022-03-25 16:37:27,722:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,743:INFO:
+2022-03-25 16:37:27,743:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,752:INFO:
+2022-03-25 16:37:27,752:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,754:INFO:
+2022-03-25 16:37:27,754:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,763:INFO:
+2022-03-25 16:37:27,763:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,770:INFO:
+2022-03-25 16:37:27,770:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,772:INFO:
+2022-03-25 16:37:27,772:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,793:INFO:
+2022-03-25 16:37:27,793:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,800:INFO:
+2022-03-25 16:37:27,800:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,802:INFO:
+2022-03-25 16:37:27,803:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,812:INFO:
+2022-03-25 16:37:27,812:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,820:INFO:
+2022-03-25 16:37:27,820:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,823:INFO:
+2022-03-25 16:37:27,823:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,832:INFO:
+2022-03-25 16:37:27,832:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,838:INFO:
+2022-03-25 16:37:27,838:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:27,840:INFO:
+2022-03-25 16:37:27,840:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,935:INFO:
+2022-03-25 16:37:42,935:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,938:INFO:
+2022-03-25 16:37:42,938:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,943:INFO:
+2022-03-25 16:37:42,943:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,945:INFO:
+2022-03-25 16:37:42,945:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,963:INFO:
+2022-03-25 16:37:42,963:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,965:INFO:
+2022-03-25 16:37:42,965:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,986:INFO:
+2022-03-25 16:37:42,986:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:42,991:INFO:
+2022-03-25 16:37:42,991:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,735:INFO:
+2022-03-25 16:37:56,735:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,743:INFO:
+2022-03-25 16:37:56,743:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,771:INFO:
+2022-03-25 16:37:56,771:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,780:INFO:
+2022-03-25 16:37:56,780:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,801:INFO:
+2022-03-25 16:37:56,801:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,811:INFO:
+2022-03-25 16:37:56,811:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,821:INFO:
+2022-03-25 16:37:56,821:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:37:56,834:INFO:
+2022-03-25 16:37:56,834:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:07,412:INFO:
+2022-03-25 16:38:07,412:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:07,420:INFO:
+2022-03-25 16:38:07,420:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:07,423:INFO:
+2022-03-25 16:38:07,423:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:07,435:INFO:
+2022-03-25 16:38:07,435:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:07,441:INFO:
+2022-03-25 16:38:07,441:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:07,443:INFO:
+2022-03-25 16:38:07,443:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 16:38:20,308:INFO:What is your name?
+2022-03-25 16:38:20,308:INFO:{"Type": "response", "Content": "Bobby.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:23,251:INFO:
+2022-03-25 17:10:23,252:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:23,666:INFO:
+2022-03-25 17:10:23,666:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:24,187:INFO:
+2022-03-25 17:10:24,187:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,250:INFO:
+2022-03-25 17:10:28,250:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,258:INFO:
+2022-03-25 17:10:28,258:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,260:INFO:
+2022-03-25 17:10:28,260:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,292:INFO:
+2022-03-25 17:10:28,292:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,299:INFO:
+2022-03-25 17:10:28,299:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,301:INFO:
+2022-03-25 17:10:28,301:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,308:INFO:
+2022-03-25 17:10:28,308:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,314:INFO:
+2022-03-25 17:10:28,314:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:28,316:INFO:
+2022-03-25 17:10:28,316:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,612:INFO:
+2022-03-25 17:10:33,612:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,619:INFO:
+2022-03-25 17:10:33,620:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,628:INFO:
+2022-03-25 17:10:33,628:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,634:INFO:
+2022-03-25 17:10:33,634:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,654:INFO:
+2022-03-25 17:10:33,654:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,660:INFO:
+2022-03-25 17:10:33,660:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,670:INFO:
+2022-03-25 17:10:33,670:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,677:INFO:
+2022-03-25 17:10:33,677:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,686:INFO:
+2022-03-25 17:10:33,686:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,693:INFO:
+2022-03-25 17:10:33,693:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,702:INFO:
+2022-03-25 17:10:33,702:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:33,708:INFO:
+2022-03-25 17:10:33,709:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,896:INFO:
+2022-03-25 17:10:38,896:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,905:INFO:
+2022-03-25 17:10:38,905:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,913:INFO:
+2022-03-25 17:10:38,913:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,921:INFO:
+2022-03-25 17:10:38,922:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,932:INFO:
+2022-03-25 17:10:38,932:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,940:INFO:
+2022-03-25 17:10:38,940:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,947:INFO:
+2022-03-25 17:10:38,947:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,956:INFO:
+2022-03-25 17:10:38,957:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,966:INFO:
+2022-03-25 17:10:38,966:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,974:INFO:
+2022-03-25 17:10:38,974:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,983:INFO:
+2022-03-25 17:10:38,983:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:38,991:INFO:
+2022-03-25 17:10:38,991:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,069:INFO:
+2022-03-25 17:10:46,069:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,072:INFO:
+2022-03-25 17:10:46,073:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,075:INFO:
+2022-03-25 17:10:46,076:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,079:INFO:
+2022-03-25 17:10:46,079:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,094:INFO:
+2022-03-25 17:10:46,094:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,096:INFO:
+2022-03-25 17:10:46,096:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,110:INFO:
+2022-03-25 17:10:46,110:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,111:INFO:
+2022-03-25 17:10:46,111:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,123:INFO:
+2022-03-25 17:10:46,123:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,125:INFO:
+2022-03-25 17:10:46,125:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,143:INFO:
+2022-03-25 17:10:46,143:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:46,145:INFO:
+2022-03-25 17:10:46,145:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,104:INFO:
+2022-03-25 17:10:50,105:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,114:INFO:
+2022-03-25 17:10:50,114:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,123:INFO:
+2022-03-25 17:10:50,123:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,133:INFO:
+2022-03-25 17:10:50,133:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,140:INFO:
+2022-03-25 17:10:50,141:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,149:INFO:
+2022-03-25 17:10:50,149:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,159:INFO:
+2022-03-25 17:10:50,159:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,168:INFO:
+2022-03-25 17:10:50,168:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,176:INFO:
+2022-03-25 17:10:50,177:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,186:INFO:
+2022-03-25 17:10:50,186:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,194:INFO:
+2022-03-25 17:10:50,194:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:10:50,202:INFO:
+2022-03-25 17:10:50,202:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:15:51,601:INFO:
+2022-03-25 17:15:51,601:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:15:51,979:INFO:
+2022-03-25 17:15:51,979:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:15:52,434:INFO:
+2022-03-25 17:15:52,434:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:01,278:INFO:
+2022-03-25 17:16:01,278:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:01,286:INFO:
+2022-03-25 17:16:01,286:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,712:INFO:
+2022-03-25 17:16:09,712:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,722:INFO:
+2022-03-25 17:16:09,722:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,730:INFO:
+2022-03-25 17:16:09,730:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,739:INFO:
+2022-03-25 17:16:09,739:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,750:INFO:
+2022-03-25 17:16:09,750:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,760:INFO:
+2022-03-25 17:16:09,760:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,770:INFO:
+2022-03-25 17:16:09,770:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,780:INFO:
+2022-03-25 17:16:09,780:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,790:INFO:
+2022-03-25 17:16:09,790:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,797:INFO:
+2022-03-25 17:16:09,797:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,806:INFO:
+2022-03-25 17:16:09,806:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,813:INFO:
+2022-03-25 17:16:09,813:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,822:INFO:
+2022-03-25 17:16:09,823:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:09,830:INFO:
+2022-03-25 17:16:09,831:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,261:INFO:
+2022-03-25 17:16:57,261:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,263:INFO:
+2022-03-25 17:16:57,263:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,267:INFO:
+2022-03-25 17:16:57,267:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,269:INFO:
+2022-03-25 17:16:57,269:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,294:INFO:
+2022-03-25 17:16:57,295:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,297:INFO:
+2022-03-25 17:16:57,298:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,311:INFO:
+2022-03-25 17:16:57,311:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,313:INFO:
+2022-03-25 17:16:57,313:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,329:INFO:
+2022-03-25 17:16:57,329:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,331:INFO:
+2022-03-25 17:16:57,331:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,343:INFO:
+2022-03-25 17:16:57,343:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:16:57,346:INFO:
+2022-03-25 17:16:57,346:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,138:INFO:
+2022-03-25 17:17:10,138:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,147:INFO:
+2022-03-25 17:17:10,147:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,156:INFO:
+2022-03-25 17:17:10,156:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,164:INFO:
+2022-03-25 17:17:10,164:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,174:INFO:
+2022-03-25 17:17:10,174:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,181:INFO:
+2022-03-25 17:17:10,181:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,190:INFO:
+2022-03-25 17:17:10,190:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,198:INFO:
+2022-03-25 17:17:10,198:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,207:INFO:
+2022-03-25 17:17:10,207:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,215:INFO:
+2022-03-25 17:17:10,216:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,223:INFO:
+2022-03-25 17:17:10,224:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,232:INFO:
+2022-03-25 17:17:10,232:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,241:INFO:
+2022-03-25 17:17:10,241:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,250:INFO:
+2022-03-25 17:17:10,250:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,258:INFO:
+2022-03-25 17:17:10,258:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,265:INFO:
+2022-03-25 17:17:10,265:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,273:INFO:
+2022-03-25 17:17:10,273:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:10,282:INFO:
+2022-03-25 17:17:10,282:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:21,239:INFO:
+2022-03-25 17:17:21,239:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:17:21,245:INFO:
+2022-03-25 17:17:21,245:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:21,022:INFO:
+2022-03-25 17:18:21,022:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:21,431:INFO:
+2022-03-25 17:18:21,431:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:21,820:INFO:
+2022-03-25 17:18:21,821:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,318:INFO:
+2022-03-25 17:18:25,318:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,326:INFO:
+2022-03-25 17:18:25,327:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,328:INFO:
+2022-03-25 17:18:25,328:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,347:INFO:
+2022-03-25 17:18:25,349:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,357:INFO:
+2022-03-25 17:18:25,357:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,359:INFO:
+2022-03-25 17:18:25,359:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,369:INFO:
+2022-03-25 17:18:25,369:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,380:INFO:
+2022-03-25 17:18:25,380:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,381:INFO:
+2022-03-25 17:18:25,381:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,405:INFO:
+2022-03-25 17:18:25,405:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,414:INFO:
+2022-03-25 17:18:25,414:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,416:INFO:
+2022-03-25 17:18:25,416:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,427:INFO:
+2022-03-25 17:18:25,427:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,438:INFO:
+2022-03-25 17:18:25,438:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,439:INFO:
+2022-03-25 17:18:25,439:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,448:INFO:
+2022-03-25 17:18:25,448:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,456:INFO:
+2022-03-25 17:18:25,456:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:25,458:INFO:
+2022-03-25 17:18:25,458:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,044:INFO:
+2022-03-25 17:18:52,044:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,054:INFO:
+2022-03-25 17:18:52,054:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,065:INFO:
+2022-03-25 17:18:52,065:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,073:INFO:
+2022-03-25 17:18:52,073:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,084:INFO:
+2022-03-25 17:18:52,084:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,093:INFO:
+2022-03-25 17:18:52,093:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,102:INFO:
+2022-03-25 17:18:52,102:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,110:INFO:
+2022-03-25 17:18:52,110:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,121:INFO:
+2022-03-25 17:18:52,121:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,128:INFO:
+2022-03-25 17:18:52,129:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,140:INFO:
+2022-03-25 17:18:52,140:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,148:INFO:
+2022-03-25 17:18:52,148:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,158:INFO:
+2022-03-25 17:18:52,158:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,167:INFO:
+2022-03-25 17:18:52,167:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,176:INFO:
+2022-03-25 17:18:52,177:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,186:INFO:
+2022-03-25 17:18:52,186:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,196:INFO:
+2022-03-25 17:18:52,196:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,204:INFO:
+2022-03-25 17:18:52,204:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,214:INFO:
+2022-03-25 17:18:52,214:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,222:INFO:
+2022-03-25 17:18:52,222:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,233:INFO:
+2022-03-25 17:18:52,233:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:18:52,241:INFO:
+2022-03-25 17:18:52,241:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,916:INFO:
+2022-03-25 17:19:03,916:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,924:INFO:
+2022-03-25 17:19:03,924:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,933:INFO:
+2022-03-25 17:19:03,933:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,941:INFO:
+2022-03-25 17:19:03,941:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,954:INFO:
+2022-03-25 17:19:03,954:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,960:INFO:
+2022-03-25 17:19:03,961:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,972:INFO:
+2022-03-25 17:19:03,972:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,979:INFO:
+2022-03-25 17:19:03,979:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,991:INFO:
+2022-03-25 17:19:03,991:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:03,999:INFO:
+2022-03-25 17:19:03,999:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:14,766:INFO:
+2022-03-25 17:19:14,766:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:14,773:INFO:
+2022-03-25 17:19:14,773:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:14,784:INFO:
+2022-03-25 17:19:14,784:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:14,790:INFO:
+2022-03-25 17:19:14,790:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:14,801:INFO:
+2022-03-25 17:19:14,801:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:14,810:INFO:
+2022-03-25 17:19:14,810:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,718:INFO:
+2022-03-25 17:19:19,718:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,720:INFO:
+2022-03-25 17:19:19,720:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,727:INFO:
+2022-03-25 17:19:19,727:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,729:INFO:
+2022-03-25 17:19:19,729:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,756:INFO:
+2022-03-25 17:19:19,756:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,758:INFO:
+2022-03-25 17:19:19,758:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,767:INFO:
+2022-03-25 17:19:19,767:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:19,769:INFO:
+2022-03-25 17:19:19,769:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,665:INFO:
+2022-03-25 17:19:24,665:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,672:INFO:
+2022-03-25 17:19:24,672:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,683:INFO:
+2022-03-25 17:19:24,684:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,693:INFO:
+2022-03-25 17:19:24,694:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,706:INFO:
+2022-03-25 17:19:24,706:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,714:INFO:
+2022-03-25 17:19:24,714:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,724:INFO:
+2022-03-25 17:19:24,724:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:19:24,731:INFO:
+2022-03-25 17:19:24,732:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:23:59,520:INFO:
+2022-03-25 17:23:59,520:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:23:59,903:INFO:
+2022-03-25 17:23:59,903:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:00,365:INFO:
+2022-03-25 17:24:00,365:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:08,945:INFO:
+2022-03-25 17:24:08,945:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:08,953:INFO:
+2022-03-25 17:24:08,954:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:08,955:INFO:
+2022-03-25 17:24:08,955:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:08,982:INFO:
+2022-03-25 17:24:08,982:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:08,991:INFO:
+2022-03-25 17:24:08,991:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:08,992:INFO:
+2022-03-25 17:24:08,993:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:09,012:INFO:
+2022-03-25 17:24:09,012:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:09,021:INFO:
+2022-03-25 17:24:09,021:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:09,023:INFO:
+2022-03-25 17:24:09,024:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:09,036:INFO:
+2022-03-25 17:24:09,036:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:09,045:INFO:
+2022-03-25 17:24:09,045:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:24:09,047:INFO:
+2022-03-25 17:24:09,047:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:52,430:INFO:
+2022-03-25 17:25:52,430:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:52,865:INFO:
+2022-03-25 17:25:52,865:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:53,322:INFO:
+2022-03-25 17:25:53,322:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:58,902:INFO:
+2022-03-25 17:25:58,902:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:58,910:INFO:
+2022-03-25 17:25:58,910:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:58,942:INFO:
+2022-03-25 17:25:58,942:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:25:58,949:INFO:
+2022-03-25 17:25:58,949:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,092:INFO:
+2022-03-25 17:26:05,092:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,094:INFO:
+2022-03-25 17:26:05,094:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,102:INFO:
+2022-03-25 17:26:05,102:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,105:INFO:
+2022-03-25 17:26:05,106:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,113:INFO:
+2022-03-25 17:26:05,113:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,115:INFO:
+2022-03-25 17:26:05,115:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,127:INFO:
+2022-03-25 17:26:05,128:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,129:INFO:
+2022-03-25 17:26:05,129:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,145:INFO:
+2022-03-25 17:26:05,145:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:05,146:INFO:
+2022-03-25 17:26:05,147:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:09,537:INFO:
+2022-03-25 17:26:09,537:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:09,546:INFO:
+2022-03-25 17:26:09,546:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:09,558:INFO:
+2022-03-25 17:26:09,558:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:09,568:INFO:
+2022-03-25 17:26:09,568:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:09,580:INFO:
+2022-03-25 17:26:09,580:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:09,588:INFO:
+2022-03-25 17:26:09,589:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:14,420:INFO:
+2022-03-25 17:26:14,420:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:14,428:INFO:
+2022-03-25 17:26:14,428:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:14,440:INFO:
+2022-03-25 17:26:14,440:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:14,450:INFO:
+2022-03-25 17:26:14,450:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:14,462:INFO:
+2022-03-25 17:26:14,462:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:14,472:INFO:
+2022-03-25 17:26:14,472:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,001:INFO:
+2022-03-25 17:26:29,001:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,010:INFO:
+2022-03-25 17:26:29,010:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,012:INFO:
+2022-03-25 17:26:29,012:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,022:INFO:
+2022-03-25 17:26:29,022:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,033:INFO:
+2022-03-25 17:26:29,034:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,036:INFO:
+2022-03-25 17:26:29,036:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,049:INFO:
+2022-03-25 17:26:29,049:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,059:INFO:
+2022-03-25 17:26:29,059:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,061:INFO:
+2022-03-25 17:26:29,061:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,072:INFO:
+2022-03-25 17:26:29,072:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,082:INFO:
+2022-03-25 17:26:29,082:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,083:INFO:
+2022-03-25 17:26:29,083:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,095:INFO:
+2022-03-25 17:26:29,095:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,104:INFO:
+2022-03-25 17:26:29,104:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:29,106:INFO:
+2022-03-25 17:26:29,107:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,630:INFO:
+2022-03-25 17:26:52,631:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,633:INFO:
+2022-03-25 17:26:52,633:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,639:INFO:
+2022-03-25 17:26:52,640:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,642:INFO:
+2022-03-25 17:26:52,642:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,649:INFO:
+2022-03-25 17:26:52,649:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,650:INFO:
+2022-03-25 17:26:52,650:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,669:INFO:
+2022-03-25 17:26:52,669:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,672:INFO:
+2022-03-25 17:26:52,672:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,683:INFO:
+2022-03-25 17:26:52,683:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,685:INFO:
+2022-03-25 17:26:52,686:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,696:INFO:
+2022-03-25 17:26:52,696:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,698:INFO:
+2022-03-25 17:26:52,699:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,717:INFO:
+2022-03-25 17:26:52,717:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:52,719:INFO:
+2022-03-25 17:26:52,719:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:56,942:INFO:
+2022-03-25 17:26:56,942:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:56,946:INFO:
+2022-03-25 17:26:56,946:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:56,955:INFO:
+2022-03-25 17:26:56,955:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:56,974:INFO:
+2022-03-25 17:26:56,975:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:56,994:INFO:
+2022-03-25 17:26:56,994:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:26:57,001:INFO:
+2022-03-25 17:26:57,001:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:27:58,106:INFO:
+2022-03-25 17:27:58,107:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:27:58,509:INFO:
+2022-03-25 17:27:58,509:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:27:58,973:INFO:
+2022-03-25 17:27:58,973:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,388:INFO:
+2022-03-25 17:28:02,388:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,396:INFO:
+2022-03-25 17:28:02,396:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,397:INFO:
+2022-03-25 17:28:02,397:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,409:INFO:
+2022-03-25 17:28:02,409:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,421:INFO:
+2022-03-25 17:28:02,421:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,424:INFO:
+2022-03-25 17:28:02,424:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,435:INFO:
+2022-03-25 17:28:02,435:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,443:INFO:
+2022-03-25 17:28:02,443:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,446:INFO:
+2022-03-25 17:28:02,446:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,456:INFO:
+2022-03-25 17:28:02,456:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,469:INFO:
+2022-03-25 17:28:02,469:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,471:INFO:
+2022-03-25 17:28:02,471:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,482:INFO:
+2022-03-25 17:28:02,482:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,490:INFO:
+2022-03-25 17:28:02,491:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:02,493:INFO:
+2022-03-25 17:28:02,493:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,906:INFO:
+2022-03-25 17:28:05,906:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,915:INFO:
+2022-03-25 17:28:05,915:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,916:INFO:
+2022-03-25 17:28:05,917:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,927:INFO:
+2022-03-25 17:28:05,927:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,935:INFO:
+2022-03-25 17:28:05,935:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,937:INFO:
+2022-03-25 17:28:05,937:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,948:INFO:
+2022-03-25 17:28:05,948:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,956:INFO:
+2022-03-25 17:28:05,956:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,958:INFO:
+2022-03-25 17:28:05,959:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,969:INFO:
+2022-03-25 17:28:05,969:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,980:INFO:
+2022-03-25 17:28:05,980:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,982:INFO:
+2022-03-25 17:28:05,982:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:05,997:INFO:
+2022-03-25 17:28:05,998:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:06,008:INFO:
+2022-03-25 17:28:06,008:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:06,009:INFO:
+2022-03-25 17:28:06,009:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:06,018:INFO:
+2022-03-25 17:28:06,018:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:06,027:INFO:
+2022-03-25 17:28:06,028:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:06,029:INFO:
+2022-03-25 17:28:06,029:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,456:INFO:
+2022-03-25 17:28:09,456:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,465:INFO:
+2022-03-25 17:28:09,465:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,467:INFO:
+2022-03-25 17:28:09,467:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,479:INFO:
+2022-03-25 17:28:09,479:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,488:INFO:
+2022-03-25 17:28:09,488:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,490:INFO:
+2022-03-25 17:28:09,490:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,500:INFO:
+2022-03-25 17:28:09,500:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,510:INFO:
+2022-03-25 17:28:09,510:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,512:INFO:
+2022-03-25 17:28:09,512:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,524:INFO:
+2022-03-25 17:28:09,524:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,534:INFO:
+2022-03-25 17:28:09,534:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,536:INFO:
+2022-03-25 17:28:09,536:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,544:INFO:
+2022-03-25 17:28:09,544:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,552:INFO:
+2022-03-25 17:28:09,552:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:09,555:INFO:
+2022-03-25 17:28:09,555:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,371:INFO:
+2022-03-25 17:28:14,372:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,380:INFO:
+2022-03-25 17:28:14,380:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,390:INFO:
+2022-03-25 17:28:14,390:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,397:INFO:
+2022-03-25 17:28:14,397:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,407:INFO:
+2022-03-25 17:28:14,407:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,415:INFO:
+2022-03-25 17:28:14,415:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,426:INFO:
+2022-03-25 17:28:14,426:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,434:INFO:
+2022-03-25 17:28:14,434:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,443:INFO:
+2022-03-25 17:28:14,444:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,452:INFO:
+2022-03-25 17:28:14,452:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,461:INFO:
+2022-03-25 17:28:14,461:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:14,468:INFO:
+2022-03-25 17:28:14,468:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,354:INFO:
+2022-03-25 17:28:20,354:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,357:INFO:
+2022-03-25 17:28:20,357:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,379:INFO:
+2022-03-25 17:28:20,379:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,403:INFO:
+2022-03-25 17:28:20,403:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,408:INFO:
+2022-03-25 17:28:20,408:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,423:INFO:
+2022-03-25 17:28:20,424:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,437:INFO:
+2022-03-25 17:28:20,437:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:28:20,457:INFO:
+2022-03-25 17:28:20,457:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:08,126:INFO:
+2022-03-25 17:29:08,127:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:08,665:INFO:
+2022-03-25 17:29:08,665:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:09,080:INFO:
+2022-03-25 17:29:09,080:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,919:INFO:
+2022-03-25 17:29:22,919:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,928:INFO:
+2022-03-25 17:29:22,928:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,929:INFO:
+2022-03-25 17:29:22,929:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,960:INFO:
+2022-03-25 17:29:22,960:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,970:INFO:
+2022-03-25 17:29:22,971:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,972:INFO:
+2022-03-25 17:29:22,972:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,982:INFO:
+2022-03-25 17:29:22,982:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,990:INFO:
+2022-03-25 17:29:22,990:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:22,991:INFO:
+2022-03-25 17:29:22,992:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:32,333:INFO:
+2022-03-25 17:29:32,334:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:32,336:INFO:
+2022-03-25 17:29:32,336:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:37,590:INFO:
+2022-03-25 17:29:37,590:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:37,598:INFO:
+2022-03-25 17:29:37,598:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:37,609:INFO:
+2022-03-25 17:29:37,609:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:29:37,617:INFO:
+2022-03-25 17:29:37,617:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:34,835:INFO:
+2022-03-25 17:31:34,835:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:35,201:INFO:
+2022-03-25 17:31:35,201:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:35,646:INFO:
+2022-03-25 17:31:35,646:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,719:INFO:
+2022-03-25 17:31:53,720:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,728:INFO:
+2022-03-25 17:31:53,728:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,730:INFO:
+2022-03-25 17:31:53,730:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,750:INFO:
+2022-03-25 17:31:53,750:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,759:INFO:
+2022-03-25 17:31:53,759:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,762:INFO:
+2022-03-25 17:31:53,762:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,772:INFO:
+2022-03-25 17:31:53,772:INFO:{"Type": "greet", "Content": "What's up my guy!", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,781:INFO:
+2022-03-25 17:31:53,781:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:31:53,782:INFO:
+2022-03-25 17:31:53,782:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:32:54,591:INFO:
+2022-03-25 17:32:54,591:INFO:{"Type": "greet", "Content": "Hello there my name is Bobby", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:32:54,596:INFO:
+2022-03-25 17:32:54,596:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:32:54,611:INFO:
+2022-03-25 17:32:54,611:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:32:54,635:INFO:
+2022-03-25 17:32:54,635:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:35:36,362:INFO:
+2022-03-25 17:35:36,363:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:35:36,768:INFO:
+2022-03-25 17:35:36,768:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:35:37,167:INFO:
+2022-03-25 17:35:37,167:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:35:47,406:INFO:
+2022-03-25 17:35:47,406:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:35:47,419:INFO:
+2022-03-25 17:35:47,419:INFO:{"Type": "greet", "Content": "Hello there my name is Alice", "Emotion": "neutral", "prob_score": null}
+2022-03-25 17:35:47,421:INFO:
+2022-03-25 17:35:47,421:INFO:{"Type": "greet", "Content": "Hi, I work in marketing but lets not talk about that...", "Emotion": "neutral", "prob_score": null}

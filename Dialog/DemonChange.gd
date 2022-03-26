@@ -49,3 +49,19 @@ func _on_Character_1_conversation(demon_name):
 	current_character = "Character_1"
 	texture = load(texture_string)
 	pass 
+
+
+func _on_Character_3_conversation(demon_name):
+	demon_name = demon_name
+	texture_string = "./Assets/Characters/Character_1/Expressions/Happy.png"
+	current_character = "Character_3"
+	texture = load(texture_string)
+	pass # Replace with function body.
+
+
+func _on_Character_4_conversation(demon_name):
+	demon_name = demon_name
+	texture_string = "./Assets/Characters/Character_1/Expressions/Happy.png"
+	current_character = "Character_4"
+	texture = load(texture_string)
+	pass # Replace with function body.

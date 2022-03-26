@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://World.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=2]
@@ -12,18 +12,26 @@
 [ext_resource path="res://RestartMenu.tscn" type="PackedScene" id=10]
 [ext_resource path="res://IntroScreen.tscn" type="PackedScene" id=11]
 
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Assets/DialogRoom/custom_font.otf"
+
+[sub_resource type="DynamicFont" id=2]
+font_data = SubResource( 1 )
+
+[sub_resource type="Theme" id=3]
+default_font = SubResource( 2 )
+
 [node name="SceneManager" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="RestartMenu" parent="." instance=ExtResource( 10 )]
 
 [node name="FinalScreen" parent="." instance=ExtResource( 9 )]
-position = Vector2( -24, 0 )
 
 [node name="Dialog" parent="." instance=ExtResource( 4 )]
 
 [node name="Sprite" parent="Dialog/YSort" index="2"]
-position = Vector2( -8, 64 )
+position = Vector2( 247, 83 )
 
 [node name="OSAsyncExecute" type="Node" parent="Dialog/RichTextLabel" index="1"]
 script = ExtResource( 5 )
@@ -55,6 +63,10 @@ mouse_filter = 2
 
 [node name="IntroScreen" parent="." instance=ExtResource( 11 )]
 
+[node name="IntroText" parent="IntroScreen" index="1"]
+theme = SubResource( 3 )
+fit_content_height = true
+
 [connection signal="exit_screen" from="." to="RestartMenu/WinOrLose" method="_on_SceneManager_exit_screen"]
 [connection signal="win_or_lose" from="RestartMenu/WinOrLose" to="RestartMenu/Restart_Screen_Text" method="_on_WinOrLose_win_or_lose"]
 [connection signal="question_1_correct" from="FinalScreen/Question_1_answer" to="RestartMenu/WinOrLose" method="_on_Question_1_answer_question_1_correct"]
@@ -74,6 +86,14 @@ mouse_filter = 2
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_1" to="Dialog/YSort/Sprite" method="_on_Character_1_conversation"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_1" to="Dialog/Socket" method="_on_Character_1_conversation"]
 [connection signal="name" from="CurrentScene/World/YSort/Character_1" to="Dialog/Socket" method="_on_Character_1_name"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_4" to="." method="_on_Character_4_conversation"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_4" to="Dialog/YSort/Sprite" method="_on_Character_4_conversation"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_4" to="Dialog/Socket" method="_on_Character_4_conversation"]
+[connection signal="name" from="CurrentScene/World/YSort/Character_4" to="Dialog/Socket" method="_on_Character_4_name"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_3" to="." method="_on_Character_3_conversation"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_3" to="Dialog/YSort/Sprite" method="_on_Character_3_conversation"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_3" to="Dialog/Socket" method="_on_Character_3_conversation"]
+[connection signal="name" from="CurrentScene/World/YSort/Character_3" to="Dialog/Socket" method="_on_Character_3_name"]
 [connection signal="transition" from="TransitionScreen" to="." method="_on_TransitionScreen_transition"]
 [connection signal="pressed" from="IntroScreen/StartButton" to="." method="_on_StartButton_pressed"]
 
@@ -82,6 +102,6 @@ mouse_filter = 2
 [editable path="Dialog"]
 [editable path="CurrentScene/World"]
 [editable path="CurrentScene/World/YSort/Character_2"]
-[editable path="CurrentScene/World/YSort/Character_2/PlayerDetectionZone"]
+[editable path="CurrentScene/World/YSort/Character_2/PlayerDetectionZone_2"]
 [editable path="TransitionScreen"]
 [editable path="IntroScreen"]

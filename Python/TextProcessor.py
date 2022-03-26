@@ -44,8 +44,7 @@ class TextProcessor:
 
                 ## if it matches specific type of "and" conjunction then we can split into two sentences
                 ## this handles very basic I like this and that and splits it into 
-                ## I like this 
-                # print(word)
+                ## I like this and this
                 if word.dep_ == 'cc' and str(word) == 'and' and short_conj_sentence:
                     
                     new_sentence = [word.text for word in sentence_list[sentence] if word.dep_ in self.tag_list ]

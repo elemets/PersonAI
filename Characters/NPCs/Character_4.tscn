@@ -1,16 +1,18 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Characters/NPCs/Character_4_Sprite.gd" type="Script" id=1]
+[ext_resource path="res://Characters/NPCs/PlayerDetectionZone_4.gd" type="Script" id=2]
 [ext_resource path="res://Characters/NPCs/PlayerDetectionZone.tscn" type="PackedScene" id=3]
 
 [sub_resource type="GDScript" id=10]
+resource_local_to_scene = true
 script/source = "extends KinematicBody2D
 
 export var ACCELERATION = 600
 export var MAX_SPEED = 70
 export var FRICTION = 200
 export var NAME = \"Magdela\"
-
+var anim = false
 
 enum {
 	IDLE,
@@ -29,7 +31,7 @@ var square_next = RIGHT
 const TOLERANCE = 4.0
 var velocity = Vector2.ZERO
 var state = WANDER
-onready var playerDetectionZone = $PlayerDetectionZone
+onready var playerDetectionZone = $PlayerDetectionZone_4
 onready var start_position = global_position
 onready var target_position = global_position
 var rng = RandomNumberGenerator.new()
@@ -37,7 +39,7 @@ signal conversation(demon_name)
 signal name(NAME)
 signal text_dict(text_dict)
 var text_dict = {}
-onready var animation_player = $AnimationPlayer
+onready var animation_player = $Character_4_Animation
 
 onready var timer = get_node(\"Timer\")
 func _ready():
@@ -46,7 +48,10 @@ func _ready():
 	var text_returned = file.get_as_text()
 	text_dict = JSON.parse(text_returned).result
 	file.close()
-	if text_dict.has(\"Character_4\"):
+	
+	if text_dict['Characters'].has(\"Character_4\"):
+		if text_dict['Character_hframes']['Character_4_hframes'] > 1 and text_dict['Character_vframes']['Character_4_vframes'] > 1:
+			anim = true 
 		NAME = text_dict['Character_4']
 		emit_signal(\"name\", NAME)
 		print(\"Emitting signal\", NAME)
@@ -94,13 +99,15 @@ func update_target_position():
 	match square_next:
 		LEFT:
 			target_vector = Vector2(start_position.x - 100, start_position.y)
-			animation_player.play(\"run_left\")
+			if anim:
+				animation_player.play(\"run_left\")
 			if is_at_target_position():
 				square_next = RIGHT
 			target_position = target_vector
 		RIGHT:
 			target_vector = Vector2(start_position.x + 100, start_position.y)
-			animation_player.play(\"run_right\")
+			if anim:
+				animation_player.play(\"run_right\")
 			if is_at_target_position():
 				square_next = LEFT
 			target_position = target_vector
@@ -211,15 +218,16 @@ script = ExtResource( 1 )
 position = Vector2( 0, -8 )
 shape = SubResource( 1 )
 
-[node name="PlayerDetectionZone" parent="." instance=ExtResource( 3 )]
+[node name="PlayerDetectionZone_4" parent="." instance=ExtResource( 3 )]
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+[node name="CollisionShape2D" parent="PlayerDetectionZone_4" index="0"]
 modulate = Color( 0.980392, 0.243137, 0.243137, 0.32549 )
 position = Vector2( 0, -8 )
 
 [node name="Timer" type="Timer" parent="."]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="Character_4_Animation" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Character_4")
 anims/RESET = SubResource( 3 )
 anims/run_backward = SubResource( 7 )
@@ -229,4 +237,4 @@ anims/run_right = SubResource( 4 )
 
 [connection signal="text_dict" from="." to="Character_4" method="_on_Character_4_text_dict"]
 
-[editable path="PlayerDetectionZone"]
+[editable path="PlayerDetectionZone_4"]

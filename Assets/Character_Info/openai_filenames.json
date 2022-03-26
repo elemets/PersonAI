@@ -1,12 +1,1 @@
-{
-    "artorius": {
-        "not_liked" : "file-QREvmWFPJ4S2ZGteFgTTYr6p",
-        "reasonably_liked" : "file-wBHRM7ED1SYU1FBuTLR8tIjg",
-        "very_liked": "file-scIvGcpGFCd0RLXnz5NSXfDc"
-    },
-    "magdela": {
-        "not_liked" : "file-hqacFza1tRfSjgcoAs2nLKVD",
-        "reasonably_liked" : "file-xpYni261hNteDEoFGCiTITBq",
-        "very_liked": "file-nYkE6PKbwFVJOMLeYZn3Ut1b"
-    }
-}
+{"open-ai": true, "open-ai-api": "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", "already_initialised": true, "already-intialised": false, "harry": {"not_liked": "file-9xn1Y49lOXnbKqlo9LHLCAdw", "reasonably_liked": "file-62J4PywOWWr6FBSIQBJsObdP", "very_liked": "file-zUlkvRwf16usHijY3Fl6bb88"}, "alice": {"not_liked": "file-J9fpwa6CO3KKgrE6vUBG1jAc", "reasonably_liked": "file-d8R4VqUXRsGMpSaYgwVJmqGm", "very_liked": "file-Po7mVm4Dx0ti081lxIcmifC4"}, "bobby": {"not_liked": "file-hd0qMsO0dq4W3BTZ37rGPlaM", "reasonably_liked": "file-Bt7MQ0IkoIC4XzXPhMguSk9j", "very_liked": "file-BZKOpAwzSdSYfpWUDizgCQG4"}}

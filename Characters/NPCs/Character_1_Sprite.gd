@@ -9,6 +9,9 @@ extends Sprite
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	texture = load("./Assets/Characters/Character_1/Character_1_Sprite.png")
+	hframes = 1
+	vframes = 1
+	frame = 0 
 	pass # Replace with function body.
 
 

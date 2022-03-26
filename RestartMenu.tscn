@@ -3,7 +3,7 @@
 [ext_resource path="res://WinOrLose.gd" type="Script" id=1]
 [ext_resource path="res://Restart_Screen_Text.gd" type="Script" id=2]
 [ext_resource path="res://Dialog/alaGardCustom.tres" type="DynamicFont" id=3]
-[ext_resource path="res://Dialog/alagard.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/DialogRoom/custom_font.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://ExitButton.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=2]
@@ -30,7 +30,7 @@ __meta__ = {
 margin_left = 232.0
 margin_top = 24.0
 margin_right = 428.0
-margin_bottom = 72.0
+margin_bottom = 83.0
 size_flags_stretch_ratio = 0.0
 theme = SubResource( 3 )
 script = ExtResource( 1 )

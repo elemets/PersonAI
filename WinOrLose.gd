@@ -38,3 +38,4 @@ func _on_Question_1_answer_question_1_correct(q_1_bool):
 
 func _on_SceneManager_exit_screen():
 	_win_checker()
+	print("Win checking")

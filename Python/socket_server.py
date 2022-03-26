@@ -1,9 +1,11 @@
 import asyncio
+from numpy import character
 import websockets
 from Demon_dialogue import Demon
 import json
 import logging
 from transformers import pipeline
+from openai_helper import openai_init
 
 ### Logging set up
 logger = logging.getLogger(__name__)  
@@ -17,10 +19,16 @@ class socket_server():
     
     def __init__(self):
         self.qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad", tokenizer="distilbert-base-cased-distilled-squad")
-        self.current_demon = Demon('artorius', "nothing", "nothing", "swearing", self.qa_pipeline)       
         with open("../Assets/Character_Info/character_names.json") as f:
             self.character_json = json.load(f) 
+        self.current_demon = Demon(f'{self.character_json["Characters"]["Character_1"]}', ["nothing"], ["nothing"], "swearing", self.qa_pipeline)       
         self.character_dict = {}
+        with open('../Assets/Character_Info/openai_filenames.json') as f:
+            openai_check = json.load(f)
+        if openai_check['open-ai'] == True and openai_check['already_initialised'] == False:
+            openai_init()
+
+    
     
     async def comms(self, websocket):
         output = "Nothing"
@@ -33,8 +41,10 @@ class socket_server():
             message = message.decode('utf-8')
             message = json.loads(message)
             character_num = message['Name']
-            demon_name = self.character_json[character_num]
+            demon_name = self.character_json['Characters'][character_num]
             instruction = message['Command']
+            print(demon_name)
+            print(character_num)
             if demon_name:
                 with open("../Assets/Characters/" + demon_name + ".json") as file:
                     demon_info = json.load(file) 
@@ -42,7 +52,7 @@ class socket_server():
             if instruction == 'init':
                 print("Initialising with name ", demon_info['Name'])
                 demon = Demon(demon_info['Name'], demon_info['Likes'], demon_info['Dislikes'], demon_info['Mannerisms'], self.qa_pipeline)       
-                self.character_dict[f"{demon_name}"] = demon
+                self.character_dict[f"{demon_info['Name']}"] = demon
             
             sentence = message['Content']
             

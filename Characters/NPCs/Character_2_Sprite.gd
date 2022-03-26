@@ -1,21 +1,16 @@
 extends Sprite
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	pass 
 
 
 func _on_Character_2_text_dict(dict):
-	texture = load("./Assets/Characters/Character_2/Character_2_Sprite.png")
-	pass # Replace with function body.
+	if dict['Characters'].has("Character_2"):
+		texture = load("./Assets/Characters/Character_2/Character_2_Sprite.png")
+		hframes = dict['Character_hframes']['Character_2_hframes']
+		vframes = dict['Character_vframes']['Character_2_vframes']
+	var current_size = texture.get_size()
+	var desired_size = Vector2(64, 64)
+	scale = desired_size / current_size
+	pass 

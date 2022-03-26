@@ -9,6 +9,13 @@ extends Sprite
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	texture = load("./Assets/Player.png")
+	var size = texture.get_size()
+	var sizeTo = Vector2(62, 44)
+	var s = sizeTo/ size
+	scale = s
+
+
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
