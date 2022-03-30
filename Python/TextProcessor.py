@@ -61,7 +61,7 @@ class TextProcessor:
                     sentence_list[sentence] = new_sentence[0]
                     sentence_list.append(new_sentence[1])
 
-
+        print(sentence_list[0].text)
         return sentence_list
 
 

@@ -14,6 +14,7 @@ var _client = WebSocketClient.new()
 var waiting_for_payload = false 
 var character_dict = {}
 var current_convo
+signal game_loaded
 
 func _ready():
 	_load_character_dict()
@@ -58,8 +59,12 @@ func _on_connected(proto = ""):
 func _on_data():
 	var payload = JSON.parse(_client.get_peer(1).get_packet().get_string_from_utf8()).result
 	waiting_for_payload = false
+	if payload['Type'] == 'initialised':
+		emit_signal("game_loaded")
+		print("loaded")
 	if payload['Type'] == 'greet' or payload['Type'] == 'response':
 		emit_signal("payload_received", payload)
+	
 
 func _send(character_num, command, content=''):
 	print(character_num)
@@ -109,7 +114,7 @@ func _on_Character_1_conversation(demon_name):
 		emit_signal("Waiting for payload")
 		waiting_for_payload = true
 		_send("Character_1", command)
-		current_convo = demon_name_2
+		current_convo = demon_name
 	pass 
 
 
