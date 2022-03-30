@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://World.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://FinalScreen.tscn" type="PackedScene" id=9]
 [ext_resource path="res://RestartMenu.tscn" type="PackedScene" id=10]
 [ext_resource path="res://IntroScreen.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Characters/NPCs/Character_4.gd" type="Script" id=12]
+[ext_resource path="res://Characters/NPCs/Character_3.gd" type="Script" id=13]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Assets/DialogRoom/custom_font.otf"
@@ -54,6 +56,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Player" parent="CurrentScene/World/YSort" index="1"]
+collision_layer = 512
+collision_mask = 511
+
+[node name="PlayerDetectionZone_1" parent="CurrentScene/World/YSort/Character_1" index="2"]
+collision_mask = 8
+
+[node name="Character_4" parent="CurrentScene/World/YSort" index="3"]
+script = ExtResource( 12 )
+
+[node name="Character_3" parent="CurrentScene/World/YSort" index="5"]
+script = ExtResource( 13 )
+
 [node name="TransitionScreen" parent="." instance=ExtResource( 2 )]
 
 [node name="ColorRect" parent="TransitionScreen" index="0"]
@@ -77,11 +92,9 @@ fit_content_height = true
 [connection signal="Player_Response" from="Dialog/RichTextLabel" to="Dialog/Socket" method="_on_RichTextLabel_Player_Response"]
 [connection signal="exit_dialog" from="Dialog/RichTextLabel" to="." method="_on_RichTextLabel_exit_dialog"]
 [connection signal="payload_received" from="Dialog/Socket" to="Dialog/RichTextLabel" method="_on_Socket_payload_received"]
+[connection signal="waiting_for_payload" from="Dialog/Socket" to="CurrentScene/World/YSort/Character_1" method="_on_Socket_waiting_for_payload"]
+[connection signal="waiting_for_payload" from="Dialog/Socket" to="CurrentScene/World/YSort/Character_4" method="_on_Socket_waiting_for_payload"]
 [connection signal="pressed" from="CurrentScene/World/YSort/TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="conversation" from="CurrentScene/World/YSort/Character_2" to="." method="_on_Character_2_conversation"]
-[connection signal="conversation" from="CurrentScene/World/YSort/Character_2" to="Dialog/YSort/Sprite" method="_on_Character_2_conversation"]
-[connection signal="conversation" from="CurrentScene/World/YSort/Character_2" to="Dialog/Socket" method="_on_Character_2_conversation"]
-[connection signal="name" from="CurrentScene/World/YSort/Character_2" to="Dialog/Socket" method="_on_Character_2_name"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_1" to="." method="_on_Character_1_conversation"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_1" to="Dialog/YSort/Sprite" method="_on_Character_1_conversation"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_1" to="Dialog/Socket" method="_on_Character_1_conversation"]
@@ -90,6 +103,10 @@ fit_content_height = true
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_4" to="Dialog/YSort/Sprite" method="_on_Character_4_conversation"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_4" to="Dialog/Socket" method="_on_Character_4_conversation"]
 [connection signal="name" from="CurrentScene/World/YSort/Character_4" to="Dialog/Socket" method="_on_Character_4_name"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_2" to="." method="_on_Character_2_conversation"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_2" to="Dialog/YSort/Sprite" method="_on_Character_2_conversation"]
+[connection signal="conversation" from="CurrentScene/World/YSort/Character_2" to="Dialog/Socket" method="_on_Character_2_conversation"]
+[connection signal="name" from="CurrentScene/World/YSort/Character_2" to="Dialog/Socket" method="_on_Character_2_name"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_3" to="." method="_on_Character_3_conversation"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_3" to="Dialog/YSort/Sprite" method="_on_Character_3_conversation"]
 [connection signal="conversation" from="CurrentScene/World/YSort/Character_3" to="Dialog/Socket" method="_on_Character_3_conversation"]
@@ -101,7 +118,7 @@ fit_content_height = true
 [editable path="FinalScreen"]
 [editable path="Dialog"]
 [editable path="CurrentScene/World"]
-[editable path="CurrentScene/World/YSort/Character_2"]
-[editable path="CurrentScene/World/YSort/Character_2/PlayerDetectionZone_2"]
+[editable path="CurrentScene/World/YSort/Character_1"]
+[editable path="CurrentScene/World/YSort/Character_1/PlayerDetectionZone_1"]
 [editable path="TransitionScreen"]
 [editable path="IntroScreen"]

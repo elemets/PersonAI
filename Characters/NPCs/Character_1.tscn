@@ -65,8 +65,8 @@ func _physics_process(delta):
 		IDLE:
 			var player = playerDetectionZone.player
 			if player != null and Input.is_key_pressed(KEY_E):
-				print(\"emitting conversation\")
-				emit_signal(\"conversation\", NAME)
+				print(\"emitting conversation player 1\")
+				emit_signal(\"conversation\")
 			elif player != null:
 				velocity = velocity.move_toward(Vector2.ZERO, FRICTION *delta)
 		WANDER:
@@ -112,7 +112,7 @@ func is_at_target_position():
 "
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 16.0
+radius = 4.0
 height = 0.0
 
 [sub_resource type="Animation" id=3]
@@ -198,6 +198,7 @@ tracks/0/keys = {
 }
 
 [node name="Character_1" type="KinematicBody2D"]
+collision_mask = 512
 script = SubResource( 10 )
 
 [node name="Character_1" type="Sprite" parent="."]
@@ -213,6 +214,8 @@ position = Vector2( 0, -8 )
 shape = SubResource( 1 )
 
 [node name="PlayerDetectionZone_1" parent="." instance=ExtResource( 3 )]
+collision_layer = 1
+collision_mask = 512
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone_1" index="0"]

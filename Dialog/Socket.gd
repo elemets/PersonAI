@@ -6,14 +6,14 @@ var demon_name
 var demon_name_2
 var demon_name_3
 var demon_name_4
-var current_convo
+signal waiting_for_payload
 var command
 var content
 signal payload_received
 var _client = WebSocketClient.new()
 var waiting_for_payload = false 
 var character_dict = {}
-
+var current_convo
 
 func _ready():
 	_load_character_dict()
@@ -61,32 +61,33 @@ func _on_data():
 	if payload['Type'] == 'greet' or payload['Type'] == 'response':
 		emit_signal("payload_received", payload)
 
-func _send(demon_name, command, content=''):
-	print(demon_name)
-	print(command)
-	_client.get_peer(1).put_packet(JSON.print({"Name": demon_name, "Command": command, "Content": content}).to_utf8())
-
+func _send(character_num, command, content=''):
+	print(character_num)
+	_client.get_peer(1).put_packet(JSON.print({"Name": character_num, "Command": command, "Content": content}).to_utf8())
 
 func _on_RichTextLabel_Player_Response(message):
 	if waiting_for_payload == false:
-		_send(current_convo, "response", message)
 		waiting_for_payload = true
+		_send(current_convo, "response", message)
 	pass # Replace with function body.
 
 
 func _on_Character_2_conversation(demon_name):
 	command = 'greet'
 	demon_name_2 = "Character_2"
-	current_convo = demon_name_2
 	print("character 2 conversation active")
 	print("sending")
-	print(demon_name_2)
-	_send(demon_name_2, command)
+	print(demon_name_2)	
+	if waiting_for_payload == false:
+		emit_signal("Waiting for payload")
+		waiting_for_payload = true
+		_send("Character_2", command)
+		current_convo = demon_name_2
 	pass # Replace with function body.
 
 
 func _on_Character_2_name(NAME):
-	demon_name_2 = "Character_2"
+	demon_name = "Character_2"
 	command = 'init'
 	pass 
 
@@ -94,17 +95,21 @@ func _on_Character_2_name(NAME):
 func _on_Character_1_name(NAME):
 	demon_name = 'Character_1'
 	command = 'init'
+	print("Character one triggers")
 	pass 
 
 
 func _on_Character_1_conversation(demon_name):
 	command = 'greet'
 	demon_name = "Character_1"
-	current_convo = demon_name
 	print("character 1 conversation active")
 	print("sending")
 	print(demon_name)
-	_send(demon_name, command)
+	if waiting_for_payload == false:
+		emit_signal("Waiting for payload")
+		waiting_for_payload = true
+		_send("Character_1", command)
+		current_convo = demon_name_2
 	pass 
 
 
@@ -114,11 +119,15 @@ func _on_Final_Screen_Text_file_loaded(dict):
 
 
 func _on_Character_3_conversation(demon_name):
+		
 	command = 'greet'
-	demon_name_3 = "Character_3"
-	current_convo = demon_name
-	_send(demon_name_3, command)
-	print("Sending")
+	if waiting_for_payload == false:
+		emit_signal("Waiting for payload")
+		waiting_for_payload = true
+		demon_name_3 = "Character_3"
+		_send("Character_3", command)
+		print("Sending")
+		current_convo = demon_name_3
 	pass # Replace with function body.
 
 
@@ -135,9 +144,11 @@ func _on_Character_4_name(NAME):
 
 
 func _on_Character_4_conversation(demon_name):
-	command = 'greet'
-	demon_name_4 = "Character_4"
-	current_convo = demon_name
-	_send(demon_name_4, command)
-
+	if waiting_for_payload == false:
+		emit_signal("Waiting for payload")
+		waiting_for_payload = true
+		command = 'greet'
+		demon_name_4 = "Character_4"
+		_send("Character_4", command)
+		current_convo = demon_name_4
 	pass # Replace with function body.

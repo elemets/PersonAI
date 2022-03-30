@@ -3,7 +3,6 @@ extends KinematicBody2D
 export var ACCELERATION = 600
 export var MAX_SPEED = 70
 export var FRICTION = 200
-var waiting_for_payload = false
 var NAME
 
 
@@ -24,14 +23,15 @@ var square_next = RIGHT
 const TOLERANCE = 4.0
 var velocity = Vector2.ZERO
 var state = WANDER
-onready var playerDetectionZone_1 = $PlayerDetectionZone_1
+onready var playerDetectionZone_4 = $PlayerDetectionZone_4
 onready var start_position = global_position
 onready var target_position = global_position
 var rng = RandomNumberGenerator.new()
 signal conversation(demon_name)
 signal name(NAME)
+var waiting_for_payload = false
 var anim
-onready var animation_player = $Character_1_Animation
+onready var animation_player = $Character_4_Animation
 var text_dict = {}
 
 onready var timer = get_node("Timer")
@@ -41,12 +41,14 @@ func _ready():
 	var text_returned = file.get_as_text()
 	text_dict = JSON.parse(text_returned).result
 	file.close()
-	if text_dict['Characters'].has("Character_1"):
-		NAME = text_dict['Characters']['Character_1']
-		if text_dict['Character_hframes']['Character_1_hframes'] > 1 and text_dict['Character_vframes']['Character_1_vframes'] > 1:
+	if text_dict['Characters'].has('Character_4'):
+		NAME = text_dict['Characters']['Character_4']
+		if text_dict['Character_hframes']['Character_4_hframes'] > 1 and text_dict['Character_vframes']['Character_4_vframes'] > 1:
 			anim = true 
 		emit_signal("name", NAME)
 		print("Emitting signal", NAME)
+	else:
+		self.queue_free()
 	timer.set_wait_time(5)
 	timer.start()
 
@@ -58,24 +60,24 @@ func _physics_process(delta):
 	see_player()
 	match state:
 		IDLE:
-			var player = playerDetectionZone_1.player
-			if player != null and Input.is_key_pressed(KEY_E):
-				print("emitting conversation player 1")
+			var player = playerDetectionZone_4.player
+			print(player)
+			if player != null and Input.is_key_pressed(KEY_E) :
+				print("emitting conversation player 4")
 				emit_signal("conversation", NAME)
 			elif player != null:
 				velocity = velocity.move_toward(Vector2.ZERO, FRICTION *delta)
 		WANDER:
-			var player = playerDetectionZone_1.player
+			var player = playerDetectionZone_4.player
 			var point = update_target_position()
 			var direction = (point - global_position).normalized()
-
 			if player ==  null:
 				velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
 
 	velocity = move_and_slide(velocity)
 
 func see_player():
-	if playerDetectionZone_1.can_see_player():
+	if playerDetectionZone_4.can_see_player():
 		state = IDLE
 	else:
 		state = WANDER
@@ -106,3 +108,6 @@ func is_at_target_position():
 
 
 
+func _on_Socket_waiting_for_payload():
+	waiting_for_payload = true
+	pass # Replace with function body.
