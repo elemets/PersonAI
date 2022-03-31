@@ -20,6 +20,13 @@ class TextProcessor:
         # self.prof_filter = ProfanityFilter()
         
 
+    """
+    Splits the sentences and splits conjunctions correctly
+    This allows people to enter sentences such as 'I love batman and superman'
+    and splits this to 'I love batman. I love superman'.
+    This allows the system to deal with a dislike and a like being within the same sentence 
+    and it can still infer the correct sentiment score from this.
+    """
     def split_sentences(self, raw_text):
         
 
@@ -61,15 +68,15 @@ class TextProcessor:
                     sentence_list[sentence] = new_sentence[0]
                     sentence_list.append(new_sentence[1])
 
-        print(sentence_list[0].text)
         return sentence_list
 
 
 
 
+    """
+    Checking the sentiment of the given sentence
+    """
     def sentiment_check(self, sentence):
-        
-
 
         sentAnalyzer = SentimentIntensityAnalyzer()
         
@@ -78,6 +85,10 @@ class TextProcessor:
 
         return sentiment
 
+
+    """
+    Returning the probability that the given sentence contains profanity
+    """
     def profanity_checker(self, sentence):
         sentence = [sentence]
         

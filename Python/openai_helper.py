@@ -55,6 +55,9 @@ def openai_init():
         json.dump(openai_filenames, file)
     print("Open ai files initialised")
     
+"""
+This deletes the previous files which have been uploaded to openai under your api key.
+"""
 def file_deleter():
     with open("../Assets/Character_Info/openai_filenames.json", "r+") as file:
         openai_filenames = json.load(file)

@@ -49,6 +49,9 @@ class Demon:
 
 
 
+    """
+    Calculates the response given the player input and context (if using transformers)
+    """
     def calc_response(self, player_input, context):
 
         ## calculating the scores of the players personality
@@ -75,7 +78,10 @@ class Demon:
         
         return response, pos_or_neg, prob_score
 
-    
+    """
+    Returns the question response depending on whether the game creator
+    has specified OpenAI or Transformers as the models for answering questions.
+    """
     def question_answering(self, question, context):
         answers = {}
         with open(f'../Assets/Characters/{self.name}_context.json') as f:

@@ -7,7 +7,9 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 
 
-
+"""
+returns the sparql query results in JSON format
+"""
 def get_results(endpoint_url, query):
     user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
     # TODO adjust user agent; see https://w.wiki/CX6
@@ -16,7 +18,10 @@ def get_results(endpoint_url, query):
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
 
-
+"""
+This query finds all the dishes from a given country (using the country id input)
+all the WD values are values of certain types of dishes
+"""
 def cuisine_query(country_id):
   endpoint_url = "https://query.wikidata.org/sparql"
 
@@ -199,10 +204,13 @@ def cuisine_query(country_id):
   for result in results["results"]["bindings"]:
     if result['itemLabel']['value'] not in dish_list:
       dish_list.append(result['itemLabel']['value'])
-  print(dish_list)
   return dish_list
 
 
+"""
+This collects all characters and entities from a given fictional universe.
+Using the wdt 'from fictional universe' using the given universe ID
+"""
 def fictional_universe_query(universe_id):
   
   endpoint_url = "https://query.wikidata.org/sparql"
