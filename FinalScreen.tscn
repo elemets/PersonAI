@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Assets/FinalRoom/FinalRoomBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://Final_Screen_Text.gd" type="Script" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://Assets/FinalRoom/Final_Button.png" type="Texture" id=17]
 [ext_resource path="res://Final_Button.gd" type="Script" id=18]
 [ext_resource path="res://Final_Screen_Background.gd" type="Script" id=19]
+[ext_resource path="res://Parchment.gd" type="Script" id=20]
 
 [sub_resource type="Theme" id=1]
 default_font = ExtResource( 4 )
@@ -51,9 +52,10 @@ __meta__ = {
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Parchment" type="Sprite" parent="YSort"]
-position = Vector2( 154, 179 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 152, 177 )
+scale = Vector2( 0.578947, 0.637363 )
 texture = ExtResource( 3 )
+script = ExtResource( 20 )
 
 [node name="Final_Screen_Text" type="RichTextLabel" parent="."]
 margin_left = 56.0

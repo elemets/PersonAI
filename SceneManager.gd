@@ -9,6 +9,7 @@ var menu_button = false
 var exit_screen_btn = false
 signal exit_screen
 
+
 func _on_TransitionScreen_transition():
 	var children = self.get_children()
 
@@ -71,3 +72,5 @@ func _on_Character_3_conversation(demon_name):
 func _on_Character_4_conversation(demon_name):
 	$TransitionScreen.transition()
 	pass # Replace with function body.
+
+

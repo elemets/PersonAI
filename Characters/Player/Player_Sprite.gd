@@ -10,7 +10,7 @@ extends Sprite
 func _ready():
 	texture = load("./Assets/Player.png")
 	var size = texture.get_size()
-	var sizeTo = Vector2(62, 44)
+	var sizeTo = Vector2(32, 32)
 	var s = sizeTo/ size
 	scale = s
 

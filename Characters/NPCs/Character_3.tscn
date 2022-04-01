@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Characters/NPCs/Character_3_Sprite.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Characters/Character_3/Character_3_Sprite.png" type="Texture" id=2]
 [ext_resource path="res://Characters/NPCs/PlayerDetectionZone.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Characters/NPCs/PlayerDetectionZone_3.gd" type="Script" id=4]
 
@@ -210,7 +209,6 @@ script = SubResource( 10 )
 
 [node name="Character_3" type="Sprite" parent="."]
 position = Vector2( 0, -24 )
-texture = ExtResource( 2 )
 hframes = 3
 vframes = 4
 frame = 6

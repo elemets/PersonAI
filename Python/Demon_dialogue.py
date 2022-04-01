@@ -122,11 +122,7 @@ class Demon:
             except:
                 answers['answer']  = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
                 answers['score'] = None
-        else:
-            true_context = None
-            
-            print(self.Pers_Score)
-           
+        else:            
                 
             question = question[0]
 

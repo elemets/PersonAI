@@ -1,61 +1,73 @@
-  ________           .___      __    __________          __  .__
- /  _____/  ____   __| _/_____/  |_  \______   \___.__._/  |_|  |__   ____   ____
-/   \  ___ /  _ \ / __ |/  _ \   __\  |     ___<   |  |\   __\  |  \ /  _ \ /    \
-\    \_\  (  <_> ) /_/ (  <_> )  |    |    |    \___  | |  | |   Y  (  <_> )   |  \
- \______  /\____/\____ |\____/|__|    |____|    / ____| |__| |___|  /\____/|___|  /
-        \/            \/                        \/                \/            \/
-                                                                     v0.50.0 (2020-11-16)
+# Sword In The Stone
 
+### Requirements
 
-Introduction
-------------
+Python (with libraries), Godot (with OSAsync)
 
-This is a beta version of the Python module for Godot.
+Requirements can be found in the requirements.txt file in the root of the project for the python part of the project.
 
-You are likely to encounter bugs and catastrophic crashes, if so please
-report them to https://github.com/touilleMan/godot-python/issues.
+Godot also needs to have the OSAsync plugin installed.
 
+### Assets
 
-Working features
-----------------
+In order to turn this game into another project look in the /Assets/ folder here you will find a layout which looks somewhat like this:
 
-Every Godot core features are expected to work fine:
-- builtins (e.g. Vector2)
-- Objects classes (e.g. Node)
-- signals
-- variable export
-- rpc synchronisation
+Looking inside these folders will help you understand the way the files need to be formatted
 
-On top of that, mixing GDscript and Python code inside a project should work fine.
+Each character needs:
 
+- Expression images (Happy, Sad, Neutral)
+- To exist within character_names.json (along with the number of hframes and vframes if an animation .png is used)
+- A sprite which is displayed in the game world (preferably 32x32 but will be resized)
+- {character_1_name}.json e.g. Artorius.json which contains their name, likes, dislikes, whether they prefer swearing or not, and Food_Bool which should be set to false at the start
+- If the likes contain a like such as:
+    - Greece Food or England Food
+    - The game will look up cuisines from this country add it to a list of likes and then set the Food_Bool to True so that it doesn’t do this every time.
 
-Using Pip
----------
+Assets File System:
 
-Pip must be installed first with `ensurepip`:
-
-On Windows:
-```
-$ <pythonscript_dir>/windows-64/python.exe -m ensurepip  # Only need to do that once
-$ <pythonscript_dir>/windows-64/python.exe -m pip install whatever
-```
-
-On Linux/macOS:
-```
-$ <pythonscript_dir>/x11-64/bin/python3 -m ensurepip  # Only need to do that once
-$ <pythonscript_dir>/x11-64/bin/python3 -m pip install whatever
-```
-
-Note you must use `python -m pip` to invoke pip (using the command `pip`
-directly will likely fail in a cryptic manner)
-
-
-Not so well features
---------------------
-
-Exporting the project hasn't been tested at all (however exporting for linux should be pretty simple and may work out of the box...).
-
-
-Have fun ;-)
-
-  - touilleMan
+- Character_Info
+    - character_names.json
+    - openai_filenames.json
+- Characters
+    - Character_1
+        - Expressions
+            - Happy.png
+            - Sad.png
+            - Neutral.png
+        - Character_1_Sprite.png
+    - {character_1_name}.json
+    - {character_1_name}_responses.json
+    - {character_1_name}_context.json
+    - and so on for up to 4 characters
+- DialogRoom
+    - background.jpg (background for dialog room)
+    - custom_font.otf (font to be used throughout your game)
+- FinalRoom
+    - Final_Button.png (These images are attached to the buttons to navigate through the final room menus)
+    - Next_Button.png (These both have pressed versions which display when pressed)
+    - FinalRoomBackground.png (The final room background)
+    - parchment.png (The text is displayed on this in the final room)
+- Floor
+    - floorboards.png (The ground texture can be anything not just floorboards)
+- InfoJSONs
+    - final_screen.json
+        - Contains:
+            - Text to be displayed on the final screen before the player inputs their questions e.g “The court will now hear your testimony...”
+            - Between 1 and 4 questions with correct answers
+            - winning and losing screen text displayed when a player wins or loses.
+    - information_screen.json
+        - Contains:
+            - Introduction to your game explaining the premise and the questions the player needs to answer at the end
+            - Controls explanation
+- IntroRoom
+    - background.jpg
+- MainRoom
+    - imreadybutton.png (this is the button which will take you from the main room to the final screen room)
+    - imreadypressed.png
+- sparqlJSONs (choose the fictional universe or countries you want to select likes and dislikes from these)
+    - all_fictional_universes.json
+    - Country_Labels.json
+- WallsTileMap.png
+    - Contains 4 wall tiles for the back walls of the main room
+- Player.png (the player sprite)

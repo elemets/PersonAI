@@ -529,4 +529,197 @@
 2022-03-25 15:21:05,342:INFO:Whats your name?
 2022-03-25 15:21:05,342:INFO:{"Type": "response", "Content": "Bobby.", "Emotion": "neutral", "prob_score": null}
 2022-03-25 15:21:12,952:INFO:What do you like?
-2022-03-25 15:21:12,952:INFO:{"Type": "response", "Content": "Pirates of the Caribbean.", "Emotion": "neutral", "prob_score": null}
+2022-03-25 15:21:12,952:INFO:{"Type": "response", "Content": "Pirates of the Caribbean.", "Emotion": "neutral", "prob_score": null}2022-04-01 14:33:02,383:INFO:
+2022-04-01 14:33:02,383:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:33:02,789:INFO:
+2022-04-01 14:33:02,789:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:33:27,903:INFO:
+2022-04-01 14:33:27,903:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:33:27,956:INFO:
+2022-04-01 14:33:27,956:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:33:40,790:INFO:
+2022-04-01 14:33:40,791:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:33:57,375:INFO:What's your name?
+2022-04-01 14:33:57,375:INFO:{"Type": "response", "Content": "Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:36:07,464:INFO:
+2022-04-01 14:36:07,464:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:36:07,872:INFO:
+2022-04-01 14:36:07,873:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:56:18,257:INFO:
+2022-04-01 14:56:18,257:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:56:18,715:INFO:
+2022-04-01 14:56:18,715:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:56:24,481:INFO:
+2022-04-01 14:56:24,482:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:56:24,515:INFO:
+2022-04-01 14:56:24,515:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:56:24,549:INFO:
+2022-04-01 14:56:24,549:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 14:56:29,487:INFO:
+2022-04-01 14:56:29,487:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:04:03,423:INFO:
+2022-04-01 15:04:03,423:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:04:03,811:INFO:
+2022-04-01 15:04:03,811:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:07:30,710:INFO:
+2022-04-01 15:07:30,710:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:07:31,103:INFO:
+2022-04-01 15:07:31,103:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:14:02,202:INFO:
+2022-04-01 15:14:02,202:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:14:02,595:INFO:
+2022-04-01 15:14:02,595:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:16:53,643:INFO:
+2022-04-01 15:16:53,643:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:16:54,027:INFO:
+2022-04-01 15:16:54,028:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:17:42,387:INFO:
+2022-04-01 15:17:42,387:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:17:42,425:INFO:
+2022-04-01 15:17:42,425:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:17:52,852:INFO:
+2022-04-01 15:17:52,852:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:18:29,103:INFO:
+2022-04-01 15:18:29,103:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:18:29,496:INFO:
+2022-04-01 15:18:29,497:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:25:58,287:INFO:
+2022-04-01 15:25:58,288:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:25:58,718:INFO:
+2022-04-01 15:25:58,718:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:02,188:INFO:
+2022-04-01 15:26:02,188:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:02,224:INFO:
+2022-04-01 15:26:02,225:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:02,255:INFO:
+2022-04-01 15:26:02,255:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:10,390:INFO:Who did the murder?
+2022-04-01 15:26:10,390:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:23,709:INFO:Who is the murderer?
+2022-04-01 15:26:23,709:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:30,088:INFO:How old are you?
+2022-04-01 15:26:30,089:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:35,953:INFO:What's your name?
+2022-04-01 15:26:35,953:INFO:{"Type": "response", "Content": "Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:41,984:INFO:What do you like?
+2022-04-01 15:26:41,985:INFO:{"Type": "response", "Content": "I like the food at the Greek restaurant.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:54,746:INFO:What greek food do you like?
+2022-04-01 15:26:54,746:INFO:{"Type": "response", "Content": "Gyros.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:26:58,393:INFO:I love pork gyros
+2022-04-01 15:26:58,393:INFO:{"Type": "response", "Content": "Hmmm, I like what you're saying", "Emotion": "pos", "prob_score": null}
+2022-04-01 15:27:07,789:INFO:What else apart from gyros do you like?
+2022-04-01 15:27:07,790:INFO:{"Type": "response", "Content": "I like Greek food.", "Emotion": "pos", "prob_score": null}
+2022-04-01 15:27:14,257:INFO:What hobbies do you have?
+2022-04-01 15:27:14,257:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:27:19,695:INFO:What sports do you play?
+2022-04-01 15:27:19,695:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:34:15,904:INFO:
+2022-04-01 15:34:15,904:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:34:16,313:INFO:
+2022-04-01 15:34:16,313:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:36:00,406:INFO:
+2022-04-01 15:36:00,406:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:36:00,818:INFO:
+2022-04-01 15:36:00,818:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:37:06,763:INFO:
+2022-04-01 15:37:06,763:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:37:07,174:INFO:
+2022-04-01 15:37:07,174:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:38:36,202:INFO:
+2022-04-01 15:38:36,202:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:38:36,603:INFO:
+2022-04-01 15:38:36,604:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:41:00,771:INFO:
+2022-04-01 15:41:00,771:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:41:01,181:INFO:
+2022-04-01 15:41:01,181:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:41:12,996:INFO:
+2022-04-01 15:41:12,996:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:41:19,624:INFO:
+2022-04-01 15:41:19,624:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:41:24,483:INFO:
+2022-04-01 15:41:24,483:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:41:30,957:INFO:Whats your name?
+2022-04-01 15:41:30,957:INFO:{"Type": "response", "Content": "Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:42:27,454:INFO:
+2022-04-01 15:42:27,454:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:42:27,858:INFO:
+2022-04-01 15:42:27,858:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:42:33,891:INFO:
+2022-04-01 15:42:33,891:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:42:33,933:INFO:
+2022-04-01 15:42:33,933:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:42:33,965:INFO:
+2022-04-01 15:42:33,965:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:42:39,633:INFO:Whats your name?
+2022-04-01 15:42:39,633:INFO:{"Type": "response", "Content": "Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:43:22,193:INFO:
+2022-04-01 15:43:22,193:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:43:30,566:INFO:Where are you from?
+2022-04-01 15:43:30,566:INFO:{"Type": "response", "Content": "I am originally from London but I have lived as a demon for many years. I don't know much about London anymore.", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:44:36,639:INFO:
+2022-04-01 15:44:36,639:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:44:37,060:INFO:
+2022-04-01 15:44:37,060:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:44:40,202:INFO:
+2022-04-01 15:44:40,203:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:44:40,250:INFO:
+2022-04-01 15:44:40,250:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:44:46,436:INFO:Who are you?
+2022-04-01 15:44:46,436:INFO:{"Type": "response", "Content": "I'm not sure I can help you with that...", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:57:05,680:INFO:
+2022-04-01 15:57:05,680:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:57:06,092:INFO:
+2022-04-01 15:57:06,092:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:57:09,797:INFO:
+2022-04-01 15:57:09,797:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:57:09,830:INFO:
+2022-04-01 15:57:09,830:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:57:09,866:INFO:
+2022-04-01 15:57:09,866:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:58:09,029:INFO:
+2022-04-01 15:58:09,029:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:58:09,471:INFO:
+2022-04-01 15:58:09,471:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:58:12,600:INFO:
+2022-04-01 15:58:12,600:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:58:12,639:INFO:
+2022-04-01 15:58:12,639:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:58:12,676:INFO:
+2022-04-01 15:58:12,676:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:59:25,357:INFO:
+2022-04-01 15:59:25,357:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:59:25,779:INFO:
+2022-04-01 15:59:25,779:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:59:28,957:INFO:
+2022-04-01 15:59:28,957:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:59:28,997:INFO:
+2022-04-01 15:59:28,998:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-04-01 15:59:35,016:INFO:What is your name?
+2022-04-01 15:59:35,016:INFO:{"Type": "response", "Content": "Artorius", "Emotion": "neutral", "prob_score": 0.9950417876243591}
+2022-04-01 15:59:40,177:INFO:Where are you from?
+2022-04-01 15:59:40,177:INFO:{"Type": "response", "Content": "Berlin", "Emotion": "neutral", "prob_score": 0.9687010049819946}
+2022-04-01 15:59:46,395:INFO:What do you like to do?
+2022-04-01 15:59:46,395:INFO:{"Type": "response", "Content": "cook", "Emotion": "neutral", "prob_score": 0.9284603595733643}
+2022-04-01 15:59:51,241:INFO:What can you cook?
+2022-04-01 15:59:51,241:INFO:{"Type": "response", "Content": "pork gyros", "Emotion": "neutral", "prob_score": 0.9290005564689636}
+2022-04-01 16:00:01,221:INFO:What else do you like doing apart from cooking?
+2022-04-01 16:00:01,221:INFO:{"Type": "response", "Content": "Magdela lent George one of my Damascus steel cooking knives", "Emotion": "neutral", "prob_score": 0.06998832523822784}
+2022-04-01 16:00:13,925:INFO:What do you know about the murder?
+2022-04-01 16:00:13,925:INFO:{"Type": "response", "Content": "I know that George loves to cook", "Emotion": "neutral", "prob_score": 0.19757965207099915}
+2022-04-01 16:00:34,454:INFO:What about that damascus steel cooking knife?
+2022-04-01 16:00:34,454:INFO:{"Type": "response", "Content": "Magdela lent George one of my Damascus steel cooking knives recently", "Emotion": "neutral", "prob_score": 0.1372218132019043}
+2022-04-01 16:00:40,364:INFO:Who is the murderer?
+2022-04-01 16:00:40,364:INFO:{"Type": "response", "Content": "Magdela", "Emotion": "neutral", "prob_score": 0.37176796793937683}
+2022-04-01 16:00:49,112:INFO:
+2022-04-01 16:00:49,112:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": 0.37176796793937683}
+2022-04-01 16:00:59,526:INFO:Where are you from?
+2022-04-01 16:00:59,526:INFO:{"Type": "response", "Content": "London", "Emotion": "neutral", "prob_score": 0.9579756259918213}
+2022-04-01 16:01:04,887:INFO:What do you know about the murder?
+2022-04-01 16:01:04,887:INFO:{"Type": "response", "Content": "I'm still not sure I have anything helpful", "Emotion": "neutral", "prob_score": 0.5832821726799011}
+2022-04-01 16:01:12,143:INFO:What about Jason
+2022-04-01 16:01:12,144:INFO:{"Type": "response", "Content": "You gotta try a bit harder, seriously!", "Emotion": "neutral", "prob_score": null}
+2022-04-01 16:01:16,845:INFO:What about Jason?
+2022-04-01 16:01:16,845:INFO:{"Type": "response", "Content": "Jason was a human before being converted into a demon", "Emotion": "neutral", "prob_score": 0.0855613425374031}
+2022-04-01 16:01:25,931:INFO:Does Jason hold grudges?
+2022-04-01 16:01:25,931:INFO:{"Type": "response", "Content": "he still holds some grudges", "Emotion": "neutral", "prob_score": 0.5908156633377075}

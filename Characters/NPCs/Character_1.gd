@@ -41,6 +41,7 @@ func _ready():
 	var text_returned = file.get_as_text()
 	text_dict = JSON.parse(text_returned).result
 	file.close()
+	print(text_dict)
 	if text_dict['Characters'].has("Character_1"):
 		NAME = text_dict['Characters']['Character_1']
 		if text_dict['Character_hframes']['Character_1_hframes'] > 1 and text_dict['Character_vframes']['Character_1_vframes'] > 1:

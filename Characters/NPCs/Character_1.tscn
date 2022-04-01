@@ -39,6 +39,7 @@ signal conversation(demon_name)
 signal name(NAME)
 var text_dict = {}
 onready var animation_player = $Character_1_Animation
+signal text_dict(text_dict)
 
 onready var timer = get_node(\"Timer\")
 func _ready():
@@ -51,9 +52,8 @@ func _ready():
 		anim = true 
 	NAME = text_dict['Character_1']
 	emit_signal(\"name\", NAME)
+	emit_signal(\"text_dict\", text_dict)
 	print(\"Emitting signal\", NAME)
-	timer.set_wait_time(5)
-	timer.start()
 
 
 func TimerTimeout():
@@ -92,18 +92,18 @@ func update_target_position():
 	match square_next:
 		LEFT:
 			target_vector = Vector2(start_position.x - 100, start_position.y)
-			if anim:
-				animation_player.play(\"run_left\")
+			target_position = target_vector
 			if is_at_target_position():
 				square_next = RIGHT
-			target_position = target_vector
+			if anim:
+				animation_player.play(\"run_left\")
 		RIGHT:
 			target_vector = Vector2(start_position.x + 100, start_position.y)
-			if anim:
-				animation_player.play(\"run_right\")
+			target_position = target_vector
 			if is_at_target_position():
 				square_next = LEFT
-			target_position = target_vector
+			if anim:
+				animation_player.play(\"run_right\")
 	return target_position
 
 func is_at_target_position():
@@ -112,7 +112,7 @@ func is_at_target_position():
 "
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 4.0
+radius = 6.0
 height = 0.0
 
 [sub_resource type="Animation" id=3]
@@ -231,5 +231,7 @@ anims/run_backward = SubResource( 7 )
 anims/run_forward = SubResource( 9 )
 anims/run_left = SubResource( 5 )
 anims/run_right = SubResource( 4 )
+
+[connection signal="text_dict" from="." to="Character_1" method="_on_Character_1_text_dict"]
 
 [editable path="PlayerDetectionZone_1"]

@@ -16,15 +16,16 @@ func _ready():
 #	pass
 
 
-func _on_Character_3_text_dict(text_dict):
-	if text_dict['Characters'].has("Character_3"):
-		texture = load("./Assets/Characters/Character_3/Character_3_Sprite.png")
-		hframes = text_dict['Character_hframes']['Character_3_hframes']
-		vframes = text_dict['Character_vframes']['Character_3_vframes']
-	frame = 0
+func _on_Character_3_text_dict(dict):
 	var current_size = texture.get_size()
-	var desired_size = Vector2(64, 64)
+	var desired_size = ''
+	if dict['Characters'].has("Character_3"):
+		texture = load("./Assets/Characters/Character_3/Character_3_Sprite.png")
+		hframes = dict['Character_hframes']['Character_3_hframes']
+		vframes = dict['Character_vframes']['Character_3_vframes']
+		desired_size = Vector2(32 * hframes, 32 * vframes)
+	else:
+		desired_size = Vector2(32 * hframes, 32 * vframes)
 	scale = desired_size / current_size
-	print("Here")
 	pass # Replace with function body.
 

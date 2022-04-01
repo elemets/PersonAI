@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Characters/NPCs/Character_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Characters/Player/Player.tscn" type="PackedScene" id=2]
@@ -10,16 +10,19 @@
 [ext_resource path="res://Characters/NPCs/Character_4.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 64, 112, 0, 112, 0, 0, 64, 0 )
+points = PoolVector2Array( 64, 118.576, 0, 118.911, 0, 0, 64, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 64, 112, 0, 112, 0, 0, 64, 0 )
+points = PoolVector2Array( 63.643, 117.906, 0.347351, 117.906, 0, 0, 64, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 64, 112, 0, 112, 0, 0, 64, 0 )
+points = PoolVector2Array( 63.6086, 117.571, 0, 118.576, 0, 0, 64, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 64, 112, 0, 112, 0, 0, 64, 0 )
+points = PoolVector2Array( 64, 118.576, 0.94812, 118.241, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 64, 96, 0, 96, 0, 0, 64, 0 )
 
 [sub_resource type="TileSet" id=1]
 0/name = "WallsTileMap.png 0"
@@ -70,6 +73,27 @@ points = PoolVector2Array( 64, 112, 0, 112, 0, 0, 64, 0 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
+1/name = "WallsTileMap.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 6 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
 
 [node name="World" type="Node2D"]
 
@@ -81,6 +105,7 @@ region_rect = Rect2( 0, 0, 640, 368 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
+show_collision = true
 collision_layer = 2
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 1, 2, 0, 2, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 2, 8, 0, 1, 9, 0, 3 )

@@ -1,17 +1,17 @@
 {
-    "final_screen_text": "You walk into a large open room with a long table running from one end to the other, several severe looking men and women look expectantly at you. ",
+    "final_screen_text": "You have come before the underworld court, only a mortal can stare into the pool of truth. If the proposition you state is correct you will be returned to earth to live out your miserable life. If however you are wrong the pool will reach out and take you into it's depths and you'll live forever answering others' truths. Trust me, the former is preferred so be certain in your accusations.",
     "Question_1": {
-        "question": "What is your name?",
-        "correct-answer": "Sen"
+        "question": "Who is the murderer?",
+        "correct-answer": "Jason"
     },
     "Question_2":{
-        "question": "Where did you go to university?",
-        "correct-answer": "San Fransisco"
+        "question": "What is the murder weapon?",
+        "correct-answer": "Magdela's Knife"
     },
     "Question_3":{
-        "question": "What programming language are you most proficient in?",
-        "correct-answer": "Java"
+        "question": "Where was it done?",
+        "correct-answer": "Kilburn"
     },
-    "winning_screen_text": "The employers look at you and smile wide grins 'You've got the job congratulations Sen! You start in a month but to help get you going we'll be helping you out a little now so you don't run off on us!', you've successfully convinced them that you're Sen a proficient Java programmer. Now time to use that paycheck to buy a laptop and start learning! Good luck!",
-    "losing_screen_text": "The people around the table look to each other with confused and slightly annoyed looks on their faces. They then say 'Get out! What are you doing here, you're not who we expected and we don't take intruders lightly'. The security barge through the door grab your arms take you to the entrance and throw you back onto the streets where you belong..."
+    "winning_screen_text": "The pool of truth stares back at you for a second after you utter your words into it. Then suddenly a cold grey hand emerges and grabs you by the collar pulling you so that your ear is resting just above the surface. A light raspy whisper enters your ear 'Well done, you have served underworld faithfully and found the truth amongst the lies, return now to your life and be free of this wretched place'",
+    "losing_screen_text": "The pool of truth stares back at you after you utter your words into it, the surface is still for a second and then suddenly many cold sordid hands break the surface and grab you. They pull you into the water with ease and for a moment you ponder which of the demons tricked you. You can feel your personality fade away as your very being osmoses into the pool merging with the many tortured souls who came before you..."
 }

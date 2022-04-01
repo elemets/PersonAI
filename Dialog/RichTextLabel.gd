@@ -44,6 +44,9 @@ func _showCharacter():
 func _on_LineEdit_text_entered(new_text):
 	if new_text != '':
 		emit_signal("Player_Response", new_text)
+	text = "."
+	text = ".."
+	text = "..."
 	pass # Replace with function body.
 
 

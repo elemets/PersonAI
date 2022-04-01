@@ -32,6 +32,7 @@ signal name(NAME)
 var anim
 onready var animation_player = $Character_2_Animation
 var text_dict = {}
+signal text_dict(text_dict)
 
 onready var timer = get_node("Timer")
 func _ready():
@@ -46,6 +47,7 @@ func _ready():
 			anim = true 
 		emit_signal("name", NAME)
 		print("Emitting signal", NAME)
+		emit_signal("text_dict", text_dict)
 	timer.set_wait_time(5)
 	timer.start()
 

@@ -98,6 +98,9 @@ script = ExtResource( 2 )
 [node name="Character_2" type="Sprite" parent="."]
 position = Vector2( 0, -24 )
 texture = ExtResource( 1 )
+hframes = 3
+vframes = 4
+frame = 6
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -122,5 +125,7 @@ anims/run_backward = SubResource( 7 )
 anims/run_forward = SubResource( 9 )
 anims/run_left = SubResource( 5 )
 anims/run_right = SubResource( 4 )
+
+[connection signal="text_dict" from="." to="Character_2" method="_on_Character_2_text_dict"]
 
 [editable path="PlayerDetectionZone_2"]
