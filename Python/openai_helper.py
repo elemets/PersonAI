@@ -83,7 +83,33 @@ def file_deleter():
     with open("../Assets/Character_Info/openai_filenames.json", "r+") as file:
         json.dump(openai_filenames, file)
         
+    
+def delete_file(file_id):
+    openai.File.delete(file_id)
+    
+def upload_file(file_id, character, sentence_to_add):
+    
+    with open(f'../Assets/Characters/{character}_context.json') as context_file:
+        contexts = json.load(context_file)
+    
+    
+    with open(f'../Assets/Characters/openaijsonl/{character}_not_liked.jsonl', "w") as f:
+            context = {"text": contexts['context'] + sentence_to_add }
+            json.dump(context, f)
+            f.close()
         
-    def delete_file(file_id):
+    with open(f'../Assets/Characters/openaijsonl/{character}_reasonably_liked.jsonl', "w") as f:
+        context_reason = {"text": contexts['context-reasonably-liked'] + sentence_to_add}
+        json.dump(context_reason, f)
+        f.close()
         
-    def upload_file(file_id):
+    with open(f'../Assets/Characters/openaijsonl/{character}_very_liked.jsonl', "w") as f:
+        context_very = {"text": contexts['context-very-liked'] + sentence_to_add}
+        json.dump(context_very, f)
+        f.close()
+        
+
+    file_not = openai.File.create(file=open(f'../Assets/Characters/openaijsonl/{character}_not_liked.jsonl'), purpose='answers') 
+    file_reasonably = openai.File.create(file=open(f'../Assets/Characters/openaijsonl/{character}_reasonably_liked.jsonl'), purpose='answers') 
+    file_very = openai.File.create(file=open(f'../Assets/Characters/openaijsonl/{character}_very_liked.jsonl'), purpose='answers') 
+

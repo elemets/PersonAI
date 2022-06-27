@@ -6,7 +6,7 @@ import random
 import json 
 import wikipedia
 from collections import OrderedDict
-import pandas as pd
+import numpy as np
 import spacy
 from iteration_utilities import deepflatten
 import re
@@ -84,16 +84,20 @@ class Demon:
         return response, pos_or_neg, prob_score
 
     """
-    Returns the question response depending on whether the game creator
+    Returns 
+    the question response depending on whether the game creator
     has specified OpenAI or Transformers as the models for answering questions.
     """
     def question_answering(self, question, context):
         
+        question = question[0]
         
         answers = {}
         with open(f'../Assets/Characters/{self.name}_context.json') as f:
             context = json.load(f)
             f.close()
+            
+            
         with open(f'../Assets/Character_Info/openai_filenames.json') as f:
             openai_files = json.load(f)  
             
@@ -109,48 +113,29 @@ class Demon:
             true_context = context['context']
             context_ai = 'not_liked'
             
-        self.question_check(question)
             
 
         if True == True:
             try:
-                question = question[0]
-                query = openai.Answer.create(
-                    search_model="ada", 
-                    model="davinci", 
-                    question=question, 
-                    file=str(openai_files[self.name][context_ai]),
-                    examples_context="In 2017, U.S. life expectancy was 78.6 years.", 
-                    examples=[["What is human life expectancy in the United States?", "78 years."]], 
-                    max_rerank=10,
-                    max_tokens=40,
-                    stop=["\n", "<|endoftext|>"],
-                    temperature=0.75
+                response = openai.Completion.create(
+                model="text-davinci-002",
+                prompt=f"Context: {true_context}, Answer this question using the context (if you can): {question}",
+                temperature=0.75,
+                max_tokens=400,
+                top_p=1,
+                frequency_penalty=0.0,
+                presence_penalty=0.0,
                 )
-                
-                answers['answer'] = query['answers'][0]
+                print(response)
+                print(f"Context: {true_context}, \n Q: {question}")
+                answer_to_return = response['choices'][0]['text'].replace("\n", "")
                 answers['score'] = None
+                
             except:
                 answers['answer']  = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
                 answers['score'] = None
-        else:            
-                
-            question = question[0]
-
-            answers = self.qa_pipeline({
-                'context': true_context,
-                'question': question
-
-            })
             
-        answer_to_return = answers['answer'] 
 
-        #### TYPE OF QUESTION CHECK
-        ## check type of question
-        ## if opinion check if nouns within question exist within likes and dislikes file
-        ## if any do not add to the likes and dislikes 
-        ## only do this if the question hasn't been asked before
-        
 
 
 
@@ -174,12 +159,25 @@ class Demon:
             else:
                 answer_to_return = "Stop asking me that!"
         else:
-            self.asked_questions[question] = (answers['answer'], 0)
+            self.asked_questions[question] = (answer_to_return, 0)
 #           self.asked_questions[question] = (answer_to_return, 0, TextProcessor.sentiment_check(answer_to_return))
 
                 
         if len(self.asked_questions) > 1000:
             self.asked_questions.popitem()
+
+
+        #### TYPE OF QUESTION CHECK
+        ## check type of question
+        ## if opinion check if nouns within question exist within likes and dislikes file
+        ## if any do not add to the likes and dislikes 
+        ## only do this if the question hasn't been asked before
+        
+
+        question_type = self.question_check(question)
+
+        # if question_type == 'Opinion':
+            
 
 
             
