@@ -3095,3 +3095,63 @@
 2022-06-21 21:21:54,371:INFO:{"Type": "response", "Content": "It's okay.", "Emotion": "neg", "prob_score": null}
 2022-06-21 21:22:36,801:INFO:Do you think that jazz is a decent genre of music or not?
 2022-06-21 21:22:36,802:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:48:07,524:INFO:
+2022-06-27 11:48:07,525:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:48:10,332:INFO:
+2022-06-27 11:48:10,332:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:48:16,974:INFO:
+2022-06-27 11:48:16,974:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:48:17,015:INFO:
+2022-06-27 11:48:17,015:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:49:26,363:INFO:
+2022-06-27 11:49:26,364:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:49:29,235:INFO:
+2022-06-27 11:49:29,235:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:49:55,131:INFO:
+2022-06-27 11:49:55,131:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:49:55,181:INFO:
+2022-06-27 11:49:55,181:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 11:50:08,702:INFO:Do you like jazz?
+2022-06-27 11:50:08,702:INFO:{"Type": "response", "Content": "Not particularly.", "Emotion": "neg", "prob_score": null}
+2022-06-27 11:50:22,541:INFO:Do you dislike jazz?
+2022-06-27 11:50:22,541:INFO:{"Type": "response", "Content": "No.", "Emotion": "pos", "prob_score": null}
+2022-06-27 11:57:35,944:INFO:Why do you like jazz?
+2022-06-27 11:57:35,944:INFO:{"Type": "response", "Content": "I was born in the 1920s and my parents were kind of into the Rat Pack, big fans of Frank Sinatra. I like swing.", "Emotion": "neg", "prob_score": null}
+2022-06-27 11:57:47,603:INFO:Why do you dislike jazz?
+2022-06-27 11:57:47,603:INFO:{"Type": "response", "Content": "I dislike jazz because it's boring, I don't like to listen to it and I don't play it. Jazz is also extremely difficult to play.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:00:38,936:INFO:Do you dislike fencing?
+2022-06-27 12:00:38,936:INFO:{"Type": "response", "Content": "I don't dislike it.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:00:45,855:INFO:Do you like fencing?
+2022-06-27 12:00:45,856:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:01:21,623:INFO:What do you know about the murder?
+2022-06-27 12:01:21,623:INFO:{"Type": "response", "Content": "Jason was a demon before being converted into a human. The night of the murder I heard screams from the basement and thought I was dreaming.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:10:55,094:INFO:Do you like fencing?
+2022-06-27 12:10:55,094:INFO:{"Type": "response", "Content": "You've already asked me this, but... Yes.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:11:04,745:INFO:Do you hate fencing?
+2022-06-27 12:11:04,745:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:11:22,151:INFO:Do you dislike fencing
+2022-06-27 12:11:22,151:INFO:{"Type": "response", "Content": "I think you're being boring and annoying, please stop", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:11:28,877:INFO:Do you dislike fencing?
+2022-06-27 12:11:28,877:INFO:{"Type": "response", "Content": "You've already asked me this, but... I don't dislike it.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:12:28,399:INFO:Do you hate tacos?
+2022-06-27 12:12:28,399:INFO:{"Type": "response", "Content": "Yes.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:12:35,501:INFO:Do you love tacos?
+2022-06-27 12:12:35,501:INFO:{"Type": "response", "Content": "I do.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:15:32,125:INFO:Do you like swing?
+2022-06-27 12:15:32,126:INFO:{"Type": "response", "Content": "I don't swing, I make swing.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:15:45,168:INFO:Why do you like swing?
+2022-06-27 12:15:45,168:INFO:{"Type": "response", "Content": "Because it is relaxing, I can think about something while I swing, it feels good, I like to swing swing swing.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:15:58,837:INFO:Why do you dislike swing?
+2022-06-27 12:15:58,838:INFO:{"Type": "response", "Content": "The music is extremely repetitive and on top of that it is extremely misleading. It makes too many people think that it is a fun activity for two people to do. Swing music is a terrible thing that", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:16:25,006:INFO:Why do you like fencing?
+2022-06-27 12:16:25,007:INFO:{"Type": "response", "Content": "I have always been proud of my fencing ability, and it's fun to have a hobby.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:16:36,003:INFO:Why do you dislike fencing?
+2022-06-27 12:16:36,003:INFO:{"Type": "response", "Content": "I don't want to talk about it.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:16:55,226:INFO:Why do you dislike Burritos?
+2022-06-27 12:16:55,226:INFO:{"Type": "response", "Content": "I don't really dislike them, they're just not my favourite food.", "Emotion": "neg", "prob_score": null}
+2022-06-27 12:17:11,521:INFO:Why do you like Burritos?
+2022-06-27 12:17:11,522:INFO:{"Type": "response", "Content": "Because they are delicious.", "Emotion": "pos", "prob_score": null}
+2022-06-27 12:17:24,455:INFO:What food do you like?
+2022-06-27 12:17:24,455:INFO:{"Type": "response", "Content": "The answer to that question is burritos.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 12:17:42,483:INFO:What are your hobbies?
+2022-06-27 12:17:42,485:INFO:{"Type": "response", "Content": "Fencing and Shotput.", "Emotion": "neutral", "prob_score": null}

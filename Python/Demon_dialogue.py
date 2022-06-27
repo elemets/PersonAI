@@ -1,5 +1,6 @@
 from pyparsing import countedArray
 from Personality import Personality
+from TextProcessor import TextProcessor
 import openai
 import random
 import json 
@@ -144,6 +145,21 @@ class Demon:
             
         answer_to_return = answers['answer'] 
 
+        #### TYPE OF QUESTION CHECK
+        ## check type of question
+        ## if opinion check if nouns within question exist within likes and dislikes file
+        ## if any do not add to the likes and dislikes 
+        ## only do this if the question hasn't been asked before
+        
+
+
+
+
+        #### SIMILARITY CHECK
+        ## check for similarity
+        ## if similar check for sentiment on sentence
+        ## if similarity and sentiment are close enough then increment the counter and respond accordingly
+
         tokens = self.nlp(question)
         for key in self.asked_questions:
             print(str(key))
@@ -159,6 +175,7 @@ class Demon:
                 answer_to_return = "Stop asking me that!"
         else:
             self.asked_questions[question] = (answers['answer'], 0)
+#           self.asked_questions[question] = (answer_to_return, 0, TextProcessor.sentiment_check(answer_to_return))
 
                 
         if len(self.asked_questions) > 1000:

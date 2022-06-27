@@ -83,3 +83,7 @@ def file_deleter():
     with open("../Assets/Character_Info/openai_filenames.json", "r+") as file:
         json.dump(openai_filenames, file)
         
+        
+    def delete_file(file_id):
+        
+    def upload_file(file_id):
