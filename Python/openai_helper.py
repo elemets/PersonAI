@@ -78,7 +78,7 @@ def file_deleter():
     for id in file_id_list:
         openai.File.delete(id)
     
-    openai_filenames['already-intialised'] = False
+    openai_filenames['already_initialised'] = False
     
     with open("../Assets/Character_Info/openai_filenames.json", "r+") as file:
         json.dump(openai_filenames, file)

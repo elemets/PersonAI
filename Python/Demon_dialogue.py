@@ -4,7 +4,9 @@ import openai
 import random
 import json 
 import wikipedia
+from collections import OrderedDict
 import pandas as pd
+import spacy
 from iteration_utilities import deepflatten
 import re
 from sparqlcuisinequery import cuisine_query, fictional_universe_query
@@ -44,6 +46,8 @@ class Demon:
         self.personality = Personality(self.likes, self.dislikes, pref_speech, name)
         
         self.qa_pipeline = qa_pipeline
+        self.asked_questions = OrderedDict()
+        self.nlp = spacy.load('en_core_web_lg')
 
     
 
@@ -83,38 +87,44 @@ class Demon:
     has specified OpenAI or Transformers as the models for answering questions.
     """
     def question_answering(self, question, context):
+        
+        
         answers = {}
         with open(f'../Assets/Characters/{self.name}_context.json') as f:
             context = json.load(f)
             f.close()
         with open(f'../Assets/Character_Info/openai_filenames.json') as f:
             openai_files = json.load(f)  
+            
+        openai.api_key = str(openai_files['open-ai-api'])
         
-        if self.Pers_Score > 25:
+        if self.Pers_Score > 10:
             true_context = context['context-very-liked']
             context_ai = 'very_liked'
-        elif self.Pers_Score > 10:
+        elif self.Pers_Score > 5:
             true_context = context['context-reasonably-liked']
             context_ai = 'reasonably_liked'
         else:
             true_context = context['context']
             context_ai = 'not_liked'
             
+        self.question_check(question)
+            
 
-        if openai_files['open-ai'] == True:
+        if True == True:
             try:
                 question = question[0]
-                openai.api_key = str(openai_files['open-ai-api'])
                 query = openai.Answer.create(
                     search_model="ada", 
-                    model="curie", 
+                    model="davinci", 
                     question=question, 
                     file=str(openai_files[self.name][context_ai]),
                     examples_context="In 2017, U.S. life expectancy was 78.6 years.", 
                     examples=[["What is human life expectancy in the United States?", "78 years."]], 
                     max_rerank=10,
                     max_tokens=40,
-                    stop=["\n", "<|endoftext|>"]
+                    stop=["\n", "<|endoftext|>"],
+                    temperature=0.75
                 )
                 
                 answers['answer'] = query['answers'][0]
@@ -131,8 +141,58 @@ class Demon:
                 'question': question
 
             })
-        return answers['answer'], answers['score']
             
+        answer_to_return = answers['answer'] 
+
+        tokens = self.nlp(question)
+        for key in self.asked_questions:
+            print(str(key))
+            sim = tokens.similarity(self.nlp(key))
+            print(sim)
+        
+        if question in self.asked_questions:
+            if self.asked_questions[question][1] == 0:
+                # you've already asked me this, but... 
+                self.asked_questions[question] = (self.asked_questions[question][0], 1)
+                answer_to_return = f"You've already asked me this, but... {self.asked_questions[question][0]}" 
+            else:
+                answer_to_return = "Stop asking me that!"
+        else:
+            self.asked_questions[question] = (answers['answer'], 0)
+
+                
+        if len(self.asked_questions) > 1000:
+            self.asked_questions.popitem()
+
+
+            
+        return answer_to_return, answers['score']
+            
+        
+    """
+    Checking the type of question asked by the player 
+    """    
+    def question_check(self, question):
+        question = question[0]
+        
+        oa_resp = openai.Classification.create(search_model="ada",model="davinci",
+                                               examples=[
+                                                   ["Do you like sports?", "Opinion"],
+                                                   ["What is your favourite book?", "Opinion"],
+                                                   ["Who wrote The Hobbit?", "Fact"],
+                                                   ["Where are you from?", "Fact"],
+                                                   ["What is the best album by the Beatles?", "Opinion"], 
+                                                   ["How tall is Shaq?", "Fact"], ["What is your name?", "Fact"]],
+                                               query=str(question),
+                                               labels=["Opinion", "Fact"])
+        
+        
+        text_resp = oa_resp['label']
+        
+        
+        print(text_resp)
+        
+        
 
     ## grabbing random greeting out of greeting list for demon
     def greet(self):
@@ -154,7 +214,6 @@ class Demon:
         else:
             resp, pos_or_neg, prob_sore = self.calc_response(player_input, context)
         return resp, pos_or_neg, prob_sore
-
 
     def negative_response(self, decrease_amount):
         self.personality.decrease_rating(decrease_amount)
@@ -193,7 +252,6 @@ class Demon:
         ## appends them to universe ids list
         for result in fictional_universes:
             if result['itemLabel'] in likes_or_dislikes:
-                print(result['item'])
                 fictional_universe_ids.append(result['item'])
         if likes_with_food_in != None:
             self.food_lookup_bool = True

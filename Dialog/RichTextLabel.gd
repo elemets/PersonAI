@@ -62,10 +62,10 @@ func _on_Socket_payload_received(payload):
 		elif prob_score > 0.5:
 			text = "The demon says with a glint of uncertainty in their eyes: " + text
 			emit_signal("mood", "neutral")
-		elif prob_score > 0.3:
+		elif prob_score > 0.2:
 			text = "Hmm I'm really not sure about this but, " + text
 			emit_signal("mood", "neutral")
-		elif prob_score > 0.2:
+		elif prob_score < 0.2:
 			text = "The demon looks confused and averts their eyes, ignoring your question."
 			emit_signal("mood", "neg")
 
