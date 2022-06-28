@@ -67,11 +67,48 @@ class TextProcessor:
                     new_sentence = str(sentence_list[sentence]).split(str(word))
                     sentence_list[sentence] = new_sentence[0]
                     sentence_list.append(new_sentence[1])
+                    
 
         return sentence_list
 
 
+    def noun_extractor(self, raw_sentences):
+        
+        doc = self.nlp(raw_sentences)
+        
+        sentence_list = list(doc.sents)
+        ## new sentences where there are conjugations
+        for sentence in range(len(sentence_list)):
+            for index, word in enumerate(sentence_list[sentence]):
+                
+                if word.pos_ == 'CCONJ':
+                    word = self.nlp.tokenizer(".")
 
+        
+        ## finding the sentiment of the sentences
+        for sentence in range(len(sentence_list)):
+            sentence_sent = str(sentence)
+            
+            sentence_sent = self.sentiment_check(sentence_sent)
+            
+            if sentence_sent > 0.3:
+                ## pos
+                for index, word in enumerate(sentence_list[sentence]):
+                    if word.pos_ == 'NOUN':
+                        ## add it to list of likes 
+                        print(word)
+            elif sentence_sent < -0.3:
+                for index, word in enumerate(sentence_list[sentence]):
+                    if word.pos_ == 'NOUN':
+                        ## add it to list of dislikes 
+                        print(word)
+                ## neg
+            
+
+        
+        
+        
+                
 
     """
     Checking the sentiment of the given sentence

@@ -113,13 +113,12 @@ class Demon:
             true_context = context['context']
             context_ai = 'not_liked'
             
-            
 
         if True == True:
             try:
                 response = openai.Completion.create(
                 model="text-davinci-002",
-                prompt=f"Context: {true_context}, Answer this question using the context (if you can): {question}",
+                prompt=f"Context: {true_context}, Give a fully qualified answer to this question using the context provided above (but also make some stuff if you want to): {question}",
                 temperature=0.75,
                 max_tokens=400,
                 top_p=1,
@@ -137,6 +136,10 @@ class Demon:
             
 
 
+
+
+        # split on conjugation and then sentiment check the sentence and extract the nouns. 
+        
 
 
 

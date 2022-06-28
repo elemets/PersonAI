@@ -3155,3 +3155,397 @@
 2022-06-27 12:17:24,455:INFO:{"Type": "response", "Content": "The answer to that question is burritos.", "Emotion": "neutral", "prob_score": null}
 2022-06-27 12:17:42,483:INFO:What are your hobbies?
 2022-06-27 12:17:42,485:INFO:{"Type": "response", "Content": "Fencing and Shotput.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:12:03,303:INFO:
+2022-06-27 13:12:03,303:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:12:06,009:INFO:
+2022-06-27 13:12:06,009:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:12:08,733:INFO:
+2022-06-27 13:12:08,733:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:12:08,775:INFO:
+2022-06-27 13:12:08,775:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:13:36,530:INFO:
+2022-06-27 13:13:36,530:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:13:38,946:INFO:
+2022-06-27 13:13:38,946:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:13:42,182:INFO:
+2022-06-27 13:13:42,182:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:13:42,222:INFO:
+2022-06-27 13:13:42,222:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:13:52,978:INFO:What is your name?
+2022-06-27 13:13:52,978:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:19:53,098:INFO:
+2022-06-27 13:19:53,098:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:19:55,537:INFO:
+2022-06-27 13:19:55,538:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:19:59,367:INFO:
+2022-06-27 13:19:59,367:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:20:10,726:INFO:What is your favourite sport?
+2022-06-27 13:20:10,726:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:20:54,551:INFO:
+2022-06-27 13:20:54,551:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:20:57,078:INFO:
+2022-06-27 13:20:57,078:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:21:07,649:INFO:
+2022-06-27 13:21:07,649:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:21:07,701:INFO:
+2022-06-27 13:21:07,701:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:21:42,360:INFO:What is your name?
+2022-06-27 13:21:42,360:INFO:{"Type": "response", "Content": "This is not the information you're looking for...", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:22:41,635:INFO:
+2022-06-27 13:22:41,635:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:22:44,017:INFO:
+2022-06-27 13:22:44,017:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:22:50,462:INFO:
+2022-06-27 13:22:50,462:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:22:50,511:INFO:
+2022-06-27 13:22:50,511:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:22:56,468:INFO:What is your name?
+2022-06-27 13:22:56,468:INFO:{"Type": "response", "Content": "I'm not sure I can help you with that...", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:23:53,297:INFO:
+2022-06-27 13:23:53,298:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:23:55,736:INFO:
+2022-06-27 13:23:55,736:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:24:00,023:INFO:
+2022-06-27 13:24:00,023:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:24:00,064:INFO:
+2022-06-27 13:24:00,064:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:24:06,764:INFO:What is your name?
+2022-06-27 13:24:06,764:INFO:{"Type": "response", "Content": "I'm not sure I can help you with that...", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:26:31,478:INFO:
+2022-06-27 13:26:31,478:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:26:33,867:INFO:
+2022-06-27 13:26:33,867:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:26:36,378:INFO:
+2022-06-27 13:26:36,379:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:26:36,414:INFO:
+2022-06-27 13:26:36,414:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:26:44,635:INFO:What is your birthday?
+2022-06-27 13:26:44,635:INFO:{"Type": "response", "Content": "You'd be better off asking me something else", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:28:58,272:INFO:
+2022-06-27 13:28:58,272:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:29:00,661:INFO:
+2022-06-27 13:29:00,661:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:29:02,794:INFO:
+2022-06-27 13:29:02,795:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:29:02,833:INFO:
+2022-06-27 13:29:02,833:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:29:02,865:INFO:
+2022-06-27 13:29:02,865:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:29:02,897:INFO:
+2022-06-27 13:29:02,897:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:29:02,929:INFO:
+2022-06-27 13:29:02,929:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:31:04,247:INFO:
+2022-06-27 13:31:04,247:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:31:06,509:INFO:
+2022-06-27 13:31:06,509:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:31:11,443:INFO:
+2022-06-27 13:31:11,443:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:31:11,489:INFO:
+2022-06-27 13:31:11,489:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:31:11,518:INFO:
+2022-06-27 13:31:11,518:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:32:03,053:INFO:
+2022-06-27 13:32:03,053:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:32:05,508:INFO:
+2022-06-27 13:32:05,508:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:32:09,451:INFO:
+2022-06-27 13:32:09,452:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:32:09,491:INFO:
+2022-06-27 13:32:09,491:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:33:51,393:INFO:
+2022-06-27 13:33:51,393:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:33:53,663:INFO:
+2022-06-27 13:33:53,663:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:34:09,550:INFO:
+2022-06-27 13:34:09,550:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:35:29,398:INFO:What is your name?
+2022-06-27 13:35:29,399:INFO:{"Type": "response", "Content": "Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:36:06,000:INFO:where are you from?
+2022-06-27 13:36:06,000:INFO:{"Type": "response", "Content": "", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:37:39,771:INFO:
+2022-06-27 13:37:39,771:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:37:42,083:INFO:
+2022-06-27 13:37:42,083:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:38:47,824:INFO:
+2022-06-27 13:38:47,824:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:38:47,881:INFO:
+2022-06-27 13:38:47,881:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:38:55,649:INFO:how old are you?
+2022-06-27 13:38:55,649:INFO:{"Type": "response", "Content": "403", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:39:04,705:INFO:Where are you from?
+2022-06-27 13:39:04,705:INFO:{"Type": "response", "Content": "I'm originally from London but I have lived as a demon for many years.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:39:15,077:INFO:Who is your favourite bball player?
+2022-06-27 13:39:15,077:INFO:{"Type": "response", "Content": "", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:43:24,983:INFO:
+2022-06-27 13:43:24,984:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:43:27,161:INFO:
+2022-06-27 13:43:27,161:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:43:30,115:INFO:
+2022-06-27 13:43:30,115:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:43:30,171:INFO:
+2022-06-27 13:43:30,171:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:43:41,987:INFO:Who is your favourite tennis player?
+2022-06-27 13:43:41,987:INFO:{"Type": "response", "Content": "", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:02,484:INFO:
+2022-06-27 13:46:02,484:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:04,805:INFO:
+2022-06-27 13:46:04,806:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:07,166:INFO:
+2022-06-27 13:46:07,166:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:07,215:INFO:
+2022-06-27 13:46:07,215:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:07,248:INFO:
+2022-06-27 13:46:07,248:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:07,280:INFO:
+2022-06-27 13:46:07,281:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:14,029:INFO:Where are you from?
+2022-06-27 13:46:14,029:INFO:{"Type": "response", "Content": "", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:46:30,485:INFO:Whats your name?
+2022-06-27 13:46:30,485:INFO:{"Type": "response", "Content": "", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:04,584:INFO:
+2022-06-27 13:48:04,584:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:06,963:INFO:
+2022-06-27 13:48:06,964:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:11,927:INFO:
+2022-06-27 13:48:11,927:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:11,962:INFO:
+2022-06-27 13:48:11,962:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:11,996:INFO:
+2022-06-27 13:48:11,996:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:12,026:INFO:
+2022-06-27 13:48:12,026:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:48:18,716:INFO:Whats ur name?
+2022-06-27 13:48:18,716:INFO:{"Type": "response", "Content": "", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:50:58,962:INFO:
+2022-06-27 13:50:58,963:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:01,209:INFO:
+2022-06-27 13:51:01,209:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:08,979:INFO:
+2022-06-27 13:51:08,979:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:09,053:INFO:
+2022-06-27 13:51:09,053:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:14,396:INFO:whats your name?
+2022-06-27 13:51:14,396:INFO:{"Type": "response", "Content": " name is Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:53,145:INFO:
+2022-06-27 13:51:53,146:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:55,475:INFO:
+2022-06-27 13:51:55,475:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:58,189:INFO:
+2022-06-27 13:51:58,189:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:51:58,242:INFO:
+2022-06-27 13:51:58,242:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:52:14,055:INFO:Who is your favourite twitch streamer?
+2022-06-27 13:52:14,055:INFO:{"Type": "response", "Content": "\n\nMy favourite twitch streamer is Artorius.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:52:28,938:INFO:Who is your favourite basketball player?
+2022-06-27 13:52:28,938:INFO:{"Type": "response", "Content": "\n\nI don't really have a favourite basketball player.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:52:43,784:INFO:What are your favourite sports?
+2022-06-27 13:52:43,784:INFO:{"Type": "response", "Content": "\n\nI'm not really into sports, but I do enjoy watching football and basketball.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:52:53,883:INFO:
+2022-06-27 13:52:53,883:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:53:01,052:INFO:What are your favourite sports?
+2022-06-27 13:53:01,052:INFO:{"Type": "response", "Content": "\n\nMy favourite sports are fencing and shotput.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:53:09,745:INFO:Why do you like fencing?
+2022-06-27 13:53:09,745:INFO:{"Type": "response", "Content": "\n\nI like fencing because it's a challenging and strategic sport. I also like the history and tradition behind it.", "Emotion": "pos", "prob_score": null}
+2022-06-27 13:53:19,397:INFO:What other sports do you like?
+2022-06-27 13:53:19,397:INFO:{"Type": "response", "Content": "\n\nI actually don't like sports very much, but I do enjoy fencing and shotput.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:53:31,390:INFO:What sort of music do you like?
+2022-06-27 13:53:31,391:INFO:{"Type": "response", "Content": "\n\nI like all sorts of music, but my favorite genre is probably metal.", "Emotion": "neg", "prob_score": null}
+2022-06-27 13:54:56,133:INFO:
+2022-06-27 13:54:56,133:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:54:58,518:INFO:
+2022-06-27 13:54:58,519:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:02,861:INFO:
+2022-06-27 13:55:02,861:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:02,893:INFO:
+2022-06-27 13:55:02,893:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:02,927:INFO:
+2022-06-27 13:55:02,927:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:02,959:INFO:
+2022-06-27 13:55:02,960:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:12,771:INFO:What is your favourite fruit?
+2022-06-27 13:55:12,771:INFO:{"Type": "response", "Content": " I don't really have a favourite fruit, I like all fruit.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:21,528:INFO:What fruit do you like?
+2022-06-27 13:55:21,528:INFO:{"Type": "response", "Content": "I really enjoy mangoes, they are one of my favourite fruits.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 13:55:58,379:INFO:What is so good about that fruit?
+2022-06-27 13:55:58,379:INFO:{"Type": "response", "Content": "I can't really say, it just tastes really good.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:22:00,173:INFO:
+2022-06-27 14:22:00,174:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:22:02,340:INFO:
+2022-06-27 14:22:02,341:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:22:05,752:INFO:
+2022-06-27 14:22:05,752:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:22:05,791:INFO:
+2022-06-27 14:22:05,791:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:22:12,915:INFO:Do you hate burritos?
+2022-06-27 14:22:12,915:INFO:{"Type": "response", "Content": "No, I love burritos.", "Emotion": "neg", "prob_score": null}
+2022-06-27 14:22:20,984:INFO:Do you like burritos?
+2022-06-27 14:22:20,984:INFO:{"Type": "response", "Content": "I love burritos!", "Emotion": "pos", "prob_score": null}
+2022-06-27 14:22:35,024:INFO:What's your take on burritos?
+2022-06-27 14:22:35,024:INFO:{"Type": "response", "Content": "I personally love burritos, and think they're a great food choice. I especially love how filling they can be, and how there are endless possibilities when it comes to fillings and toppings.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:22:49,984:INFO:Do you hate fencing?
+2022-06-27 14:22:49,985:INFO:{"Type": "response", "Content": " No, I love fencing.", "Emotion": "neg", "prob_score": null}
+2022-06-27 14:23:11,248:INFO:Do you love Marvel?
+2022-06-27 14:23:11,248:INFO:{"Type": "response", "Content": " No, I don't really like Marvel.", "Emotion": "neg", "prob_score": null}
+2022-06-27 14:23:40,543:INFO:How much do you like Marvel?
+2022-06-27 14:23:40,543:INFO:{"Type": "response", "Content": "I don't really like Marvel that much, the movies are pretty cheesy and boring.", "Emotion": "neg", "prob_score": null}
+2022-06-27 14:48:39,736:INFO:
+2022-06-27 14:48:39,737:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:48:42,369:INFO:
+2022-06-27 14:48:42,369:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:49:04,178:INFO:
+2022-06-27 14:49:04,178:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:49:16,095:INFO:What u saying?
+2022-06-27 14:49:16,095:INFO:{"Type": "response", "Content": " I'm saying that I think the murder took place in the basement.", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:49:27,072:INFO:you slut
+2022-06-27 14:49:27,073:INFO:{"Type": "response", "Content": "Man, I forgot how boring humans are, Dio you're a draaag!", "Emotion": "neutral", "prob_score": null}
+2022-06-27 14:49:52,707:INFO:Do you like jazz?
+2022-06-27 14:49:52,707:INFO:{"Type": "response", "Content": "No, I don't particularly care for jazz.", "Emotion": "neg", "prob_score": null}
+2022-06-27 14:50:04,940:INFO:What do you think of Marvel?
+2022-06-27 14:50:04,940:INFO:{"Type": "response", "Content": " I think Marvel is pretty bad, the movies are cheesy and boring.", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:22:17,219:INFO:
+2022-06-28 01:22:17,263:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:22:19,508:INFO:
+2022-06-28 01:22:19,509:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:22:24,112:INFO:
+2022-06-28 01:22:24,112:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:22:24,155:INFO:
+2022-06-28 01:22:24,155:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:22:24,202:INFO:
+2022-06-28 01:22:24,203:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:22:44,528:INFO:What kind of music do you like?
+2022-06-28 01:22:44,528:INFO:{"Type": "response", "Content": "I like all kinds of music, from classical to metal.", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:23:02,945:INFO:What is your favourite music?
+2022-06-28 01:23:02,945:INFO:{"Type": "response", "Content": "I don't really have a favourite music genre, I just enjoy listening to music that I find enjoyable.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:25:27,040:INFO:Do you like jazZ?
+2022-06-28 01:25:27,041:INFO:{"Type": "response", "Content": "No, I don't really like jazz.", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:25:43,015:INFO:Why don't you like jazz?
+2022-06-28 01:25:43,015:INFO:{"Type": "response", "Content": " It's too mellow and slow for me, I prefer something with a bit more energy.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:27:39,038:INFO:
+2022-06-28 01:27:39,038:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:27:43,072:INFO:
+2022-06-28 01:27:43,072:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:27:48,738:INFO:
+2022-06-28 01:27:48,738:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:27:48,784:INFO:
+2022-06-28 01:27:48,784:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:28:00,847:INFO:Do you like jazz?
+2022-06-28 01:28:00,847:INFO:{"Type": "response", "Content": "No, I don't really like jazz.", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:28:15,491:INFO:What sports do you like?
+2022-06-28 01:28:15,491:INFO:{"Type": "response", "Content": "I'm a big fan of fencing and shotput. I won the interdimensional shotput championship back in 1606, which was probably my most recent achievement.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:28:30,030:INFO:What else do you like?
+2022-06-28 01:28:30,030:INFO:{"Type": "response", "Content": "I like reading and spending time with my friends.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:30:25,715:INFO:I love reading
+2022-06-28 01:30:25,716:INFO:{"Type": "response", "Content": "Talk to me about something I care about or leave", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:31:01,670:INFO:I love burritos too
+2022-06-28 01:31:01,670:INFO:{"Type": "response", "Content": "Interesting take, I'd have to agree!", "Emotion": "pos", "prob_score": null}
+2022-06-28 01:32:05,276:INFO:I fucking hate burritos and tacos suck ass
+2022-06-28 01:32:05,276:INFO:{"Type": "response", "Content": "I think you're being boring and annoying, please stop", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:32:16,120:INFO:Fuck you
+2022-06-28 01:32:16,120:INFO:{"Type": "response", "Content": "Man, I forgot how boring humans are, Dio you're a draaag!", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:32:25,087:INFO:
+2022-06-28 01:32:25,088:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:41:47,549:INFO:Can you travel faster than the speed of light?
+2022-06-28 01:41:47,549:INFO:{"Type": "response", "Content": "No, I cannot travel faster than the speed of light.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:41:59,633:INFO:Whats covid brovid?
+2022-06-28 01:41:59,634:INFO:{"Type": "response", "Content": "I don't know what you're talking about.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:42:06,391:INFO:Whats covid?
+2022-06-28 01:42:06,391:INFO:{"Type": "response", "Content": "Covid is a deadly virus that has killed many people across the globe.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:43:18,994:INFO:Make up something about bush?
+2022-06-28 01:43:18,994:INFO:{"Type": "response", "Content": "I don't really know much about bush but I think it's a pretty cool plant.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:43:32,105:INFO:Did bush do 9/11?
+2022-06-28 01:43:32,105:INFO:{"Type": "response", "Content": "No, I don't believe Bush was responsible for 9/11.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:43:43,574:INFO:You fucking coward..?
+2022-06-28 01:43:43,574:INFO:{"Type": "response", "Content": "This is not an appropriate way to speak to someone and I would prefer if you didn't use profanity around me.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:45:47,609:INFO:
+2022-06-28 01:45:47,610:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:46:18,602:INFO:Do you like jazz?
+2022-06-28 01:46:18,602:INFO:{"Type": "response", "Content": "You've already asked me this, but... No, I don't really like jazz.", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:46:37,146:INFO:What music do you like?
+2022-06-28 01:46:37,146:INFO:{"Type": "response", "Content": "I like all types of music, but my favourite type of music is metal. I also like rap and hip-hop.", "Emotion": "neg", "prob_score": null}
+2022-06-28 01:52:21,076:INFO:I fucking hate batman 
+2022-06-28 01:52:21,077:INFO:{"Type": "response", "Content": "Mhm nice one!", "Emotion": "pos", "prob_score": null}
+2022-06-28 01:53:05,120:INFO:I hate spiderman
+2022-06-28 01:53:05,120:INFO:{"Type": "response", "Content": "Nice chat cocheese!", "Emotion": "pos", "prob_score": null}
+2022-06-28 01:53:12,451:INFO:I hate The Watchmen
+2022-06-28 01:53:12,452:INFO:{"Type": "response", "Content": "Hmmm, I like what you're saying", "Emotion": "pos", "prob_score": null}
+2022-06-28 01:55:06,499:INFO:Problem?
+2022-06-28 01:55:06,499:INFO:{"Type": "response", "Content": "There is no problem.", "Emotion": "pos", "prob_score": null}
+2022-06-28 01:55:17,970:INFO:Problem..? ;)
+2022-06-28 01:55:17,970:INFO:{"Type": "response", "Content": "It's possible that Jason was the one who murdered Dionese, given that he holds a grudge against him and was in the vicinity of the screams. However, without further evidence it's hard to say for certain.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:55:56,236:INFO:WHat do you know about London/.
+2022-06-28 01:55:56,236:INFO:{"Type": "response", "Content": "Talk to me about something I care about or leave", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:56:04,972:INFO:What do you know about London?
+2022-06-28 01:56:04,972:INFO:{"Type": "response", "Content": "I don't know much about London anymore.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:56:13,453:INFO:Name some facts about London
+2022-06-28 01:56:13,454:INFO:{"Type": "response", "Content": "You could at least try to be interesting...", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:56:25,250:INFO:Name me some facts about London?
+2022-06-28 01:56:25,250:INFO:{"Type": "response", "Content": "Some facts about London are that it is the capital of England, it is located in the United Kingdom, and it has a population of over 8 million people.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 01:56:41,835:INFO:Make something up about London?
+2022-06-28 01:56:41,836:INFO:{"Type": "response", "Content": " London is a beautiful city with a rich history. It is home to many famous landmarks, such as Big Ben and the Tower of London, and is a popular tourist destination.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:02:30,109:INFO:What sports do you like?
+2022-06-28 02:02:30,110:INFO:{"Type": "response", "Content": "You've already asked me this, but... I'm a big fan of fencing and shotput. I won the interdimensional shotput championship back in 1606, which was probably my most recent achievement.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:02:42,292:INFO:What music are you into?
+2022-06-28 02:02:42,293:INFO:{"Type": "response", "Content": "I don't really have a type of music that I'm into, I just like what I like.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:03:06,232:INFO:What music genres do you like?
+2022-06-28 02:03:06,232:INFO:{"Type": "response", "Content": "I fucking love profanity, so anything with a lot of swearing in it. I also like anything that's heavy and fast-paced.", "Emotion": "neg", "prob_score": null}
+2022-06-28 02:09:03,145:INFO:
+2022-06-28 02:09:03,145:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:09:06,758:INFO:
+2022-06-28 02:09:06,758:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:09:27,619:INFO:
+2022-06-28 02:09:27,619:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:26:24,235:INFO:
+2022-06-28 02:26:24,236:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:26:26,523:INFO:
+2022-06-28 02:26:26,524:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:26:29,829:INFO:
+2022-06-28 02:26:29,829:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:26:29,867:INFO:
+2022-06-28 02:26:29,868:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:26:44,428:INFO:What sports do you like?
+2022-06-28 02:26:44,428:INFO:{"Type": "response", "Content": "I love fencing and shotput. I won the interdimensional shotput championship back in 1606, which was probably my most recent achievement.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:26:57,231:INFO:Where are you from?
+2022-06-28 02:26:57,232:INFO:{"Type": "response", "Content": "I am from London, but I have been living as a demon for many years.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:27:11,667:INFO:What is the best TV show you've watched?
+2022-06-28 02:27:11,667:INFO:{"Type": "response", "Content": "I don't really watch TV shows, but from what I've seen, I think The Office is the best one.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:27:54,165:INFO:What are you?
+2022-06-28 02:27:54,165:INFO:{"Type": "response", "Content": "I am a demon.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:28:05,941:INFO:Where am I right now?
+2022-06-28 02:28:05,942:INFO:{"Type": "response", "Content": "You are in my thoughts.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 02:28:21,199:INFO:No, where physically am I?
+2022-06-28 02:28:21,200:INFO:{"Type": "response", "Content": "I am in the demon realm, which is located in another dimension.", "Emotion": "pos", "prob_score": null}
+2022-06-28 02:29:47,114:INFO:What games do you play?
+2022-06-28 02:29:47,114:INFO:{"Type": "response", "Content": "I play a lot of different games, but my favourites are probably fencing and shotput. I also really enjoy playing video games and board games.", "Emotion": "neg", "prob_score": null}
+2022-06-28 02:30:01,042:INFO:What video games do you like?
+2022-06-28 02:30:01,042:INFO:{"Type": "response", "Content": "I don't really play video games that often, but when I do I tend to enjoy games that are fast paced and relatively simple, like Mario Kart or Super Smash Bros. I also like games that are a bit more challenging, like Dark Souls or Bloodborne.", "Emotion": "neg", "prob_score": null}
+2022-06-28 02:41:18,947:INFO:Do you like jazz?
+2022-06-28 02:41:18,947:INFO:{"Type": "response", "Content": "No, I don't really like jazz.", "Emotion": "neg", "prob_score": null}
+2022-06-28 02:41:35,230:INFO:What music do you like?
+2022-06-28 02:41:35,230:INFO:{"Type": "response", "Content": "I like a lot of classical music, but I also enjoy some modern music as well. I'm not really into rap or anything like that, but I do enjoy some pop and rock music.", "Emotion": "neg", "prob_score": null}
+2022-06-28 03:45:52,910:INFO:
+2022-06-28 03:45:52,910:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 03:45:55,659:INFO:
+2022-06-28 03:45:55,659:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 03:45:58,666:INFO:
+2022-06-28 03:45:58,667:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-28 03:45:58,726:INFO:
+2022-06-28 03:45:58,726:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-28 03:45:58,768:INFO:
+2022-06-28 03:45:58,768:INFO:{"Type": "greet", "Content": "Hello there my name is Artorius the second", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:09:55,090:INFO:
+2022-06-28 18:09:55,090:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:09:57,130:INFO:
+2022-06-28 18:09:57,130:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:15:05,552:INFO:
+2022-06-28 18:15:05,563:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:15:07,441:INFO:
+2022-06-28 18:15:07,441:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:15:11,510:INFO:
+2022-06-28 18:15:11,510:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:15:11,547:INFO:
+2022-06-28 18:15:11,548:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:15:11,585:INFO:
+2022-06-28 18:15:11,585:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:15:25,291:INFO:What music do you like?
+2022-06-28 18:15:25,291:INFO:{"Type": "response", "Content": "I like classical music, it's very relaxing.", "Emotion": "neg", "prob_score": null}
