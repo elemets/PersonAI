@@ -3549,3 +3549,17 @@
 2022-06-28 18:15:11,585:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
 2022-06-28 18:15:25,291:INFO:What music do you like?
 2022-06-28 18:15:25,291:INFO:{"Type": "response", "Content": "I like classical music, it's very relaxing.", "Emotion": "neg", "prob_score": null}
+2022-06-28 18:26:34,288:INFO:
+2022-06-28 18:26:34,288:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:26:36,045:INFO:
+2022-06-28 18:26:36,045:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:26:41,061:INFO:
+2022-06-28 18:26:41,061:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:26:41,101:INFO:
+2022-06-28 18:26:41,101:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:26:52,906:INFO:What sorta tunes do you enjoy?
+2022-06-28 18:26:52,906:INFO:{"Type": "response", "Content": "I enjoy all sorts of music, but my favorite genres are metal and rock. I especially enjoy high-energy music that gets me pumped up and ready to face the day.", "Emotion": "neutral", "prob_score": null}
+2022-06-28 18:27:35,035:INFO:What music is good?
+2022-06-28 18:27:35,035:INFO:{"Type": "response", "Content": "There is no definitive answer to this question as everyone has different taste in music. However, some popular genres that are generally considered to be good include jazz, classical, rock, and hip hop.", "Emotion": "neg", "prob_score": null}
+2022-06-28 18:31:59,915:INFO:What sports do you like?
+2022-06-28 18:31:59,915:INFO:{"Type": "response", "Content": "I like fencing and shotput. I won the interdimensional shotput championship back in 1606, which was probably my most recent achievement.", "Emotion": "neutral", "prob_score": null}

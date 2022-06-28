@@ -140,7 +140,7 @@ class Demon:
 
         # split on conjugation and then sentiment check the sentence and extract the nouns. 
         
-
+        
 
 
         #### SIMILARITY CHECK
@@ -178,6 +178,9 @@ class Demon:
         
 
         question_type = self.question_check(question)
+        
+        if question_type == 'Opinion':
+            TextProcessor.noun_extractor(answer_to_return)
 
         # if question_type == 'Opinion':
             
@@ -209,6 +212,7 @@ class Demon:
         
         
         print(text_resp)
+        return text_resp
         
         
 
