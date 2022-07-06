@@ -3563,3 +3563,101 @@
 2022-06-28 18:27:35,035:INFO:{"Type": "response", "Content": "There is no definitive answer to this question as everyone has different taste in music. However, some popular genres that are generally considered to be good include jazz, classical, rock, and hip hop.", "Emotion": "neg", "prob_score": null}
 2022-06-28 18:31:59,915:INFO:What sports do you like?
 2022-06-28 18:31:59,915:INFO:{"Type": "response", "Content": "I like fencing and shotput. I won the interdimensional shotput championship back in 1606, which was probably my most recent achievement.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:02:35,176:INFO:
+2022-07-06 15:02:35,177:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:02:36,989:INFO:
+2022-07-06 15:02:36,989:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:02:40,276:INFO:
+2022-07-06 15:02:40,276:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:02:40,309:INFO:
+2022-07-06 15:02:40,309:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:02:40,341:INFO:
+2022-07-06 15:02:40,342:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:02:56,700:INFO:What is your name?
+2022-07-06 15:02:56,700:INFO:{"Type": "response", "Content": "My name is Magdela and I am a demon from London.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 15:03:30,470:INFO:What is your favourite sport?#
+2022-07-06 15:03:30,471:INFO:{"Type": "response", "Content": "My favourite sport is fencing. I love the strategic aspect of it and the feeling of scoring a touch against your opponent.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:00:44,997:INFO:
+2022-07-06 16:00:44,997:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:00:46,975:INFO:
+2022-07-06 16:00:46,976:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:00:50,246:INFO:
+2022-07-06 16:00:50,246:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:00:50,289:INFO:
+2022-07-06 16:00:50,289:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:01:43,081:INFO:
+2022-07-06 16:01:43,081:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:01:44,962:INFO:
+2022-07-06 16:01:44,962:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:01:50,075:INFO:
+2022-07-06 16:01:50,075:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:01:50,109:INFO:
+2022-07-06 16:01:50,109:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:02:00,857:INFO:What is your name?
+2022-07-06 16:02:00,857:INFO:{"Type": "response", "Content": "My name is Magdela.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:03:02,754:INFO:What is your favourite sort of architecture?
+2022-07-06 16:03:02,754:INFO:{"Type": "response", "Content": "I have a soft spot for gothic architecture, it's just so elegant and dramatic. I love the way it makes use of light and shadow, and the way it can be both somber and haunting or stately and imposing.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:13:16,374:INFO:
+2022-07-06 16:13:16,374:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:13:18,421:INFO:
+2022-07-06 16:13:18,421:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:13:23,550:INFO:
+2022-07-06 16:13:23,550:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:13:23,586:INFO:
+2022-07-06 16:13:23,586:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:13:39,052:INFO:What is the best type of architecture?
+2022-07-06 16:13:39,052:INFO:{"Type": "response", "Content": "In my opinion, the best type of architecture comes from a mix of different styles that come together to create something unique. For example, I love the way that London has a mix of old and new architecture, with the traditional buildings alongside the more modern ones. This mix creates a city that is full of character and that has something for everyone.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:16:41,364:INFO:
+2022-07-06 16:16:41,364:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:16:43,220:INFO:
+2022-07-06 16:16:43,220:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:16:48,834:INFO:
+2022-07-06 16:16:48,834:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:16:48,868:INFO:
+2022-07-06 16:16:48,868:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:21:23,831:INFO:
+2022-07-06 16:21:23,831:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:21:25,885:INFO:
+2022-07-06 16:21:25,885:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:21:36,038:INFO:
+2022-07-06 16:21:36,038:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:21:36,080:INFO:
+2022-07-06 16:21:36,080:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:21:49,897:INFO:What is the best ice cream flavour
+2022-07-06 16:21:49,897:INFO:{"Type": "response", "Content": "Where did you get that stupid idea!", "Emotion": "neg", "prob_score": null}
+2022-07-06 16:22:05,185:INFO:What is your favourite ice cream flavour?
+2022-07-06 16:22:05,186:INFO:{"Type": "response", "Content": "My favourite ice cream flavour is chocolate.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:23:17,574:INFO:
+2022-07-06 16:23:17,574:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:23:19,623:INFO:
+2022-07-06 16:23:19,623:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:23:22,525:INFO:
+2022-07-06 16:23:22,526:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:23:22,559:INFO:
+2022-07-06 16:23:22,559:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 16:23:35,193:INFO:What is your favourite book?
+2022-07-06 16:23:35,194:INFO:{"Type": "response", "Content": "My favourite book would have to be the Chronicles of Narnia, I love the story and the characters.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:11:55,065:INFO:
+2022-07-06 17:11:55,065:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:11:56,714:INFO:
+2022-07-06 17:11:56,714:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:12:58,201:INFO:
+2022-07-06 17:12:58,201:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:12:58,235:INFO:
+2022-07-06 17:12:58,235:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:12:58,268:INFO:
+2022-07-06 17:12:58,268:INFO:{"Type": "greet", "Content": "Hello there my name is Magdela", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:13:07,329:INFO:What is your favourite bisucit?
+2022-07-06 17:13:07,329:INFO:{"Type": "response", "Content": "My favourite bisucit is the chocolate chip bisucit.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:14:09,649:INFO:
+2022-07-06 17:14:09,649:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:14:11,339:INFO:
+2022-07-06 17:14:11,339:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:14:14,683:INFO:
+2022-07-06 17:14:14,684:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:14:14,726:INFO:
+2022-07-06 17:14:14,726:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:14:14,754:INFO:
+2022-07-06 17:14:14,754:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 17:14:25,017:INFO:What is your favourite type of biscuit?
+2022-07-06 17:14:25,017:INFO:{"Type": "response", "Content": "My favourite type of biscuit would have to be the classic chocolate chip cookie. I love the way the chocolate chips melt in your mouth and the dough is always so soft and chewy.", "Emotion": "neutral", "prob_score": null}

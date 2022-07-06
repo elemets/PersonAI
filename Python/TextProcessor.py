@@ -87,10 +87,9 @@ class TextProcessor:
         
         ## finding the sentiment of the sentences
         for sentence in range(len(sentence_list)):
-            sentence_sent = str(sentence)
-            
+            sentence_sent = str(sentence_list[sentence])
             sentence_sent = self.sentiment_check(sentence_sent)
-            
+            print(sentence_sent)
             if sentence_sent > 0.3:
                 ## pos
                 for index, word in enumerate(sentence_list[sentence]):

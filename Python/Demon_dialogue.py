@@ -118,7 +118,7 @@ class Demon:
             try:
                 response = openai.Completion.create(
                 model="text-davinci-002",
-                prompt=f"Context: {true_context}, Give a fully qualified answer to this question using the context provided above (but also make some stuff if you want to): {question}",
+                prompt=f"Context: {true_context}, Give a fully qualified answer to this question using the context provided above (but also make some stuff up): {question}",
                 temperature=0.75,
                 max_tokens=400,
                 top_p=1,
@@ -180,10 +180,9 @@ class Demon:
         question_type = self.question_check(question)
         
         if question_type == 'Opinion':
-            TextProcessor.noun_extractor(answer_to_return)
+            self.personality.textProcessor.noun_extractor(answer_to_return)
 
-        # if question_type == 'Opinion':
-            
+
 
 
             
@@ -196,24 +195,32 @@ class Demon:
     def question_check(self, question):
         question = question[0]
         
-        oa_resp = openai.Classification.create(search_model="ada",model="davinci",
-                                               examples=[
-                                                   ["Do you like sports?", "Opinion"],
-                                                   ["What is your favourite book?", "Opinion"],
-                                                   ["Who wrote The Hobbit?", "Fact"],
-                                                   ["Where are you from?", "Fact"],
-                                                   ["What is the best album by the Beatles?", "Opinion"], 
-                                                   ["How tall is Shaq?", "Fact"], ["What is your name?", "Fact"]],
-                                               query=str(question),
-                                               labels=["Opinion", "Fact"])
+        opin_resp = response = openai.Completion.create(
+            model="text-davinci-002",
+            prompt=f"Classify this question into fact or opinion using these as examples only provide the classification \n Example Questions:\n What sports do you like?\n How tall is Shaq?\n Who is your favourite author?\n What is the best sushi restaurant?\n What is sushi?\n\nExample Classifications:\nOpinion\nFact\nOpinion\nOpinion\nFact\n\nQuestion:\n{question}\n\nClassification:\n",
+            temperature=0,
+            max_tokens=64,
+            top_p=1.0,
+            frequency_penalty=0.0,
+            presence_penalty=0.0
+        )
+
+                    
+        # oa_resp = openai.Completion.create(search_model="ada",model="davinci",
+        #                                        examples=[
+        #                                            ["Do you like sports?", "Opinion"],
+        #                                            ["What is your favourite book?", "Opinion"],
+        #                                            ["Who wrote The Hobbit?", "Fact"],
+        #                                            ["Where are you from?", "Fact"],
+        #                                            ["What is the best album by the Beatles?", "Opinion"], 
+        #                                            ["How tall is Shaq?", "Fact"], ["What is your name?", "Fact"],
+        #                                            ],
+        #                                        query=str(question),
+        #                                        labels=["Opinion", "Fact"])  
+        fact_or_opin = opin_resp['choices'][0]['text'].strip()
+        print(fact_or_opin)
         
-        
-        text_resp = oa_resp['label']
-        
-        
-        print(text_resp)
-        return text_resp
-        
+        return fact_or_opin
         
 
     ## grabbing random greeting out of greeting list for demon
