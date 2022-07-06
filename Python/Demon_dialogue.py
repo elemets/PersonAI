@@ -148,24 +148,20 @@ class Demon:
         ## if similar check for sentiment on sentence
         ## if similarity and sentiment are close enough then increment the counter and respond accordingly
 
-        tokens = self.nlp(question)
-        for key in self.asked_questions:
-            print(str(key))
-            sim = tokens.similarity(self.nlp(key))
-            print(sim)
-        
-        if question in self.asked_questions:
-            if self.asked_questions[question][1] == 0:
-                # you've already asked me this, but... 
-                self.asked_questions[question] = (self.asked_questions[question][0], 1)
-                answer_to_return = f"You've already asked me this, but... {self.asked_questions[question][0]}" 
-            else:
+        current_question = self.nlp(question)
+        question_sims = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
+        # print(question_sims[max(question_sims)])
+        if question_sims:
+            most_sim_question = question_sims[max(question_sims)]
+            if most_sim_question in self.asked_questions and self.asked_questions[most_sim_question][1] == 1:
                 answer_to_return = "Stop asking me that!"
+            elif max(question_sims) > 0.92:
+                self.asked_questions[most_sim_question] = (self.asked_questions[most_sim_question][0], 1)
+                answer_to_return = f"You've already asked me this, but... {self.asked_questions[most_sim_question][0]}"
+                print(max(question_sims))           
         else:
             self.asked_questions[question] = (answer_to_return, 0)
-#           self.asked_questions[question] = (answer_to_return, 0, TextProcessor.sentiment_check(answer_to_return))
-
-                
+                    
         if len(self.asked_questions) > 1000:
             self.asked_questions.popitem()
 
