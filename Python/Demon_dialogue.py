@@ -1,3 +1,4 @@
+from this import s
 from pyparsing import countedArray
 from Personality import Personality
 from TextProcessor import TextProcessor
@@ -149,16 +150,18 @@ class Demon:
         ## if similarity and sentiment are close enough then increment the counter and respond accordingly
 
         current_question = self.nlp(question)
-        question_sims = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
-        # print(question_sims[max(question_sims)])
-        if question_sims:
-            most_sim_question = question_sims[max(question_sims)]
-            if most_sim_question in self.asked_questions and self.asked_questions[most_sim_question][1] == 1:
-                answer_to_return = "Stop asking me that!"
-            elif max(question_sims) > 0.92:
+        sim_questions = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
+        if self.asked_questions:
+            sim_enough = max(sim_questions) > 0.92
+            most_sim_question = sim_questions[max(sim_questions)]
+            already_asked = self.asked_questions[most_sim_question][1] == 1
+            if sim_enough and not already_asked:
                 self.asked_questions[most_sim_question] = (self.asked_questions[most_sim_question][0], 1)
                 answer_to_return = f"You've already asked me this, but... {self.asked_questions[most_sim_question][0]}"
-                print(max(question_sims))           
+            elif sim_enough and already_asked:
+                answer_to_return = "Stop asking me that!"
+            else:
+                self.asked_questions[question] = (answer_to_return, 0)
         else:
             self.asked_questions[question] = (answer_to_return, 0)
                     
@@ -179,9 +182,6 @@ class Demon:
             self.personality.textProcessor.noun_extractor(answer_to_return)
 
 
-
-
-            
         return answer_to_return, answers['score']
             
         
