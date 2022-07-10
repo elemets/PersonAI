@@ -189,11 +189,9 @@ class Demon:
     Checking the type of question asked by the player 
     """    
     def question_check(self, question):
-        question = question[0]
-        
         opin_resp = response = openai.Completion.create(
             model="text-davinci-002",
-            prompt=f"Classify this question into fact or opinion using these as examples only provide the classification \n Example Questions:\n What sports do you like?\n How tall is Shaq?\n Who is your favourite author?\n What is the best sushi restaurant?\n What is sushi?\n\nExample Classifications:\nOpinion\nFact\nOpinion\nOpinion\nFact\n\nQuestion:\n{question}\n\nClassification:\n",
+            prompt=f"Classify this question into fact or opinion using these as examples only provide the classification\n\nExample Questions:\nWhat sports do you like?\nHow tall is Shaq?\nWho is your favourite author?\nWhat is the best sushi restaurant?\nWhat is sushi?\n\nExample Classifications:\nOpinion\nFact\nOpinion\nOpinion\nFact\n\nQuestion:\n{question}\n\nClassification:\n",
             temperature=0,
             max_tokens=64,
             top_p=1.0,
@@ -201,18 +199,6 @@ class Demon:
             presence_penalty=0.0
         )
 
-                    
-        # oa_resp = openai.Completion.create(search_model="ada",model="davinci",
-        #                                        examples=[
-        #                                            ["Do you like sports?", "Opinion"],
-        #                                            ["What is your favourite book?", "Opinion"],
-        #                                            ["Who wrote The Hobbit?", "Fact"],
-        #                                            ["Where are you from?", "Fact"],
-        #                                            ["What is the best album by the Beatles?", "Opinion"], 
-        #                                            ["How tall is Shaq?", "Fact"], ["What is your name?", "Fact"],
-        #                                            ],
-        #                                        query=str(question),
-        #                                        labels=["Opinion", "Fact"])  
         fact_or_opin = opin_resp['choices'][0]['text'].strip()
         print(fact_or_opin)
         
