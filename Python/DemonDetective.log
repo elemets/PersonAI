@@ -3661,3 +3661,17 @@
 2022-07-06 17:14:14,754:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
 2022-07-06 17:14:25,017:INFO:What is your favourite type of biscuit?
 2022-07-06 17:14:25,017:INFO:{"Type": "response", "Content": "My favourite type of biscuit would have to be the classic chocolate chip cookie. I love the way the chocolate chips melt in your mouth and the dough is always so soft and chewy.", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:05,255:INFO:
+2022-07-06 21:17:05,255:INFO:{"Type": "Null", "Content": "Nothing", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:07,226:INFO:
+2022-07-06 21:17:07,226:INFO:{"Type": "initialised", "Content": "None", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:12,075:INFO:
+2022-07-06 21:17:12,076:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:12,127:INFO:
+2022-07-06 21:17:12,127:INFO:{"Type": "greet", "Content": "Hi, I am a demon of the underworld, horrible to meet you", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:25,925:INFO:What kind of genre of music do you like/
+2022-07-06 21:17:25,925:INFO:{"Type": "response", "Content": "You gotta try a bit harder, seriously!", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:33,967:INFO:What kind of genre of music do you like/
+2022-07-06 21:17:33,967:INFO:{"Type": "response", "Content": "You could at least try to be interesting...", "Emotion": "neutral", "prob_score": null}
+2022-07-06 21:17:49,954:INFO:What kind of genre of music do you like?
+2022-07-06 21:17:49,954:INFO:{"Type": "response", "Content": "I like all kinds of music, but my favorite genre is probably metal. I like the heavy guitars and the screaming vocals. It just gets me pumped up and ready to headbang.", "Emotion": "neg", "prob_score": null}

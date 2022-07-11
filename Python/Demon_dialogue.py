@@ -189,7 +189,7 @@ class Demon:
     Checking the type of question asked by the player 
     """    
     def question_check(self, question):
-        opin_resp = response = openai.Completion.create(
+        opin_resp = openai.Completion.create(
             model="text-davinci-002",
             prompt=f"Classify this question into fact or opinion using these as examples only provide the classification\n\nExample Questions:\nWhat sports do you like?\nHow tall is Shaq?\nWho is your favourite author?\nWhat is the best sushi restaurant?\nWhat is sushi?\n\nExample Classifications:\nOpinion\nFact\nOpinion\nOpinion\nFact\n\nQuestion:\n{question}\n\nClassification:\n",
             temperature=0,
