@@ -178,8 +178,11 @@ class Demon:
 
         question_type = self.question_check(question)
         
+        
         if question_type == 'Opinion':
-            self.personality.textProcessor.noun_extractor(answer_to_return)
+            question_noun = self.personality.textProcessor.question_noun_extractor(question)
+            nouns = self.personality.textProcessor.noun_extractor(answer_to_return)
+            self.like_dislike_extractor(nouns, question_noun)
 
 
         return answer_to_return, answers['score']
@@ -204,6 +207,31 @@ class Demon:
         
         return fact_or_opin
         
+        
+    def like_dislike_extractor(self, nouns, question_noun):
+        
+        if question_noun:
+            question_noun = question_noun[0]
+            for noun, sent in nouns.items():
+                like_dis = openai.Completion.create(
+                    model="text-davinci-002",
+                    prompt=f"Is this word related to a {question_noun} (answer only yes or no):\n1. {noun}\nAnswer:\n",
+                    temperature=0,
+                    max_tokens=64,
+                    top_p=1.0,
+                    frequency_penalty=0.0,
+                    presence_penalty=0.0
+                )
+                print(like_dis)
+                yes_or_no = like_dis['choices'][0]['text'].strip()
+                if yes_or_no == 'Yes':
+                    if sent == 'pos':
+                        self.likes += noun
+                    if sent == 'neg':
+                        self.dislikes += noun
+                
+            
+
 
     ## grabbing random greeting out of greeting list for demon
     def greet(self):

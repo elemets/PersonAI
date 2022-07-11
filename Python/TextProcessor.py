@@ -16,6 +16,8 @@ class TextProcessor:
     
         self.tag_list = ["nsubj", "ROOT", "conj"]
         self.nlp =en_core_web_sm.load()
+        self.nlp.add_pipe('merge_entities')
+
 
         # self.prof_filter = ProfanityFilter()
         
@@ -74,7 +76,8 @@ class TextProcessor:
 
     def noun_extractor(self, raw_sentences):
         
-        doc = self.nlp(raw_sentences)
+        doc = self.nlp(raw_sentences)#
+        # merge_ents = self.nlp.create_pipe('merge_entities')
         
         sentence_list = list(doc.sents)
         ## new sentences where there are conjugations
@@ -84,29 +87,45 @@ class TextProcessor:
                 if word.pos_ == 'CCONJ':
                     word = self.nlp.tokenizer(".")
 
-        
+        noun_dict = {}
         ## finding the sentiment of the sentences
         for sentence in range(len(sentence_list)):
             sentence_sent = str(sentence_list[sentence])
+            print(sentence_sent)
+
             sentence_sent = self.sentiment_check(sentence_sent)
             print(sentence_sent)
             if sentence_sent > 0.3:
                 ## pos
                 for index, word in enumerate(sentence_list[sentence]):
-                    if word.pos_ == 'NOUN':
+                    if word.pos_ == 'NOUN' or word.pos_ == 'PROPN':
                         ## add it to list of likes 
-                        print(word)
+                        noun_dict[str(word)] = 'pos'
+                        print(str(word))
             elif sentence_sent < -0.3:
                 for index, word in enumerate(sentence_list[sentence]):
-                    if word.pos_ == 'NOUN':
+                    if word.pos_ == 'NOUN' or word.pos_ == 'PROPN':
                         ## add it to list of dislikes 
-                        print(word)
+                        noun_dict[str(word)] = 'neg'
+                        print(str(word))
+
+
                 ## neg
+        return noun_dict
             
 
-        
-        
-        
+    def question_noun_extractor(self, raw_sentences):
+        noun_list= []
+        doc = self.nlp(raw_sentences)
+        sentence_list = list(doc.sents)
+        for sentence in range(len(sentence_list)):
+            for index, word in enumerate(sentence_list[sentence]):
+                if word.pos_ == 'NOUN':
+                    noun_list.append(str(word))
+                    
+        return noun_list
+                    
+            
                 
 
     """

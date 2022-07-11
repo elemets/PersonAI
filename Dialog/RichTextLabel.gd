@@ -12,7 +12,7 @@ var pid
 signal mood(emotion)
 signal Player_Response(message)
 var drawTextSpeed = 0
-var chatLimit = 145
+var chatLimit = 300
 var demon_name
 var payload_received
 signal exit_dialog
