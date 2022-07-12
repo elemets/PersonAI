@@ -18,7 +18,7 @@ logger.addHandler(file_handler)
 class socket_server():
     
     def __init__(self):
-        self.qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad", tokenizer="distilbert-base-cased-distilled-squad")
+        self.qa_pipeline = None
         with open("../Assets/Character_Info/character_names.json") as f:
             self.character_json = json.load(f) 
             self.num_of_characters = len(self.character_json['Characters'])

@@ -151,8 +151,9 @@ class Demon:
 
         current_question = self.nlp(question)
         sim_questions = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
+        print(sim_questions)
         if self.asked_questions:
-            sim_enough = max(sim_questions) > 0.92
+            sim_enough = max(sim_questions) > 0.95
             most_sim_question = sim_questions[max(sim_questions)]
             already_asked = self.asked_questions[most_sim_question][1] == 1
             if sim_enough and not already_asked:
