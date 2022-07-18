@@ -118,7 +118,7 @@ class Demon:
         try:
             response = openai.Completion.create(
             model="text-davinci-002",
-            prompt=f"Context: {true_context}, Give a fully qualified answer of at least three words to this question using the context provided above (but also make some stuff up): {question}",
+            prompt=f"Context: {true_context}, Give a long and opinionated answer to this question using the context provided above (but also make some stuff up): {question}",
             temperature=0.75,
             max_tokens=400,
             top_p=1,
