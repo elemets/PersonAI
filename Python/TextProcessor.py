@@ -3,6 +3,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from profanity_check import predict_prob
 from collections import Counter
 import en_core_web_sm
+from transformers import pipeline
+
 
 """
 TextProcessor
@@ -16,6 +18,7 @@ class TextProcessor:
     
         self.tag_list = ["nsubj", "ROOT", "conj"]
         self.nlp =en_core_web_sm.load()
+        self.sent_analyser = pipeline("text-classification", model="j-hartmann/sentiment-roberta-large-english-3-classes", return_all_scores=True)
         self.nlp.add_pipe('merge_entities')
 
 
@@ -95,14 +98,14 @@ class TextProcessor:
 
             sentence_sent = self.sentiment_check(sentence_sent)
             print(sentence_sent)
-            if sentence_sent > 0.3:
+            if sentence_sent == 'positive':
                 ## pos
                 for index, word in enumerate(sentence_list[sentence]):
                     if word.pos_ == 'NOUN' or word.pos_ == 'PROPN':
                         ## add it to list of likes 
                         noun_dict[str(word)] = 'pos'
                         print(str(word))
-            elif sentence_sent < -0.3:
+            elif sentence_sent == 'negative':
                 for index, word in enumerate(sentence_list[sentence]):
                     if word.pos_ == 'NOUN' or word.pos_ == 'PROPN':
                         ## add it to list of dislikes 
@@ -133,12 +136,13 @@ class TextProcessor:
     """
     def sentiment_check(self, sentence):
 
-        sentAnalyzer = SentimentIntensityAnalyzer()
-        
         ## returning the compound sentiment from a sentence
-        sentiment = sentAnalyzer.polarity_scores(sentence)['compound']
+        sentiment = self.sent_analyser(sentence)[0]
+        
+        max_sentiment = max(sentiment, key=lambda x:x['score'])['label']
+        
 
-        return sentiment
+        return max_sentiment
 
 
     """

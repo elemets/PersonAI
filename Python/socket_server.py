@@ -5,7 +5,10 @@ from Demon_dialogue import Demon
 import json
 import logging
 from transformers import pipeline
+from sentence_transformers import SentenceTransformer
 from openai_helper import openai_init
+from TextProcessor import TextProcessor
+
 
 ### Logging set up
 logger = logging.getLogger(__name__)  
@@ -18,11 +21,13 @@ logger.addHandler(file_handler)
 class socket_server():
     
     def __init__(self):
-        self.qa_pipeline = None
+        self.similarity_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        self.text_processor = TextProcessor()
+        
         with open("../Assets/Character_Info/character_names.json") as f:
             self.character_json = json.load(f) 
             self.num_of_characters = len(self.character_json['Characters'])
-        self.current_demon = Demon(f'{self.character_json["Characters"]["Character_1"]}', ["nothing"], ["nothing"], "swearing", self.qa_pipeline)       
+        self.current_demon = Demon(f'{self.character_json["Characters"]["Character_1"]}', ["nothing"], ["nothing"], "swearing", self.similarity_model, self.text_processor)       
         self.character_dict = {}
         with open('../Assets/Character_Info/openai_filenames.json') as f:
             openai_check = json.load(f)
@@ -53,7 +58,7 @@ class socket_server():
             print(instruction)
             if instruction == 'init':
                 print("Initialising with name ", demon_info['Name'])
-                demon = Demon(demon_info['Name'], demon_info['Likes'], demon_info['Dislikes'], demon_info['Mannerisms'], self.qa_pipeline)       
+                demon = Demon(demon_info['Name'], demon_info['Likes'], demon_info['Dislikes'], demon_info['Mannerisms'], self.similarity_model, self.text_processor)       
                 self.character_dict[f"{demon_info['Name']}"] = demon
                 init_counter += 1
             

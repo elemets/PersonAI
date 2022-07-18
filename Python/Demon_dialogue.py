@@ -5,12 +5,11 @@ from TextProcessor import TextProcessor
 import openai
 import random
 import json 
-import wikipedia
+from sentence_transformers import util
 from collections import OrderedDict
 import numpy as np
 import spacy
 from iteration_utilities import deepflatten
-import re
 from sparqlcuisinequery import cuisine_query, fictional_universe_query
 """
 Demon class, this manages the demon's response to the player
@@ -18,7 +17,7 @@ Demon class, this manages the demon's response to the player
 
 class Demon:
 
-    def __init__(self, name, likes, dislikes, pref_speech, qa_pipeline):
+    def __init__(self, name, likes, dislikes, pref_speech, similarity_model, text_processor):
         self.name = name
         with open(f'../Assets/Characters/{name}_responses.json') as f:
             data = json.load(f)
@@ -45,11 +44,12 @@ class Demon:
                 json.dump(demon_info, f)
         
         self.Pers_Score = demon_info['Player_Rating']
-        self.personality = Personality(self.likes, self.dislikes, pref_speech, name)
+        self.personality = Personality(self.likes, self.dislikes, pref_speech, name, text_processor)
         
-        self.qa_pipeline = qa_pipeline
+        self.similarity_model = similarity_model
         self.asked_questions = OrderedDict()
         self.nlp = spacy.load('en_core_web_lg')
+        self.text_processor = text_processor
 
     
 
@@ -118,7 +118,7 @@ class Demon:
         try:
             response = openai.Completion.create(
             model="text-davinci-002",
-            prompt=f"Context: {true_context}, Give a fully qualified answer to this question using the context provided above (but also make some stuff up): {question}",
+            prompt=f"Context: {true_context}, Give a fully qualified answer of at least three words to this question using the context provided above (but also make some stuff up): {question}",
             temperature=0.75,
             max_tokens=400,
             top_p=1,
@@ -147,19 +147,25 @@ class Demon:
         ## check for similarity
         ## if similar check for sentiment on sentence
         ## if similarity and sentiment are close enough then increment the counter and respond accordingly
-
+        sim_enough = False
         current_question = self.nlp(question)
-        question_noun = self.like_dislike_extractor(question)
-        sim_questions = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
-        print(sim_questions)
+        # sim_questions = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
         if self.asked_questions:
-            sim_enough = max(sim_questions) > 0.95
+            question_list = list(self.asked_questions.keys())
+            current_question_emb = self.similarity_model.encode(question)
+            ### embed the questions compare them and then assign a dictionary with the similarity score as the key and question as value
+            sim_questions = {util.cos_sim(current_question_emb, self.similarity_model.encode(question)): question for question in question_list}
+            
+            
+        if self.asked_questions:
+            sim_enough = max(sim_questions) > 0.85
             most_sim_question = sim_questions[max(sim_questions)]
+            print(sim_questions)
             already_asked = self.asked_questions[most_sim_question][1] == 1
-            if sim_enough and not already_asked and question_noun in most_sim_question:
+            if sim_enough and not already_asked:
                 self.asked_questions[most_sim_question] = (self.asked_questions[most_sim_question][0], 1)
                 answer_to_return = f"You've already asked me this, but... {self.asked_questions[most_sim_question][0]}"
-            elif sim_enough and already_asked and question_noun in most_sim_question:
+            elif sim_enough and already_asked:
                 answer_to_return = "Stop asking me that!"
             else:
                 self.asked_questions[question] = (answer_to_return, 0)
@@ -180,9 +186,9 @@ class Demon:
         question_type = self.question_check(question)
         
         
-        if question_type == 'Opinion':
-            question_noun = self.personality.textProcessor.question_noun_extractor(question)
-            nouns = self.personality.textProcessor.noun_extractor(answer_to_return)
+        if question_type == 'Opinion' and not sim_enough:
+            question_noun = self.text_processor.question_noun_extractor(question)
+            nouns = self.text_processor.noun_extractor(answer_to_return)
             self.like_dislike_extractor(nouns, question_noun)
 
 

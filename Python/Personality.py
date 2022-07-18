@@ -10,7 +10,7 @@ class Personality:
     personality_score: this determines how much this instance of demon likes you. Ranging from 
     - 10 to 10, always starts at 0. 
     """
-    def __init__(self, likes, dislikes, pref_speech, name):
+    def __init__(self, likes, dislikes, pref_speech, name, text_processor):
 
         self.likes = likes
         self.dislikes = dislikes
@@ -19,7 +19,7 @@ class Personality:
         with open(f"../Assets/Characters/{name}.json") as file:
             self.json_file = json.load(file)
         self.personality_score = self.json_file['Player_Rating']
-        self.textProcessor = TextProcessor()
+        self.text_processor = text_processor
     
 
     """
@@ -31,7 +31,7 @@ class Personality:
     def personality_calc(self, corpus):
         
 
-        sentences = self.textProcessor.split_sentences(corpus)
+        sentences = self.text_processor.split_sentences(corpus)
 
         ## checking each sentence for likes and dislikes to work out 
         ## the sentiment for each sentence as well as the subject (hopefully)
@@ -85,7 +85,7 @@ class Personality:
         else:
             opinion = self.dislikes
             
-        profanity_check = self.textProcessor.profanity_checker(sentence)
+        profanity_check = self.text_processor.profanity_checker(sentence)
 
         opinion_score = []
         for op in opinion:
@@ -93,7 +93,15 @@ class Personality:
             sentiment_value = 0
             if op in str(sentence):
                 
-                sentiment_value = self.textProcessor.sentiment_check(sentence)
+                sentiment = self.text_processor.sentiment_check(sentence)
+                
+                if sentiment == 'positive':
+                    sentiment_value = 0.5
+                if sentiment == 'negative':
+                    sentiment_value = - 0.5
+                if sentiment_value == 'neutral':
+                    sentiment_value = 0
+                
                 if self.pref_speech == 'no_swearing':
                     sentiment_value = sentiment_value * (1 - profanity_check)
                 elif self.pref_speech == 'swearing':
