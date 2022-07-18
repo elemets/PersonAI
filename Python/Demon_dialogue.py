@@ -115,26 +115,25 @@ class Demon:
             context_ai = 'not_liked'
             
 
-        if True == True:
-            try:
-                response = openai.Completion.create(
-                model="text-davinci-002",
-                prompt=f"Context: {true_context}, Give a fully qualified answer to this question using the context provided above (but also make some stuff up): {question}",
-                temperature=0.75,
-                max_tokens=400,
-                top_p=1,
-                frequency_penalty=0.0,
-                presence_penalty=0.0,
-                )
-                print(response)
-                print(f"Context: {true_context}, \n Q: {question}")
-                answer_to_return = response['choices'][0]['text'].replace("\n", "")
-                answers['score'] = None
-                
-            except:
-                answers['answer']  = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
-                answers['score'] = None
+        try:
+            response = openai.Completion.create(
+            model="text-davinci-002",
+            prompt=f"Context: {true_context}, Give a fully qualified answer to this question using the context provided above (but also make some stuff up): {question}",
+            temperature=0.75,
+            max_tokens=400,
+            top_p=1,
+            frequency_penalty=0.0,
+            presence_penalty=0.0,
+            )
+            print(response)
+            print(f"Context: {true_context}, \n Q: {question}")
+            answer_to_return = response['choices'][0]['text'].replace("\n", "")
+            answers['score'] = None
             
+        except:
+            answers['answer']  = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
+            answers['score'] = None
+        
 
 
 
@@ -150,16 +149,17 @@ class Demon:
         ## if similarity and sentiment are close enough then increment the counter and respond accordingly
 
         current_question = self.nlp(question)
+        question_noun = self.like_dislike_extractor(question)
         sim_questions = {current_question.similarity(self.nlp(question)):question for question in self.asked_questions}
         print(sim_questions)
         if self.asked_questions:
             sim_enough = max(sim_questions) > 0.95
             most_sim_question = sim_questions[max(sim_questions)]
             already_asked = self.asked_questions[most_sim_question][1] == 1
-            if sim_enough and not already_asked:
+            if sim_enough and not already_asked and question_noun in most_sim_question:
                 self.asked_questions[most_sim_question] = (self.asked_questions[most_sim_question][0], 1)
                 answer_to_return = f"You've already asked me this, but... {self.asked_questions[most_sim_question][0]}"
-            elif sim_enough and already_asked:
+            elif sim_enough and already_asked and question_noun in most_sim_question:
                 answer_to_return = "Stop asking me that!"
             else:
                 self.asked_questions[question] = (answer_to_return, 0)
