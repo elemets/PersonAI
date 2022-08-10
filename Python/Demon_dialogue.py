@@ -222,20 +222,28 @@ class Demon:
             for noun, sent in nouns.items():
                 like_dis = openai.Completion.create(
                     model="text-davinci-002",
-                    prompt=f"Is this word related to a {question_noun} (answer only yes or no):\n1. {noun}\nAnswer:\n",
+                    prompt=f"Is this word related to a {question_noun} (answer Yes or No):\n1. {noun}\nAnswer:\n",
                     temperature=0,
-                    max_tokens=64,
+                    max_tokens=3,
                     top_p=1.0,
                     frequency_penalty=0.0,
                     presence_penalty=0.0
                 )
-                print(like_dis)
                 yes_or_no = like_dis['choices'][0]['text'].strip()
+                print("YES OR NO")
+                print(yes_or_no)
                 if yes_or_no == 'Yes':
                     if sent == 'pos':
-                        self.likes += noun
+                        print("Nount that is getting added")
+                        print(noun)
+                        old_likes = self.likes
+                        self.likes += [noun]
+                        print("OLD LIKES:")
+                        print(set(old_likes))
+                        print("NEW LIKES")
+                        print(set(self.likes))
                     if sent == 'neg':
-                        self.dislikes += noun
+                        self.dislikes += [noun]
                 
             
 

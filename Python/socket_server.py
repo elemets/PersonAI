@@ -1,5 +1,4 @@
 import asyncio
-from numpy import character
 import websockets
 from Demon_dialogue import Demon
 import json
