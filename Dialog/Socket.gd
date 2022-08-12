@@ -69,6 +69,7 @@ func _on_data():
 func _send(character_num, command, content=''):
 	print(character_num)
 	_client.get_peer(1).put_packet(JSON.print({"Name": character_num, "Command": command, "Content": content}).to_utf8())
+	$Timer.start()
 
 func _on_RichTextLabel_Player_Response(message):
 	if waiting_for_payload == false:
@@ -156,4 +157,9 @@ func _on_Character_4_conversation(demon_name):
 		demon_name_4 = "Character_4"
 		_send("Character_4", command)
 		current_convo = demon_name_4
+	pass # Replace with function body.
+
+
+func _on_Timer_timeout():
+	_send("Character_1", "ask_question")
 	pass # Replace with function body.

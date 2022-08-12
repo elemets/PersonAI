@@ -79,7 +79,9 @@ class socket_server():
                 output, pos_or_neg, prob_score = self.character_dict[f'{demon_name}'].respond(str(sentence), context)
                 type = "response"
             elif instruction == 'get_score':
-                output = demon_info['Player_Rating']            
+                output = demon_info['Player_Rating']
+            elif instruction == "ask_question":
+                output = self.character_dict[f'{demon_name}'].question_asker()
          
 
             if init_counter == self.num_of_characters and not self.init_flag:

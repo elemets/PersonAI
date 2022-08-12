@@ -40,6 +40,9 @@ position = Vector2( 247, 83 )
 [node name="OSAsyncExecute" type="Node" parent="Dialog/RichTextLabel" index="1"]
 script = ExtResource( 5 )
 
+[node name="Button" parent="Dialog" index="3"]
+toggle_mode = true
+
 [node name="CurrentScene" type="Node2D" parent="."]
 
 [node name="World" parent="CurrentScene" instance=ExtResource( 1 )]

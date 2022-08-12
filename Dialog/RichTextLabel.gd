@@ -14,6 +14,7 @@ signal Player_Response(message)
 var drawTextSpeed = 0
 var chatLimit = 300
 var demon_name
+var old_text
 var payload_received
 signal exit_dialog
 # Called when the node enters the scene tree for the first time.
@@ -24,16 +25,8 @@ func _ready():
 	
 func _process(delta):
 	_showCharacter()
-	if Input.is_action_pressed("ui_focus_next"):
-		text = ''
-		emit_signal("conversation_finished")
-	elif Input.is_key_pressed(KEY_ESCAPE):
+	if Input.is_key_pressed(KEY_ESCAPE):
 		emit_signal("exit_dialog")
-	
-func _handled_event(event):
-	if (event.is_pressed() and event.button_index == BUTTON_LEFT):
-		print("left button pressed")
-
 	
 	
 
@@ -48,8 +41,6 @@ func _showCharacter():
 func _on_LineEdit_text_entered(new_text):
 	if new_text != '':
 		emit_signal("Player_Response", new_text)
-	text = "."
-	text = ".."
 	text = "..."
 	pass # Replace with function body.
 
@@ -73,4 +64,18 @@ func _on_Socket_payload_received(payload):
 			text = "The demon looks confused and averts their eyes, ignoring your question."
 			emit_signal("mood", "neg")
 
+	pass # Replace with function body.
+
+
+func _on_Button_toggled(button_pressed):
+	if text == '':
+		text = old_text
+	else:
+		old_text = text
+		text = ''
+		emit_signal("conversation_finished")
+	pass # Replace with function body.
+
+
+func _on_Timer_timeout():
 	pass # Replace with function body.

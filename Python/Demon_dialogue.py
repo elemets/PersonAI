@@ -244,7 +244,17 @@ class Demon:
                         self.dislikes += [noun]
                 
             
+
+    """
+    Will ask a random question then we need to get the response decide an opinion of the players response 
+    """
     def question_asker(self):
+        if self.question_set:
+            demon_question_to_ask = random.choice(tuple(self.question_set))
+            self.question_set.remove(demon_question_to_ask)
+        else:
+            demon_question_to_ask = ''
+        return demon_question_to_ask
         
 
 
