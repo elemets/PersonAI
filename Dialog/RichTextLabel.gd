@@ -24,12 +24,16 @@ func _ready():
 	
 func _process(delta):
 	_showCharacter()
-	if Input.is_key_pressed(KEY_E):
+	if Input.is_action_pressed("ui_focus_next"):
 		text = ''
 		emit_signal("conversation_finished")
 	elif Input.is_key_pressed(KEY_ESCAPE):
 		emit_signal("exit_dialog")
 	
+func _handled_event(event):
+	if (event.is_pressed() and event.button_index == BUTTON_LEFT):
+		print("left button pressed")
+
 	
 	
 

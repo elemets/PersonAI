@@ -50,11 +50,15 @@ class Demon:
         self.asked_questions = OrderedDict()
         self.nlp = spacy.load('en_core_web_lg')
         self.text_processor = text_processor
-
+        self.question_set = {
+            "Who is your favourite director?", 
+            "What is your favourite sport?",
+            "What sort of music do you listen to?",
+            "What genre of films do you like?",
+            "Where are you from?",
+            "Do you play video games, and if so which ones?"
+        }
     
-
-
-
     """
     Calculates the response given the player input and context (if using transformers)
     """
@@ -234,18 +238,14 @@ class Demon:
                 print(yes_or_no)
                 if yes_or_no == 'Yes':
                     if sent == 'pos':
-                        print("Nount that is getting added")
-                        print(noun)
                         old_likes = self.likes
                         self.likes += [noun]
-                        print("OLD LIKES:")
-                        print(set(old_likes))
-                        print("NEW LIKES")
-                        print(set(self.likes))
                     if sent == 'neg':
                         self.dislikes += [noun]
                 
             
+    def question_asker(self):
+        
 
 
     ## grabbing random greeting out of greeting list for demon

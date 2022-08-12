@@ -82,6 +82,8 @@ mouse_filter = 2
 script = ExtResource( 15 )
 
 [node name="IntroText" parent="IntroScreen" index="1"]
+margin_top = 28.0
+margin_bottom = 292.0
 theme = SubResource( 3 )
 fit_content_height = true
 
