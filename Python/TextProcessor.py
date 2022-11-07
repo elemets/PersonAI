@@ -79,7 +79,7 @@ class TextProcessor:
 
     def noun_extractor(self, raw_sentences):
         
-        doc = self.nlp(raw_sentences)#
+        doc = self.nlp(raw_sentences)
         # merge_ents = self.nlp.create_pipe('merge_entities')
         
         sentence_list = list(doc.sents)
@@ -89,6 +89,8 @@ class TextProcessor:
                 
                 if word.pos_ == 'CCONJ':
                     word = self.nlp.tokenizer(".")
+                    
+        print(sentence_list)
 
         noun_dict = {}
         ## finding the sentiment of the sentences
@@ -112,8 +114,6 @@ class TextProcessor:
                         noun_dict[str(word)] = 'neg'
                         print(str(word))
 
-
-                ## neg
         return noun_dict
             
 

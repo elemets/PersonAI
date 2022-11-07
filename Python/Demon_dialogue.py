@@ -55,9 +55,12 @@ class Demon:
             "What is your favourite sport?",
             "What sort of music do you listen to?",
             "What genre of films do you like?",
-            "Where are you from?",
-            "Do you play video games, and if so which ones?"
         }
+        with open(f'../Assets/Character_Info/openai_filenames.json') as f:
+            openai_files = json.load(f)  
+        openai.api_key = str(openai_files['open-ai-api'])
+
+        
     
     """
     Calculates the response given the player input and context (if using transformers)
@@ -103,10 +106,8 @@ class Demon:
             f.close()
             
             
-        with open(f'../Assets/Character_Info/openai_filenames.json') as f:
-            openai_files = json.load(f)  
+
             
-        openai.api_key = str(openai_files['open-ai-api'])
         
         if self.Pers_Score > 10:
             true_context = context['context-very-liked']
@@ -133,19 +134,10 @@ class Demon:
             print(f"Context: {true_context}, \n Q: {question}")
             answer_to_return = response['choices'][0]['text'].replace("\n", "")
             answers['score'] = None
-            
         except:
-            answers['answer']  = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
             answers['score'] = None
+            answer_to_return = random.choice(["I'm not sure I can help you with that...", "You'd be better off asking me something else", "This is not the information you're looking for..."])
         
-
-
-
-
-        # split on conjugation and then sentiment check the sentence and extract the nouns. 
-        
-        
-
 
         #### SIMILARITY CHECK
         ## check for similarity
@@ -166,6 +158,7 @@ class Demon:
             most_sim_question = sim_questions[max(sim_questions)]
             print(sim_questions)
             already_asked = self.asked_questions[most_sim_question][1] == 1
+            answer_to_return = current
             if sim_enough and not already_asked:
                 self.asked_questions[most_sim_question] = (self.asked_questions[most_sim_question][0], 1)
                 answer_to_return = f"You've already asked me this, but... {self.asked_questions[most_sim_question][0]}"
@@ -219,6 +212,7 @@ class Demon:
         return fact_or_opin
         
         
+        
     def like_dislike_extractor(self, nouns, question_noun):
         
         if question_noun:
@@ -243,10 +237,42 @@ class Demon:
                     if sent == 'neg':
                         self.dislikes += [noun]
                 
-            
+    
+    """
+    If the noun is related to the question noun e.g. the demon asks what sort of music do you like 
+    and you answer Jazz then it will decide on whether it likes jazz or not
+    """
+    def like_dislike_extract_no_add(self, nouns, question_noun):
+        noun_opinion_pair = []
+        if question_noun:
+                    for noun in nouns.items():
+                        like_dis = openai.Completion.create(
+                            model="text-davinci-002",
+                            prompt=f"Is this word related to a {question_noun} (answer Yes or No):\n1. {noun}\nAnswer:\n",
+                            temperature=0,
+                            max_tokens=3,
+                            top_p=1.0,
+                            frequency_penalty=0.0,
+                            presence_penalty=0.0
+                        )
+                        yes_or_no = like_dis['choices'][0]['text'].strip()
+                        if yes_or_no == 'Yes':
+                            if random.choice([True, False]):
+                                self.likes += noun
+                                noun_opinion_pair += (noun, "positive")
+                            else:
+                                self.dislikes += noun
+                                noun_opinion_pair += (noun, "negative")
+
+        return noun_opinion_pair
 
     """
     Will ask a random question then we need to get the response decide an opinion of the players response 
+    if a question has just been asked then the noun extractor is required
+    once the correct noun is found then the demon can decide whether to like or dislike this and thus form an 
+    opinion on it 
+    Maybe instead of a period of time the random questions should be tagged onto the end of the text 
+    Probably a better idea but one for later
     """
     def question_asker(self):
         if self.question_set:
@@ -255,7 +281,58 @@ class Demon:
         else:
             demon_question_to_ask = ''
         return demon_question_to_ask
+    
+    """
+    Responding once a question has been asked this needs to be called
+    """
+    def question_respond(self, response, question):
+        ## first find the noun within the response
+        question_noun = self.text_processor.question_noun_extractor(question)
+        nouns = self.text_processor.noun_extractor(response)
+        ## added opinions to like and dislike
+        ## now a response is required in order to make the conversation convincing
+        print(nouns)
+        print(question_noun)
+        nouns = {noun: op for noun, op in nouns.items() if noun not in question_noun}
+        print(nouns)
+        noun_op_pairing = self.like_dislike_extract_no_add(nouns, question_noun)
         
+        print(len(noun_op_pairing))
+        
+        
+        
+        if len(noun_op_pairing) >= 3:
+            answer_regarding_question = openai.Completion.create(
+                model="text-davinci-002",
+                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence \n {noun_op_pairing[0][0]} - {noun_op_pairing[0][1]} \n {noun_op_pairing[1][0]} - {noun_op_pairing[1][1]} \n {noun_op_pairing[2][0]} - {noun_op_pairing[2][1]}",
+                temperature=1,
+                max_tokens=246,
+                top_p=1.0,
+                frequency_penalty=0.1,
+                presence_penalty=0.49
+            )
+        elif len(noun_op_pairing) == 2:
+            answer_regarding_question = openai.Completion.create(
+                model="text-davinci-002",
+                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence \n {noun_op_pairing[0][0]} - {noun_op_pairing[0][1]} \n {noun_op_pairing[1][0]} - {noun_op_pairing[1][1]} \n ",
+                temperature=1,
+                max_tokens=256,
+                top_p=1.0,
+                frequency_penalty=0.1,
+                presence_penalty=0.49
+            )
+        else:
+            answer_regarding_question = openai.Completion.create(
+                model="text-davinci-002",
+                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence\n {noun_op_pairing[0][0]} - {noun_op_pairing[0][1]}",
+                temperature=1,
+                max_tokens=256,
+                top_p=1.0,
+                frequency_penalty=0.1,
+                presence_penalty=0.49
+            )
+       
+        return answer_regarding_question['choices'][0]['text']  
 
 
     ## grabbing random greeting out of greeting list for demon

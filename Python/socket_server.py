@@ -33,6 +33,7 @@ class socket_server():
         if openai_check['open-ai'] == True and openai_check['already_initialised'] == False:
             openai_init()
         self.init_flag = False
+        self.question_asked = False
     
     
     async def comms(self, websocket):
@@ -40,6 +41,7 @@ class socket_server():
         type = "Null"
         pos_or_neg = "neutral"
         context = 'normal'
+        asked_question = ''
         prob_score = None
         init_counter = 0 
         async for message in websocket:
@@ -72,16 +74,30 @@ class socket_server():
             else:
                 context = 'normal'
 
+            ## need a flag for when a question has just been asked if it has just been asked then 
+            ## the next response needs to generate content based off the response rather than just
+            ## something random 
+            
+
             if instruction == 'greet':
                 output = self.character_dict[f'{demon_name}'].greet()
                 type = "greet"
+            elif instruction == 'response' and self.question_asked:
+                output = self.character_dict[f'{demon_name}'].question_respond(str(sentence), asked_question)
+                self.question_asked = False
             elif instruction == 'response':
                 output, pos_or_neg, prob_score = self.character_dict[f'{demon_name}'].respond(str(sentence), context)
                 type = "response"
             elif instruction == 'get_score':
                 output = demon_info['Player_Rating']
-            elif instruction == "ask_question":
+            elif instruction == "ask_question" and self.question_asked == False:
                 output = self.character_dict[f'{demon_name}'].question_asker()
+                asked_question = output
+                self.question_asked = True
+        
+            print("THIS IS QUESTION JUST ASKED FLAG -==-")
+            print(self.question_asked)
+            print("_______________________")
          
 
             if init_counter == self.num_of_characters and not self.init_flag:

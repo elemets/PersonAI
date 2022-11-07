@@ -69,7 +69,8 @@ func _on_data():
 func _send(character_num, command, content=''):
 	print(character_num)
 	_client.get_peer(1).put_packet(JSON.print({"Name": character_num, "Command": command, "Content": content}).to_utf8())
-	$Timer.start()
+	if command != "init":
+		$Timer.start()
 
 func _on_RichTextLabel_Player_Response(message):
 	if waiting_for_payload == false:
