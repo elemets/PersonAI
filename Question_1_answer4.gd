@@ -30,9 +30,10 @@ func _on_Final_Screen_Text_file_loaded(dict):
 
 func _on_Final_Button_pressed():
 	text = text.to_lower()
+	var q_4_wrong_answer = text
 	if text_dict.has("Question_4"):
 		if text.similarity(required_answer) > 0.8:
-			emit_signal("question_4_correct", true)
+			emit_signal("question_4_correct", true, null)
 		else:
-			emit_signal("question_4_correct", false)
+			emit_signal("question_4_correct", false, q_4_wrong_answer)
 	pass # Replace with function body.

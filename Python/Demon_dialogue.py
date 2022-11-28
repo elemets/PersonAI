@@ -335,6 +335,13 @@ class Demon:
         return answer_regarding_question['choices'][0]['text']  
 
 
+    """
+    Ending where demons who lied come back to roast you
+    This can be done by checking where the player was in the context with the demons
+    """
+
+
+
     ## grabbing random greeting out of greeting list for demon
     def greet(self):
 

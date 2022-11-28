@@ -22,7 +22,6 @@ class TextProcessor:
         self.nlp.add_pipe('merge_entities')
 
 
-        # self.prof_filter = ProfanityFilter()
         
 
     """

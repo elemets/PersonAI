@@ -74,9 +74,6 @@ class socket_server():
             else:
                 context = 'normal'
 
-            ## need a flag for when a question has just been asked if it has just been asked then 
-            ## the next response needs to generate content based off the response rather than just
-            ## something random 
             
 
             if instruction == 'greet':

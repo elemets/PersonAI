@@ -98,6 +98,7 @@ script = ExtResource( 5 )
 
 [connection signal="exit_screen" from="." to="RestartMenu/WinOrLose" method="_on_SceneManager_exit_screen"]
 [connection signal="win_or_lose" from="RestartMenu/WinOrLose" to="RestartMenu/Restart_Screen_Text" method="_on_WinOrLose_win_or_lose"]
+[connection signal="file_loaded" from="FinalScreen/Final_Screen_Text" to="RestartMenu/WinOrLose" method="_on_Final_Screen_Text_file_loaded"]
 [connection signal="question_1_correct" from="FinalScreen/Question_1_answer" to="RestartMenu/WinOrLose" method="_on_Question_1_answer_question_1_correct"]
 [connection signal="question_2_correct" from="FinalScreen/Question_1_answer2" to="RestartMenu/WinOrLose" method="_on_Question_1_answer2_question_2_correct"]
 [connection signal="question_3_correct" from="FinalScreen/Question_1_answer3" to="RestartMenu/WinOrLose" method="_on_Question_1_answer3_question_3_correct"]
