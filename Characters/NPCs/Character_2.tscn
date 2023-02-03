@@ -126,6 +126,4 @@ anims/run_forward = SubResource( 9 )
 anims/run_left = SubResource( 5 )
 anims/run_right = SubResource( 4 )
 
-[connection signal="text_dict" from="." to="Character_2" method="_on_Character_2_text_dict"]
-
 [editable path="PlayerDetectionZone_2"]

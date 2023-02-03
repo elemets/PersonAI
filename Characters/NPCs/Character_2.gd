@@ -3,6 +3,7 @@ extends KinematicBody2D
 export var ACCELERATION = 600
 export var MAX_SPEED = 70
 export var FRICTION = 200
+var waiting_for_payload = false
 var NAME
 
 
@@ -17,90 +18,101 @@ enum {
 	RIGHT
 }
 
-var square_next = RIGHT
+
 
 
 const TOLERANCE = 4.0
-var velocity = Vector2.ZERO
-var state = WANDER
-onready var playerDetectionZone_2 = $PlayerDetectionZone_2
-onready var start_position = global_position
-onready var target_position = global_position
+
+onready var PlayerDetectionZone_2 = $PlayerDetectionZone_2
+
+
 var rng = RandomNumberGenerator.new()
 signal conversation(demon_name)
 signal name(NAME)
 var anim
 onready var animation_player = $Character_2_Animation
 var text_dict = {}
-signal text_dict(text_dict)
 
 onready var timer = get_node("Timer")
 func _ready():
+	start_position = global_position
 	var file = File.new()
 	file.open("./Assets/Character_Info/character_names.json", file.READ)
 	var text_returned = file.get_as_text()
 	text_dict = JSON.parse(text_returned).result
 	file.close()
+	print(text_dict)
 	if text_dict['Characters'].has("Character_2"):
 		NAME = text_dict['Characters']['Character_2']
 		if text_dict['Character_hframes']['Character_2_hframes'] > 1 and text_dict['Character_vframes']['Character_2_vframes'] > 1:
 			anim = true 
 		emit_signal("name", NAME)
 		print("Emitting signal", NAME)
-		emit_signal("text_dict", text_dict)
 	timer.set_wait_time(5)
 	timer.start()
 
 
 func TimerTimeout():
 	pass
+	
+
+enum AIState {
+	IDLE,
+	WANDER,
+}
+
+enum SquareDirection {
+	LEFT,
+	RIGHT,
+}
+
+const ZERO = Vector2(0, 0)
+
+var state = AIState.WANDER
+var square_next = SquareDirection.LEFT
+var velocity = Vector2.ZERO
+var target_position = Vector2.ZERO
+var start_position = Vector2.ZERO
+
+
 
 func _physics_process(delta):
 	see_player()
-	match state:
-		IDLE:
-			var player = playerDetectionZone_2.player
-			if player != null and Input.is_key_pressed(KEY_E):
-				print("emitting conversation player 2")
-				emit_signal("conversation", NAME)
-			elif player != null:
-				velocity = velocity.move_toward(Vector2.ZERO, FRICTION *delta)
-		WANDER:
-			var player = playerDetectionZone_2.player
-			var point = update_target_position()
-			var direction = (point - global_position).normalized()
-			if player ==  null:
-				velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
-
+	move_towards_target(delta)
 	velocity = move_and_slide(velocity)
 
 func see_player():
-	if playerDetectionZone_2.can_see_player():
-		state = IDLE
+	if PlayerDetectionZone_2.can_see_player():
+		idle()
 	else:
-		state = WANDER
-		
-		
+		wander()
+
+func idle():
+	state = AIState.IDLE
+	velocity = velocity.move_toward(ZERO, FRICTION)
+	var player = PlayerDetectionZone_2.player
+	if player != null and Input.is_key_pressed(KEY_E):
+		emit_signal("conversation", NAME)
+
+func wander():
+	state = AIState.WANDER
+	var direction = (update_target_position() - global_position).normalized()
+	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION)
+
+func move_towards_target(delta):
+	var direction = (update_target_position() - global_position).normalized()
+	if (target_position - global_position).length() > TOLERANCE:
+		velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
+	else:
+		square_next = SquareDirection.LEFT if square_next == SquareDirection.RIGHT else SquareDirection.RIGHT
+
 func update_target_position():
-	var target_vector = Vector2.ZERO
-
-	match square_next:
-		LEFT:
-			target_vector = Vector2(start_position.x - 100, start_position.y)
-			if anim:
-				animation_player.play("run_left")
-			if is_at_target_position():
-				square_next = RIGHT
-			target_position = target_vector
-		RIGHT:
-			target_vector = Vector2(start_position.x + 100, start_position.y)
-			if anim:
-				animation_player.play("run_right")
-			if is_at_target_position():
-				square_next = LEFT
-			target_position = target_vector
+	if square_next == SquareDirection.LEFT:
+		target_position = Vector2(start_position.x - 100, start_position.y)
+		if anim:
+			animation_player.play("run_left")
+	else:
+		target_position = Vector2(start_position.x + 100, start_position.y)
+		if anim:
+			animation_player.play("run_right")
 	return target_position
-
-func is_at_target_position():
-	return (target_position - global_position).length() < TOLERANCE
-

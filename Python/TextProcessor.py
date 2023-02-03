@@ -79,7 +79,8 @@ class TextProcessor:
     def noun_extractor(self, raw_sentences):
         
         doc = self.nlp(raw_sentences)
-        # merge_ents = self.nlp.create_pipe('merge_entities')
+        print("Doc Sents")
+        print(doc.sents)
         
         sentence_list = list(doc.sents)
         ## new sentences where there are conjugations
@@ -139,8 +140,8 @@ class TextProcessor:
         sentiment = self.sent_analyser(sentence)[0]
         
         max_sentiment = max(sentiment, key=lambda x:x['score'])['label']
-        
-
+        print("Max sentiment:")
+        print(max_sentiment)
         return max_sentiment
 
 

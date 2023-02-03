@@ -53,6 +53,9 @@ margin_bottom = 402.0
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 24.0

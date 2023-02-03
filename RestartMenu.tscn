@@ -1,10 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://WinOrLose.gd" type="Script" id=1]
 [ext_resource path="res://Restart_Screen_Text.gd" type="Script" id=2]
 [ext_resource path="res://Dialog/alaGardCustom.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Assets/DialogRoom/custom_font.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://ExitButton.gd" type="Script" id=5]
+[ext_resource path="res://RetryButton.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Characters/Character_1/Expressions/Happy.png" type="Texture" id=7]
+[ext_resource path="res://EndScreenCharacterSprite.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=2]
 size = 42
@@ -39,10 +42,10 @@ __meta__ = {
 }
 
 [node name="Restart_Screen_Text" type="RichTextLabel" parent="."]
-margin_left = 96.0
-margin_top = 136.0
-margin_right = 536.0
-margin_bottom = 264.0
+margin_left = 173.0
+margin_top = 90.0
+margin_right = 496.0
+margin_bottom = 243.0
 theme = SubResource( 4 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -50,13 +53,32 @@ __meta__ = {
 }
 
 [node name="ExitButton" type="MenuButton" parent="."]
-margin_left = 288.0
+margin_left = 325.0
 margin_top = 296.0
-margin_right = 353.0
+margin_right = 390.0
 margin_bottom = 316.0
+custom_fonts/font = ExtResource( 3 )
 text = "EXIT"
 switch_on_hover = true
 script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EndScreenCharacterSprite" type="Sprite" parent="."]
+position = Vector2( 80, 400 )
+scale = Vector2( 0.78, 0.78 )
+texture = ExtResource( 7 )
+script = ExtResource( 8 )
+
+[node name="RetryButton" type="MenuButton" parent="."]
+margin_left = 250.0
+margin_top = 296.0
+margin_right = 312.0
+margin_bottom = 317.0
+custom_fonts/font = ExtResource( 3 )
+text = "RETRY"
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

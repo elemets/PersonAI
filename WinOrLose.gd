@@ -41,6 +41,7 @@ func _win_checker():
 		text = "YOU WIN"
 		emit_signal("win_or_lose", "win", null, null)
 		
+		
 
 func _on_Question_1_answer4_question_4_correct(q_4_bool, q_4_wrong_answer):
 	var char_with_kno_of_q_4 = question_dict['Question_4']['character-with-knowledge']

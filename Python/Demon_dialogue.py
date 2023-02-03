@@ -122,7 +122,7 @@ class Demon:
 
         try:
             response = openai.Completion.create(
-            model="text-davinci-002",
+            model="text-davinci-003",
             prompt=f"Context: {true_context}, Give a long and opinionated answer to this question using the context provided above (but also make some stuff up): {question}",
             temperature=0.75,
             max_tokens=400,
@@ -158,7 +158,7 @@ class Demon:
             most_sim_question = sim_questions[max(sim_questions)]
             print(sim_questions)
             already_asked = self.asked_questions[most_sim_question][1] == 1
-            answer_to_return = current
+            answer_to_return = current_question
             if sim_enough and not already_asked:
                 self.asked_questions[most_sim_question] = (self.asked_questions[most_sim_question][0], 1)
                 answer_to_return = f"You've already asked me this, but... {self.asked_questions[most_sim_question][0]}"
@@ -197,7 +197,7 @@ class Demon:
     """    
     def question_check(self, question):
         opin_resp = openai.Completion.create(
-            model="text-davinci-002",
+            model="text-davinci-003",
             prompt=f"Classify this question into fact or opinion using these as examples only provide the classification\n\nExample Questions:\nWhat sports do you like?\nHow tall is Shaq?\nWho is your favourite author?\nWhat is the best sushi restaurant?\nWhat is sushi?\n\nExample Classifications:\nOpinion\nFact\nOpinion\nOpinion\nFact\n\nQuestion:\n{question}\n\nClassification:\n",
             temperature=0,
             max_tokens=64,
@@ -219,7 +219,7 @@ class Demon:
             question_noun = question_noun[0]
             for noun, sent in nouns.items():
                 like_dis = openai.Completion.create(
-                    model="text-davinci-002",
+                    model="text-davinci-003",
                     prompt=f"Is this word related to a {question_noun} (answer Yes or No):\n1. {noun}\nAnswer:\n",
                     temperature=0,
                     max_tokens=3,
@@ -244,25 +244,31 @@ class Demon:
     """
     def like_dislike_extract_no_add(self, nouns, question_noun):
         noun_opinion_pair = []
+        
+        print(nouns)
+        print(question_noun)
         if question_noun:
                     for noun in nouns.items():
                         like_dis = openai.Completion.create(
-                            model="text-davinci-002",
-                            prompt=f"Is this word related to a {question_noun} (answer Yes or No):\n1. {noun}\nAnswer:\n",
+                            model="text-davinci-003",
+                            prompt=f"Is this word related to a {question_noun[0]} (answer Yes or No):\n{noun[0]}\nanswer:\n",
                             temperature=0,
                             max_tokens=3,
                             top_p=1.0,
                             frequency_penalty=0.0,
                             presence_penalty=0.0
                         )
+                        print("+++++ Nouns and Q Noun 0 ++++++")
+                        print(noun[0])
+                        print(question_noun[0])
                         yes_or_no = like_dis['choices'][0]['text'].strip()
                         if yes_or_no == 'Yes':
                             if random.choice([True, False]):
-                                self.likes += noun
-                                noun_opinion_pair += (noun, "positive")
+                                self.likes += noun[0]
+                                noun_opinion_pair += (noun[0], "positive")
                             else:
-                                self.dislikes += noun
-                                noun_opinion_pair += (noun, "negative")
+                                self.dislikes += noun[0]
+                                noun_opinion_pair += (noun[0], "negative")
 
         return noun_opinion_pair
 
@@ -291,57 +297,60 @@ class Demon:
         nouns = self.text_processor.noun_extractor(response)
         ## added opinions to like and dislike
         ## now a response is required in order to make the conversation convincing
-        print(nouns)
-        print(question_noun)
+
         nouns = {noun: op for noun, op in nouns.items() if noun not in question_noun}
-        print(nouns)
         noun_op_pairing = self.like_dislike_extract_no_add(nouns, question_noun)
         
-        print(len(noun_op_pairing))
+        print(f"Noun, Op Pair: {noun_op_pairing}")
+
         
         
-        
-        if len(noun_op_pairing) >= 3:
+        if len(noun_op_pairing) >= 6:
             answer_regarding_question = openai.Completion.create(
-                model="text-davinci-002",
-                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence \n {noun_op_pairing[0][0]} - {noun_op_pairing[0][1]} \n {noun_op_pairing[1][0]} - {noun_op_pairing[1][1]} \n {noun_op_pairing[2][0]} - {noun_op_pairing[2][1]}",
+                model="text-davinci-003",
+                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence \n {noun_op_pairing[0]} - {noun_op_pairing[1]} \n {noun_op_pairing[2]} - {noun_op_pairing[3]} \n {noun_op_pairing[4]} - {noun_op_pairing[5]}",
                 temperature=1,
                 max_tokens=246,
                 top_p=1.0,
                 frequency_penalty=0.1,
                 presence_penalty=0.49
             )
-        elif len(noun_op_pairing) == 2:
+            answer_to_q_return = answer_regarding_question['choices'][0]['text']  
+
+        elif len(noun_op_pairing) == 4:
             answer_regarding_question = openai.Completion.create(
-                model="text-davinci-002",
-                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence \n {noun_op_pairing[0][0]} - {noun_op_pairing[0][1]} \n {noun_op_pairing[1][0]} - {noun_op_pairing[1][1]} \n ",
+                model="text-davinci-003",
+                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence \n {noun_op_pairing[0]} - {noun_op_pairing[1]} \n {noun_op_pairing[2]} - {noun_op_pairing[3]} \n ",
                 temperature=1,
                 max_tokens=256,
                 top_p=1.0,
                 frequency_penalty=0.1,
                 presence_penalty=0.49
             )
+            answer_to_q_return = answer_regarding_question['choices'][0]['text']  
+
+        elif (len(noun_op_pairing) == 2):
+            answer_regarding_question = openai.Completion.create(
+                model="text-davinci-003",
+                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence\n {noun_op_pairing[0]} - {noun_op_pairing[1]}",
+                temperature=1,
+                max_tokens=256,
+                top_p=1.0,
+                frequency_penalty=0.1,
+                presence_penalty=0.49
+            )
+            answer_to_q_return = answer_regarding_question['choices'][0]['text']  
         else:
-            answer_regarding_question = openai.Completion.create(
-                model="text-davinci-002",
-                prompt=f"Write a few sentences about these nouns forming your own opinion using this noun and opinion pair, using the opinion component to guide your sentence\n {noun_op_pairing[0][0]} - {noun_op_pairing[0][1]}",
-                temperature=1,
-                max_tokens=256,
-                top_p=1.0,
-                frequency_penalty=0.1,
-                presence_penalty=0.49
-            )
+            answer_to_q_return = "I don't think what you said was relevant to my question. I'm bored ask me something!"
        
-        return answer_regarding_question['choices'][0]['text']  
+
+        return answer_to_q_return
 
 
     """
     Ending where demons who lied come back to roast you
     This can be done by checking where the player was in the context with the demons
     """
-
-
-
     ## grabbing random greeting out of greeting list for demon
     def greet(self):
 
